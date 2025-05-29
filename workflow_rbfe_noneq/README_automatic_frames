@@ -1,0 +1,131 @@
+Please, read the file BEFORE running ANY TRAJECTORY, EVEN JUST PRODUCTION
+
+ATTENTION: The nonequilibrium RBFE method proposed here analyses irreversible work distributions for A->B and B->A processes. The only potential issue is that for the A->B case the built topology is based on the geometry of ligand A, and for B->A on the geometry of ligand B. However, though formally we analyse work distributions obtained through different hybrid topology MOL.itp files, these files should be exactly mirror-ed, i.e. state A in MOL.itp based on ligand A will be exactly same as state B in MOL_to_be_used.itp based on ligand B and vice versa. In this sense, no error is done and the approach is formally correct. User just recommended to be sure that two _to_be_used.itp files generated are exactly mirror-ing each other, that there are no other differences between them. 
+
+You can also watch a short Video_instruction.mov in this folder.
+
+1) First, we run script_Gregory_0.sh.
+
+a) We need python2 for it. We need to e.g. switch on the corresponding conda environment or to have python2 available already.
+b) The script has two main entries, which must be manually edited: the variable names state, s0, s1, ligand_0 and ligand_1. They must be edited both in the beginning of the script (Step 1) and closer to the end (Step 5). The entries in (Step 5) must mirror those in (Step 1). It means that if in (Step 1) you had s0=benzene and s1=toluene, in (Step 5) you need to write s0=toluene and s1=benzene. 
+
+c) To know the variables:
+state - the name of the folder where you want to store your output. Choose any.
+s0 - the reference name of the folders and some files related to the non-hybrid trajectory of the first ligand. Choose the one you've chosen to name the folders of your CHARMM-GUI output
+s1 - the reference name of the folders and some files related to the non-hybrid trajectory of the second ligand. Choose the one you've chosen to name the folders of your CHARMM-GUI output
+ligand_0 - name of your ligand residue in CHARMM-GUI output of the first ligand. If you were cautious enough to use MOL in the very beginning of CHARMM-GUI non-hybrid trajectories, then put MOL.
+ligand_1 - name of your ligand residue in CHARMM-GUI output of the second ligand. If you were cautious enough to use MOL in the very beginning of CHARMM-GUI non-hybrid trajectories, then put MOL.
+
+d) If you want to use other structures than step4.1_equilibration.gro to form hybrid topology which will be used for all the frames, you need to change the script in respective part
+
+e) If you have problems with script finding all your input files, check the beginning of the script on whether the namings and structure of your CHARMM-GUI output folders is the same.
+
+f) To check the success of the script, you may pay attention to the next files:
+
+ - the files e.g. ${state}/${s0}/pmx/parameters.itp and ${state}/${s1}/pmx/parameters.itp - they must contain all the atomtypes used in the system with ligand 1 or ligand 2. The same goes to files nonbonded.itp, e.g. when you've used WYF parameters.
+
+- the files ${state}/toppar_${s0}/forcefield.itp and ${state}/toppar_${s1}/forcefield.itp - they should not contain [ atomtypes ] entries anymore. As well, no [ defaults ] or [ nonbond_params ] entries.
+
+- the file $state/topol_${s0}-${s1}.top and analogue for 2nd ligand. They must have links into ${state}/${s1}/pmx/parameters.itp file, into MOL-to-be_used.itp files and so on, as in the script. Not all of these files must exist at this point, we just check the contents of .top file.
+
+- the ${state}/${s0}/pmx/MOL.itp file should not have POSRES entry 
+
+g)BE CAREFUL!!!!! If you run this script once again, it will delete the main folder with all the output. It is made so that errors do not accumulate, and in consideration that it does not take a lot of time to run all the scripts of the workflow.
+
+h) If you have a system not with SOD or ACET, you need to change it in the parts of the scripts where .top files are modified
+
+i) IMPORTANT!!!!! I suppose in cases you want to work with any protein containing the same ligand in the several same binding sites (multi-subunits protein), you need to choose the binding site you want to explore and rename the corresponding ligand as e.g. MOL even BEFORE running any dynamics, because otherwise you will need to do a lot of manual work afterwards. 
+
+Surely, if you have more ligands than one, if you have any additional moleculetype, like membrane, you will need to change the parts of the scripts where .top files are modified
+
+J) We do:
+
+bash script_Gregory_0.sh
+
+
+----------------
+
+2) Second, we run the script script_Gregory_1.sh 
+
+a) Again, before running the script, be sure to change the ligand_0, state, s0 and s1 in both mirror-like parts of the script
+
+b) To check the success of the script, you may pay attention to the next files:
+- the ${state}/${s0}-${s1}/pmx/MOL_to_be_used.itp files must contain POSRES group
+- in ${state}/${s0}/pmx/parameters.itp files now we should also find dummy atomtypes along the other atomtypes
+- it is absolutely necessary to be sure that MOL_to_be_used.itp files based on ligand A and on ligand B are exactly mirror-ed, have no other differences than just switched state A and state B inside.
+
+c) The restraints we return here are from CHARMM-GUI. We are not sure these are the best restraints to use. This could be modified later.
+
+d) To run this script, you need to use the "develop" branch of pmx software, working on python3.
+
+e) We do:
+
+bash script_Gregory_1.sh
+
+---------------
+
+3) Third, we run the script script_Gregory_2_lig0.sh and script_Gregory_2_lig1.sh. These files were divided into two instead of having two mirrored parts in one script, for the ease of development.
+
+a) Again, be sure to use correct and mirrored variables s0, s1, ligand_0, ligand_1 in both scripts
+
+b) You may want to change the GROMACS extraction command with respect to the beginning frame, skip value, etc.
+
+c) Be sure that after MOL in your original structure files the next name of the moleculetype is SOD. Otherwise, you need to change the respective parts of the code.
+
+d) To check that the scripts run correctly, you may:
+- check the contents of any frame like $state/$s0-$s1/frameX.gro, where X is the number of frame. It should contain dummy atoms now. Additionaly, frames in the folders like lysozyme/benzene-toluene/ and lysozyme/toluene-benzene will be different in the number of dummies, as the first ones are based on the geometry of benzene, and the second - vice versa.
+- check the contents of the index.ndx file
+- compare the respective frame $state/$s0-$s1/frameX.gro with the respective hybrid topology which was generated in the previous script, i.e. with $state/$s0-$s1/pmx/MOL_to_be_used.itp 
+- check that in respective frames $state/$s0-$s1/frameX.gro there are velocities for all non-dummy atoms, and that the number of atoms in the header of the file is correct.
+- compare the generated frame{i}.gro file with frame{i}_bck.gro. The former must contain dummies without velocities, otherwise they must be same. 
+
+e) Be sure to change the command preparing the index.inx file if you have other ions/additional ligands/membrane, etc.
+
+f) The indexes are created based on dummy atoms defined as "D* and HV*". In some difficult cases it may not be appropriate, but they should be extremely rare and irrelevant.
+
+g) We do:
+bash script_Gregory_2_lig0.sh
+bash script_Gregory_2_lig1.sh
+
+Or one can run extract_frames.sh file to extract frames both for complex and for water.
+
+-----------------
+4) Fourth, it is a stage of doing the actual runs of the nonequilibrium steps
+
+a) Your .mdp files must be changed according to the conditions you are exploring and according to the system. For example, in case of protein you need groups for coupling, sometimes taking membrane into account. And so on.
+
+b) The script I provide must be modified in case of runs on cluster. However, the main idea of per-frame iterations may be the same. I am providing the script to run the calculations on local machine.
+
+c) The proposed mdp files should make the proposed runs as adequate as the runs based on hybrid trajectories created per ligand pair. The approach I propose will economize computational resources, as it is based on non-hybrid trajectories (e.g., for 3 ligands we need to run not 2 pairs of trajectories, but only 3 trajectories). 
+
+Here is the desctiption of what mdp files are doing: 
+- they freeze completely whole system, except non-dummy atoms. Then, they minimize the positions of dummy atoms
+- then, a short 20 ps NVT run is done to generate velocities on the dummies, with all other atoms frozen. NPT run is obviously not possible here as the most atoms are frozen, but NVT/NPT differences should not matter when generating velocities for the dummies.
+- then, nonequilibrium NPT runs start, based on generated velocities of dummy atoms and velocities of all other atoms taken from the original frames from trajectory.
+
+d) It should be noted that in this workflow both systems based on ligand_0 and on ligand_1 correspond to lambda=0 in .mdp files, i.e. they are using the same .mdp files. This is why in postprocessing you will need to use --reverse flag, to signal that the values of the work for the systems based on second ligand must change their sign. 
+
+e) In run_lysozyme.sh script be careful with the outputs it generates. To check that everything went well:
+- compare generated frame{i}_inp.gro files with original frame{i}.gro. The only difference should be that velocities of dummies appear in frame{i}_inp.gro. Also, be sure that the coordinates of dummies are not very different between frame{i}_inp.gro and frame{i}.gro. 
+
+f) Be careful - in run_lysozyme.sh you may need to manually change the number of spaces in the line commented "# Add 2 spaces to the beginning of the line", as .gro files have rather strict formatting rules, and depending on where your MOL is in your .gro file you may need different amount of spaces so that after all operation the lines with dummies and velocities will not have any additional/redundant spaces in the beginning. 
+
+g) Again, scripts are working with dummy atoms defined as "D* and HV*". We should bear that in mind, although I do not envisage any other options of how dummy atoms are generated, and we're probably not going to work with deuterium and etc.
+
+h) the integration timestep for NVT velocities generation step for dummy atoms is decreased, as otherwise LINCS restraints are generating errors. Disabling LINCS on h-bonds, on the other hand, causes instability of the system. 
+
+i) We do: 
+
+bash run_lysozyme.sh
+
+-----------------------
+5) We put the .xvg files for each nonequilibrium run per frame by running:
+bash bash_to_dhdl_lysozyme.sh
+
+------------------------
+6) We do the final postprocessing:
+
+We create any folder for postprocessing, e.g. s0-s1_analysis. We enter this folder, and run the command as:
+
+pmx analyse -fA ../benzene_dhdl/noneq*.xvg -fB ../toluene_dhdl/noneq*.xvg -t 302.15 --reverseB
+

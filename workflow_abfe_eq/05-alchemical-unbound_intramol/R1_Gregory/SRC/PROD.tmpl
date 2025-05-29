@@ -1,0 +1,102 @@
+;====================================================
+; Production MD
+;====================================================
+
+; RUN CONTROL
+;----------------------------------------------------
+;define       = -DPOSRES -DPOSRES_FC_BB=40.0 -DPOSRES_FC_SC=0.0
+integrator   = sd            ; (CHANGE) stochastic leap-frog integrator
+nsteps       = 2500000        ; total number of steps (2000ps)
+;nsteps       = 100000        ; total number of steps (200ps)
+;nsteps       = 10000        ; total number of steps (20ps)
+dt           = 0.002         ; 2 fs for timestep
+;mass-repartition-factor = 3
+
+; OUTPUT CONTROL
+;----------------------------------------------------
+nstxout          = 250000      ; save coordinates to .trr every 100 ps
+nstvout          = 0          ; don't save velocities to .trr
+nstfout          = 0          ; don't save forces to .trr
+
+nstxout-compressed     = 0        ; xtc compressed trajectory output every 0 steps
+;compressed-x-precision = 10000     ; precision with which to write to the compressed trajectory file
+nstlog                 = 100000   ; update log file every 200 ps
+nstenergy              = 10000    ; save energies every 20 ps
+nstcalcenergy          = 100      ; calculate energies every 100 steps
+
+; BONDS
+;----------------------------------------------------
+constraint_algorithm   = lincs    ; holonomic constraints
+constraints            = h-bonds  ; hydrogens only are constrained
+lincs_iter             = 1        ; accuracy of LINCS (1 is default)
+lincs_order            = 4        ; (CHANGE: 4) also related to accuracy (4 is default)
+lincs-warnangle        = 30       ; maximum angle that a bond can rotate before LINCS will complain (30 is default)
+continuation           = yes       ; formerly known as 'unconstrained-start' - useful for exact continuations and reruns
+
+; NEIGHBOR SEARCHING
+;----------------------------------------------------
+cutoff-scheme    = Verlet
+ns-type          = grid   ; search neighboring grid cells
+nstlist          = 20     ; 20 fs (default is 10)
+rlist            = 1.2    ; short-range neighborlist cutoff (in nm)
+pbc              = xyz    ; 3D PBC
+
+; ELECTROSTATICS & EWALD
+;----------------------------------------------------
+coulombtype      = PME      ; Particle Mesh Ewald for long-range electrostatics
+rcoulomb         = 1.2      ; short-range electrostatic cutoff (in nm)
+ewald_geometry   = 3d       ; Ewald sum is performed in all three dimensions
+pme-order        = 4        
+fourierspacing   = 0.12 
+ewald-rtol       = 1e-6     ; relative strength of the Ewald-shifted direct potential at rcoulomb
+
+; VAN DER WAALS
+;----------------------------------------------------
+vdw-type                = Cut-off
+vdw-modifier            = Potential-shift-Verlet ; (CHANGE: force-switch)
+;verlet-buffer-tolerance = -1           ;
+rvdw                    = 1.2          ; short-range van der Waals cutoff (in nm)
+DispCorr                = EnerPres     ; (CHANGE: no) apply long range dispersion corrections for Energy and Pressure
+
+; TEMPERATURE COUPLING (SD ==> Langevin dynamics)
+;----------------------------------------------------
+tc_grps    =  System	; (CHANGE: md+Verlet)
+tau_t      =  1.0
+ref_t      =  298.15
+
+; PRESSURE COUPLING
+;----------------------------------------------------
+pcoupl           = C-rescale    ;
+pcoupltype       = isotropic            ; uniform scaling of box vectors
+tau_p            = 5.0                    ; time constant (ps)
+ref_p            = 1.0                  ; reference pressure (bar)
+compressibility  = 4.5e-05              ; isothermal compressibility of water (bar^-1)
+
+; VELOCITY GENERATION
+;----------------------------------------------------
+gen_vel      = no      ; Velocity generation is on (if gen_vel is 'yes', continuation should be 'no')
+gen_seed     = -1       ; Use random seed
+gen_temp     = 298.15
+
+; FREE ENERGY
+;----------------------------------------------------
+free-energy              = yes
+couple-moltype           = NNNNN
+; 'soft-core' parameters
+sc-alpha                 = 0.5
+sc-power                 = 1
+sc-sigma                 = 0.3
+sc-coul                  = no
+; we still want the molecule to interact with itself at lambda=1
+couple-intramol          = yes
+couple-lambda0           = vdw-q
+couple-lambda1           = none
+;..lambda schedule
+init-lambda-state        = YYYYY
+; init_lambda_state        0    1    2    3    4    5    6    7    8    9    10   11   12   13   14   15   16   17   18   19   20   21   22   23   24   25   26   27   28   29   30   31   32   33   34   35    36
+bonded-lambdas           = 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00
+coul-lambdas             = 0.00 0.01 0.02 0.05 0.08 0.11 0.14 0.17 0.20 0.24 0.28 0.32 0.36 0.40 0.44 0.48 0.52 0.56 0.60 0.64 0.68 0.72 0.76 0.80 0.84 0.88 0.92 0.96 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00
+vdw-lambdas              = 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.05 0.10 0.15 0.20 0.25 0.30 0.34 0.38 0.42 0.46 0.50 0.53 0.56 0.59 0.62 0.65 0.68 0.71 0.74 0.77 0.80 0.83 0.87 0.90 0.93 0.96 0.99 1.00
+nstdhdl                  = 50
+dhdl-print-energy        = total
+calc-lambda-neighbors    = -1

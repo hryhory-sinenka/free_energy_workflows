@@ -1,0 +1,6 @@
+The scripts are almost of no difference with the ones for lysozyme. What should be noted additionally:
+
+1) It seems that CHARMM-GUI output presents the ligand as SOLU group, different from SOLV. I'm not sure if it is optimal, as in Lemkul's tutorial it is said that temperature coupling applied to just a few atoms may blow the system up.
+
+2) Therefore, the line which creates an index file with corresponding groups in script_Gregory_2_water_lig0.sh and script_Gregory_2_water_lig1.sh may be deleted if your original non-hybrid .mdp files were not using this separation between the ligand and the system for temperature coupling.
+

@@ -1,0 +1,8 @@
+#!/bin/csh
+#source /usr/local/gromacs/bin/GMXR
+#gmx_mpi grompp -f step4.0_minimization.mdp -o step4.0_minimization.tpr -c step3_input.gro -r step3_input.gro -p topol.top -n index.ndx -maxwarn 1
+#gmx_mpi mdrun -v -deffnm step4.0_minimization -nb gpu
+#gmx_mpi grompp -f step4.1_equilibration.mdp -o step4.1_equilibration.tpr -c step4.0_minimization.gro -r step3_input.gro -p topol.top -n index.ndx -maxwarn 1
+#gmx_mpi mdrun -v -deffnm step4.1_equilibration -nb gpu
+gmx_mpi grompp -f step5_production.mdp -o step5_production.tpr -c step4.1_equilibration.gro -p topol.top -n index.ndx -maxwarn 1
+gmx_mpi mdrun -v -deffnm step5_production -nb gpu 

@@ -1,0 +1,81 @@
+;==========================================================================================
+; NON-Equilibrium run
+;==========================================================================================
+
+;------------------------------------------------------------------------------------------
+; RUN CONTROL & MINIMIZATION
+;------------------------------------------------------------------------------------------
+define			= 
+integrator		= md		;
+tinit			= 0		; start time, in ps
+dt			= 0.002		; timestep, in ps
+nsteps			= 24999		; number of steps - 50 ps
+ld_seed			= -1		; pseudo-random seed for brownian dynamcis in sd
+comm-mode		= Linear	; mode for center of mass motion removal
+nstcomm			= 100		; no. steps for center of mass motion removal
+comm-grps		= SOLU SOLV
+;------------------------------------------------------------------------------------------
+; OUTPUT CONTROL
+;------------------------------------------------------------------------------------------
+nstcalcenergy		= 1		; freq of computed energies
+nstlog			= 10000		; freq of updating the .log file
+nstenergy		= 50000		; freq of saving the energies
+nstdhdl			= 1		; deltaH values written every nstdhdl steps 
+nstxout-compressed	= 50000		; freq of .xtc trajectory
+nstxout                 = 5000
+nstvout                 = 5000
+nstfout                 = 5000
+
+;------------------------------------------------------------------------------------------
+; NEIGHBOR SEARCHING
+;------------------------------------------------------------------------------------------
+cutoff-scheme		= Verlet	; generate a pair list with buffering
+nstlist			= 20		; frequency to update neighbor list
+pbc			= xyz		; periodic boundary conditions
+rlist			= 3
+;------------------------------------------------------------------------------------------
+; ELECTROSTATICS
+;------------------------------------------------------------------------------------------
+coulombtype		= PME			; method for doing electrostatics
+coulomb-modifier	= Potential-shift	; shift pot so it is zero at cut-off
+rcoulomb		= 1.1			; dist. for coul cut-off, nm
+;------------------------------------------------------------------------------------------
+; VDW
+;------------------------------------------------------------------------------------------
+vdwtype			= Cut-off	; method for doing Van der Waals (N.B. switch)
+vdw-modifier		= Force-switch	; needed for vdwtype = switch     
+rvdw-switch		= 1.0		; where to switch LJ force, nm
+rvdw			= 1.1		; distance for LJ cut-off
+DispCorr		= EnerPres	; long range dispersion corr for en and pressure
+;------------------------------------------------------------------------------------------
+; BONDS
+;------------------------------------------------------------------------------------------
+constraints		= all-bonds	; constrain all bonds
+constraint-algorithm	= Lincs		; type of constraint algorithm
+Shake-SOR		= no		; use succesive overrelation, less shake iters
+shake-tol		= 1e-04		; relative tolerance of shake
+lincs-iter		= 2
+;------------------------------------------------------------------------------------------
+; TEMPERATURE & PRESSURE COUPLING
+;------------------------------------------------------------------------------------------
+tcoupl			= V-rescale		; temperature coupling
+tc-grps			= SOLU SOLV	; groups for temperature coupling
+tau-t			= 1.0 1.0		; time constant, ps
+ref-t			= 302.15 302.15		; reference temperature, K
+pcoupl			= Parrinello-Rahman	; pressure coupling
+Pcoupltype		= semiisotropic
+tau-p			= 5			; time constant, ps
+compressibility		= 4.5E-5 4.5E-5		; compressibility, 1/bar
+ref-p			= 1.0 1.0		; reference P, bar
+gen-vel			= no
+continuation            = yes
+gen-temp		= 302.15
+gen-seed		= -1
+refcoord-scaling	= com
+;------------------------------------------------------------------------------------------
+; FREE ENERGY CALCULATIONS
+;------------------------------------------------------------------------------------------
+free-energy			= yes
+init-lambda			= 0
+delta-lambda			= 4e-5
+sc-function			= gapsys

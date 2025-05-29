@@ -1,0 +1,1356 @@
+2023-10-06 16:03:55.083 | INFO     | alchemlyb.workflows.base:__init__:50 - Alchemlyb Version: f2.1.0
+2023-10-06 16:03:55.084 | INFO     | alchemlyb.workflows.base:__init__:51 - Set Temperature to 298 K.
+2023-10-06 16:03:55.084 | INFO     | alchemlyb.workflows.base:__init__:53 - Set Software to GROMACS.
+2023-10-06 16:03:55.084 | INFO     | alchemlyb.workflows.abfe:__init__:83 - Initialise Alchemlyb ABFE Workflow
+2023-10-06 16:03:55.084 | INFO     | alchemlyb.workflows.abfe:update_units:307 - Set unit to kcal/mol.
+2023-10-06 16:03:55.084 | INFO     | alchemlyb.workflows.abfe:__init__:85 - Finding files with prefix: dhdl, suffix: xvg under directory /home/cecchini/Methods/Alchemlyb/181L/ligand produced by GROMACS
+2023-10-06 16:03:55.084 | INFO     | alchemlyb.workflows.abfe:__init__:102 - Found 21 xvg files.
+2023-10-06 16:03:55.084 | INFO     | alchemlyb.workflows.abfe:__init__:103 - Unsorted file list: 
+ /home/cecchini/Methods/Alchemlyb/181L/ligand/dhdl_07.xvg
+/home/cecchini/Methods/Alchemlyb/181L/ligand/dhdl_06.xvg
+/home/cecchini/Methods/Alchemlyb/181L/ligand/dhdl_12.xvg
+/home/cecchini/Methods/Alchemlyb/181L/ligand/dhdl_01.xvg
+/home/cecchini/Methods/Alchemlyb/181L/ligand/dhdl_04.xvg
+/home/cecchini/Methods/Alchemlyb/181L/ligand/dhdl_14.xvg
+/home/cecchini/Methods/Alchemlyb/181L/ligand/dhdl_03.xvg
+/home/cecchini/Methods/Alchemlyb/181L/ligand/dhdl_19.xvg
+/home/cecchini/Methods/Alchemlyb/181L/ligand/dhdl_09.xvg
+/home/cecchini/Methods/Alchemlyb/181L/ligand/dhdl_05.xvg
+/home/cecchini/Methods/Alchemlyb/181L/ligand/dhdl_20.xvg
+/home/cecchini/Methods/Alchemlyb/181L/ligand/dhdl_11.xvg
+/home/cecchini/Methods/Alchemlyb/181L/ligand/dhdl_13.xvg
+/home/cecchini/Methods/Alchemlyb/181L/ligand/dhdl_18.xvg
+/home/cecchini/Methods/Alchemlyb/181L/ligand/dhdl_10.xvg
+/home/cecchini/Methods/Alchemlyb/181L/ligand/dhdl_08.xvg
+/home/cecchini/Methods/Alchemlyb/181L/ligand/dhdl_00.xvg
+/home/cecchini/Methods/Alchemlyb/181L/ligand/dhdl_16.xvg
+/home/cecchini/Methods/Alchemlyb/181L/ligand/dhdl_15.xvg
+/home/cecchini/Methods/Alchemlyb/181L/ligand/dhdl_02.xvg
+/home/cecchini/Methods/Alchemlyb/181L/ligand/dhdl_17.xvg
+2023-10-06 16:03:55.084 | INFO     | alchemlyb.workflows.abfe:__init__:106 - Using GROMACS parser to read the data.
+2023-10-06 16:03:55.095 | INFO     | alchemlyb.workflows.abfe:read:145 - Reading 21 lines of u_nk from /home/cecchini/Methods/Alchemlyb/181L/ligand/dhdl_07.xvg
+2023-10-06 16:03:55.102 | INFO     | alchemlyb.workflows.abfe:read:155 - Reading 21 lines of dhdl from /home/cecchini/Methods/Alchemlyb/181L/ligand/dhdl_07.xvg
+2023-10-06 16:03:55.111 | INFO     | alchemlyb.workflows.abfe:read:145 - Reading 21 lines of u_nk from /home/cecchini/Methods/Alchemlyb/181L/ligand/dhdl_06.xvg
+2023-10-06 16:03:55.117 | INFO     | alchemlyb.workflows.abfe:read:155 - Reading 21 lines of dhdl from /home/cecchini/Methods/Alchemlyb/181L/ligand/dhdl_06.xvg
+2023-10-06 16:03:55.126 | INFO     | alchemlyb.workflows.abfe:read:145 - Reading 21 lines of u_nk from /home/cecchini/Methods/Alchemlyb/181L/ligand/dhdl_12.xvg
+2023-10-06 16:03:55.135 | INFO     | alchemlyb.workflows.abfe:read:155 - Reading 21 lines of dhdl from /home/cecchini/Methods/Alchemlyb/181L/ligand/dhdl_12.xvg
+2023-10-06 16:03:55.146 | INFO     | alchemlyb.workflows.abfe:read:145 - Reading 21 lines of u_nk from /home/cecchini/Methods/Alchemlyb/181L/ligand/dhdl_01.xvg
+2023-10-06 16:03:55.153 | INFO     | alchemlyb.workflows.abfe:read:155 - Reading 21 lines of dhdl from /home/cecchini/Methods/Alchemlyb/181L/ligand/dhdl_01.xvg
+2023-10-06 16:03:55.162 | INFO     | alchemlyb.workflows.abfe:read:145 - Reading 21 lines of u_nk from /home/cecchini/Methods/Alchemlyb/181L/ligand/dhdl_04.xvg
+2023-10-06 16:03:55.168 | INFO     | alchemlyb.workflows.abfe:read:155 - Reading 21 lines of dhdl from /home/cecchini/Methods/Alchemlyb/181L/ligand/dhdl_04.xvg
+2023-10-06 16:03:55.177 | INFO     | alchemlyb.workflows.abfe:read:145 - Reading 21 lines of u_nk from /home/cecchini/Methods/Alchemlyb/181L/ligand/dhdl_14.xvg
+2023-10-06 16:03:55.184 | INFO     | alchemlyb.workflows.abfe:read:155 - Reading 21 lines of dhdl from /home/cecchini/Methods/Alchemlyb/181L/ligand/dhdl_14.xvg
+2023-10-06 16:03:55.192 | INFO     | alchemlyb.workflows.abfe:read:145 - Reading 21 lines of u_nk from /home/cecchini/Methods/Alchemlyb/181L/ligand/dhdl_03.xvg
+2023-10-06 16:03:55.199 | INFO     | alchemlyb.workflows.abfe:read:155 - Reading 21 lines of dhdl from /home/cecchini/Methods/Alchemlyb/181L/ligand/dhdl_03.xvg
+2023-10-06 16:03:55.207 | INFO     | alchemlyb.workflows.abfe:read:145 - Reading 21 lines of u_nk from /home/cecchini/Methods/Alchemlyb/181L/ligand/dhdl_19.xvg
+2023-10-06 16:03:55.214 | INFO     | alchemlyb.workflows.abfe:read:155 - Reading 21 lines of dhdl from /home/cecchini/Methods/Alchemlyb/181L/ligand/dhdl_19.xvg
+2023-10-06 16:03:55.223 | INFO     | alchemlyb.workflows.abfe:read:145 - Reading 21 lines of u_nk from /home/cecchini/Methods/Alchemlyb/181L/ligand/dhdl_09.xvg
+2023-10-06 16:03:55.230 | INFO     | alchemlyb.workflows.abfe:read:155 - Reading 21 lines of dhdl from /home/cecchini/Methods/Alchemlyb/181L/ligand/dhdl_09.xvg
+2023-10-06 16:03:55.238 | INFO     | alchemlyb.workflows.abfe:read:145 - Reading 21 lines of u_nk from /home/cecchini/Methods/Alchemlyb/181L/ligand/dhdl_05.xvg
+2023-10-06 16:03:55.245 | INFO     | alchemlyb.workflows.abfe:read:155 - Reading 21 lines of dhdl from /home/cecchini/Methods/Alchemlyb/181L/ligand/dhdl_05.xvg
+2023-10-06 16:03:55.254 | INFO     | alchemlyb.workflows.abfe:read:145 - Reading 21 lines of u_nk from /home/cecchini/Methods/Alchemlyb/181L/ligand/dhdl_20.xvg
+2023-10-06 16:03:55.261 | INFO     | alchemlyb.workflows.abfe:read:155 - Reading 21 lines of dhdl from /home/cecchini/Methods/Alchemlyb/181L/ligand/dhdl_20.xvg
+2023-10-06 16:03:55.270 | INFO     | alchemlyb.workflows.abfe:read:145 - Reading 21 lines of u_nk from /home/cecchini/Methods/Alchemlyb/181L/ligand/dhdl_11.xvg
+2023-10-06 16:03:55.276 | INFO     | alchemlyb.workflows.abfe:read:155 - Reading 21 lines of dhdl from /home/cecchini/Methods/Alchemlyb/181L/ligand/dhdl_11.xvg
+2023-10-06 16:03:55.285 | INFO     | alchemlyb.workflows.abfe:read:145 - Reading 21 lines of u_nk from /home/cecchini/Methods/Alchemlyb/181L/ligand/dhdl_13.xvg
+2023-10-06 16:03:55.295 | INFO     | alchemlyb.workflows.abfe:read:155 - Reading 21 lines of dhdl from /home/cecchini/Methods/Alchemlyb/181L/ligand/dhdl_13.xvg
+2023-10-06 16:03:55.303 | INFO     | alchemlyb.workflows.abfe:read:145 - Reading 21 lines of u_nk from /home/cecchini/Methods/Alchemlyb/181L/ligand/dhdl_18.xvg
+2023-10-06 16:03:55.310 | INFO     | alchemlyb.workflows.abfe:read:155 - Reading 21 lines of dhdl from /home/cecchini/Methods/Alchemlyb/181L/ligand/dhdl_18.xvg
+2023-10-06 16:03:55.318 | INFO     | alchemlyb.workflows.abfe:read:145 - Reading 21 lines of u_nk from /home/cecchini/Methods/Alchemlyb/181L/ligand/dhdl_10.xvg
+2023-10-06 16:03:55.325 | INFO     | alchemlyb.workflows.abfe:read:155 - Reading 21 lines of dhdl from /home/cecchini/Methods/Alchemlyb/181L/ligand/dhdl_10.xvg
+2023-10-06 16:03:55.334 | INFO     | alchemlyb.workflows.abfe:read:145 - Reading 21 lines of u_nk from /home/cecchini/Methods/Alchemlyb/181L/ligand/dhdl_08.xvg
+2023-10-06 16:03:55.340 | INFO     | alchemlyb.workflows.abfe:read:155 - Reading 21 lines of dhdl from /home/cecchini/Methods/Alchemlyb/181L/ligand/dhdl_08.xvg
+2023-10-06 16:03:55.349 | INFO     | alchemlyb.workflows.abfe:read:145 - Reading 21 lines of u_nk from /home/cecchini/Methods/Alchemlyb/181L/ligand/dhdl_00.xvg
+2023-10-06 16:03:55.355 | INFO     | alchemlyb.workflows.abfe:read:155 - Reading 21 lines of dhdl from /home/cecchini/Methods/Alchemlyb/181L/ligand/dhdl_00.xvg
+2023-10-06 16:03:55.365 | INFO     | alchemlyb.workflows.abfe:read:145 - Reading 21 lines of u_nk from /home/cecchini/Methods/Alchemlyb/181L/ligand/dhdl_16.xvg
+2023-10-06 16:03:55.372 | INFO     | alchemlyb.workflows.abfe:read:155 - Reading 21 lines of dhdl from /home/cecchini/Methods/Alchemlyb/181L/ligand/dhdl_16.xvg
+2023-10-06 16:03:55.382 | INFO     | alchemlyb.workflows.abfe:read:145 - Reading 21 lines of u_nk from /home/cecchini/Methods/Alchemlyb/181L/ligand/dhdl_15.xvg
+2023-10-06 16:03:55.389 | INFO     | alchemlyb.workflows.abfe:read:155 - Reading 21 lines of dhdl from /home/cecchini/Methods/Alchemlyb/181L/ligand/dhdl_15.xvg
+2023-10-06 16:03:55.397 | INFO     | alchemlyb.workflows.abfe:read:145 - Reading 21 lines of u_nk from /home/cecchini/Methods/Alchemlyb/181L/ligand/dhdl_02.xvg
+2023-10-06 16:03:55.404 | INFO     | alchemlyb.workflows.abfe:read:155 - Reading 21 lines of dhdl from /home/cecchini/Methods/Alchemlyb/181L/ligand/dhdl_02.xvg
+2023-10-06 16:03:55.413 | INFO     | alchemlyb.workflows.abfe:read:145 - Reading 21 lines of u_nk from /home/cecchini/Methods/Alchemlyb/181L/ligand/dhdl_17.xvg
+2023-10-06 16:03:55.420 | INFO     | alchemlyb.workflows.abfe:read:155 - Reading 21 lines of dhdl from /home/cecchini/Methods/Alchemlyb/181L/ligand/dhdl_17.xvg
+2023-10-06 16:03:55.420 | INFO     | alchemlyb.workflows.abfe:read:164 - Sort files according to the u_nk.
+2023-10-06 16:03:55.433 | INFO     | alchemlyb.workflows.abfe:read:184 - Sorted file list: 
+/home/cecchini/Methods/Alchemlyb/181L/ligand/dhdl_00.xvg
+/home/cecchini/Methods/Alchemlyb/181L/ligand/dhdl_01.xvg
+/home/cecchini/Methods/Alchemlyb/181L/ligand/dhdl_02.xvg
+/home/cecchini/Methods/Alchemlyb/181L/ligand/dhdl_03.xvg
+/home/cecchini/Methods/Alchemlyb/181L/ligand/dhdl_04.xvg
+/home/cecchini/Methods/Alchemlyb/181L/ligand/dhdl_05.xvg
+/home/cecchini/Methods/Alchemlyb/181L/ligand/dhdl_06.xvg
+/home/cecchini/Methods/Alchemlyb/181L/ligand/dhdl_07.xvg
+/home/cecchini/Methods/Alchemlyb/181L/ligand/dhdl_08.xvg
+/home/cecchini/Methods/Alchemlyb/181L/ligand/dhdl_09.xvg
+/home/cecchini/Methods/Alchemlyb/181L/ligand/dhdl_10.xvg
+/home/cecchini/Methods/Alchemlyb/181L/ligand/dhdl_11.xvg
+/home/cecchini/Methods/Alchemlyb/181L/ligand/dhdl_12.xvg
+/home/cecchini/Methods/Alchemlyb/181L/ligand/dhdl_13.xvg
+/home/cecchini/Methods/Alchemlyb/181L/ligand/dhdl_14.xvg
+/home/cecchini/Methods/Alchemlyb/181L/ligand/dhdl_15.xvg
+/home/cecchini/Methods/Alchemlyb/181L/ligand/dhdl_16.xvg
+/home/cecchini/Methods/Alchemlyb/181L/ligand/dhdl_17.xvg
+/home/cecchini/Methods/Alchemlyb/181L/ligand/dhdl_18.xvg
+/home/cecchini/Methods/Alchemlyb/181L/ligand/dhdl_19.xvg
+/home/cecchini/Methods/Alchemlyb/181L/ligand/dhdl_20.xvg
+2023-10-06 16:03:55.433 | INFO     | alchemlyb.workflows.abfe:preprocess:333 - Start preprocessing with skiptime of 10 uncorrelation method of dhdl and threshold of 50
+2023-10-06 16:03:55.433 | INFO     | alchemlyb.workflows.abfe:preprocess:339 - Processing the u_nk data set with skiptime of 10.
+2023-10-06 16:03:55.440 | DEBUG    | alchemlyb.preprocessing.subsampling:equilibrium_detection:599 - Running equilibration detection.
+2023-10-06 16:03:55.441 | DEBUG    | alchemlyb.preprocessing.subsampling:equilibrium_detection:601 - Start index: 0.
+2023-10-06 16:03:55.441 | DEBUG    | alchemlyb.preprocessing.subsampling:equilibrium_detection:602 - Statistical inefficiency: 1.00.
+2023-10-06 16:03:55.441 | DEBUG    | alchemlyb.preprocessing.subsampling:equilibrium_detection:608 - Number of uncorrelated samples: 19.
+2023-10-06 16:03:55.442 | WARNING  | alchemlyb.workflows.abfe:preprocess:349 - Number of u_nk 19 for state 0 is less than the threshold 50.
+2023-10-06 16:03:55.442 | INFO     | alchemlyb.workflows.abfe:preprocess:354 - Take all the u_nk for state 0.
+2023-10-06 16:03:55.450 | DEBUG    | alchemlyb.preprocessing.subsampling:equilibrium_detection:599 - Running equilibration detection.
+2023-10-06 16:03:55.452 | DEBUG    | alchemlyb.preprocessing.subsampling:equilibrium_detection:601 - Start index: 5.
+2023-10-06 16:03:55.452 | DEBUG    | alchemlyb.preprocessing.subsampling:equilibrium_detection:602 - Statistical inefficiency: 1.00.
+2023-10-06 16:03:55.452 | DEBUG    | alchemlyb.preprocessing.subsampling:equilibrium_detection:608 - Number of uncorrelated samples: 14.
+2023-10-06 16:03:55.453 | WARNING  | alchemlyb.workflows.abfe:preprocess:349 - Number of u_nk 14 for state 1 is less than the threshold 50.
+2023-10-06 16:03:55.453 | INFO     | alchemlyb.workflows.abfe:preprocess:354 - Take all the u_nk for state 1.
+2023-10-06 16:03:55.461 | DEBUG    | alchemlyb.preprocessing.subsampling:equilibrium_detection:599 - Running equilibration detection.
+2023-10-06 16:03:55.462 | DEBUG    | alchemlyb.preprocessing.subsampling:equilibrium_detection:601 - Start index: 0.
+2023-10-06 16:03:55.462 | DEBUG    | alchemlyb.preprocessing.subsampling:equilibrium_detection:602 - Statistical inefficiency: 1.00.
+2023-10-06 16:03:55.463 | DEBUG    | alchemlyb.preprocessing.subsampling:equilibrium_detection:608 - Number of uncorrelated samples: 19.
+2023-10-06 16:03:55.463 | WARNING  | alchemlyb.workflows.abfe:preprocess:349 - Number of u_nk 19 for state 2 is less than the threshold 50.
+2023-10-06 16:03:55.463 | INFO     | alchemlyb.workflows.abfe:preprocess:354 - Take all the u_nk for state 2.
+2023-10-06 16:03:55.470 | DEBUG    | alchemlyb.preprocessing.subsampling:equilibrium_detection:599 - Running equilibration detection.
+2023-10-06 16:03:55.471 | DEBUG    | alchemlyb.preprocessing.subsampling:equilibrium_detection:601 - Start index: 2.
+2023-10-06 16:03:55.471 | DEBUG    | alchemlyb.preprocessing.subsampling:equilibrium_detection:602 - Statistical inefficiency: 1.00.
+2023-10-06 16:03:55.471 | DEBUG    | alchemlyb.preprocessing.subsampling:equilibrium_detection:608 - Number of uncorrelated samples: 17.
+2023-10-06 16:03:55.472 | WARNING  | alchemlyb.workflows.abfe:preprocess:349 - Number of u_nk 17 for state 3 is less than the threshold 50.
+2023-10-06 16:03:55.472 | INFO     | alchemlyb.workflows.abfe:preprocess:354 - Take all the u_nk for state 3.
+2023-10-06 16:03:55.479 | DEBUG    | alchemlyb.preprocessing.subsampling:equilibrium_detection:599 - Running equilibration detection.
+2023-10-06 16:03:55.480 | DEBUG    | alchemlyb.preprocessing.subsampling:equilibrium_detection:601 - Start index: 2.
+2023-10-06 16:03:55.480 | DEBUG    | alchemlyb.preprocessing.subsampling:equilibrium_detection:602 - Statistical inefficiency: 1.04.
+2023-10-06 16:03:55.480 | DEBUG    | alchemlyb.preprocessing.subsampling:equilibrium_detection:608 - Number of uncorrelated samples: 16.
+2023-10-06 16:03:55.481 | WARNING  | alchemlyb.workflows.abfe:preprocess:349 - Number of u_nk 16 for state 4 is less than the threshold 50.
+2023-10-06 16:03:55.481 | INFO     | alchemlyb.workflows.abfe:preprocess:354 - Take all the u_nk for state 4.
+2023-10-06 16:03:55.488 | DEBUG    | alchemlyb.preprocessing.subsampling:equilibrium_detection:599 - Running equilibration detection.
+2023-10-06 16:03:55.489 | DEBUG    | alchemlyb.preprocessing.subsampling:equilibrium_detection:601 - Start index: 0.
+2023-10-06 16:03:55.489 | DEBUG    | alchemlyb.preprocessing.subsampling:equilibrium_detection:602 - Statistical inefficiency: 1.00.
+2023-10-06 16:03:55.489 | DEBUG    | alchemlyb.preprocessing.subsampling:equilibrium_detection:608 - Number of uncorrelated samples: 19.
+2023-10-06 16:03:55.490 | WARNING  | alchemlyb.workflows.abfe:preprocess:349 - Number of u_nk 19 for state 5 is less than the threshold 50.
+2023-10-06 16:03:55.490 | INFO     | alchemlyb.workflows.abfe:preprocess:354 - Take all the u_nk for state 5.
+2023-10-06 16:03:55.497 | DEBUG    | alchemlyb.preprocessing.subsampling:equilibrium_detection:599 - Running equilibration detection.
+2023-10-06 16:03:55.498 | DEBUG    | alchemlyb.preprocessing.subsampling:equilibrium_detection:601 - Start index: 0.
+2023-10-06 16:03:55.498 | DEBUG    | alchemlyb.preprocessing.subsampling:equilibrium_detection:602 - Statistical inefficiency: 1.00.
+2023-10-06 16:03:55.499 | DEBUG    | alchemlyb.preprocessing.subsampling:equilibrium_detection:608 - Number of uncorrelated samples: 19.
+2023-10-06 16:03:55.499 | WARNING  | alchemlyb.workflows.abfe:preprocess:349 - Number of u_nk 19 for state 6 is less than the threshold 50.
+2023-10-06 16:03:55.499 | INFO     | alchemlyb.workflows.abfe:preprocess:354 - Take all the u_nk for state 6.
+2023-10-06 16:03:55.506 | DEBUG    | alchemlyb.preprocessing.subsampling:equilibrium_detection:599 - Running equilibration detection.
+2023-10-06 16:03:55.507 | DEBUG    | alchemlyb.preprocessing.subsampling:equilibrium_detection:601 - Start index: 0.
+2023-10-06 16:03:55.507 | DEBUG    | alchemlyb.preprocessing.subsampling:equilibrium_detection:602 - Statistical inefficiency: 1.00.
+2023-10-06 16:03:55.507 | DEBUG    | alchemlyb.preprocessing.subsampling:equilibrium_detection:608 - Number of uncorrelated samples: 19.
+2023-10-06 16:03:55.508 | WARNING  | alchemlyb.workflows.abfe:preprocess:349 - Number of u_nk 19 for state 7 is less than the threshold 50.
+2023-10-06 16:03:55.508 | INFO     | alchemlyb.workflows.abfe:preprocess:354 - Take all the u_nk for state 7.
+2023-10-06 16:03:55.515 | DEBUG    | alchemlyb.preprocessing.subsampling:equilibrium_detection:599 - Running equilibration detection.
+2023-10-06 16:03:55.515 | DEBUG    | alchemlyb.preprocessing.subsampling:equilibrium_detection:601 - Start index: 0.
+2023-10-06 16:03:55.516 | DEBUG    | alchemlyb.preprocessing.subsampling:equilibrium_detection:602 - Statistical inefficiency: 1.00.
+2023-10-06 16:03:55.516 | DEBUG    | alchemlyb.preprocessing.subsampling:equilibrium_detection:608 - Number of uncorrelated samples: 19.
+2023-10-06 16:03:55.517 | WARNING  | alchemlyb.workflows.abfe:preprocess:349 - Number of u_nk 19 for state 8 is less than the threshold 50.
+2023-10-06 16:03:55.517 | INFO     | alchemlyb.workflows.abfe:preprocess:354 - Take all the u_nk for state 8.
+2023-10-06 16:03:55.523 | DEBUG    | alchemlyb.preprocessing.subsampling:equilibrium_detection:599 - Running equilibration detection.
+2023-10-06 16:03:55.524 | DEBUG    | alchemlyb.preprocessing.subsampling:equilibrium_detection:601 - Start index: 11.
+2023-10-06 16:03:55.524 | DEBUG    | alchemlyb.preprocessing.subsampling:equilibrium_detection:602 - Statistical inefficiency: 1.35.
+2023-10-06 16:03:55.524 | DEBUG    | alchemlyb.preprocessing.subsampling:equilibrium_detection:608 - Number of uncorrelated samples: 6.
+2023-10-06 16:03:55.525 | WARNING  | alchemlyb.workflows.abfe:preprocess:349 - Number of u_nk 6 for state 9 is less than the threshold 50.
+2023-10-06 16:03:55.525 | INFO     | alchemlyb.workflows.abfe:preprocess:354 - Take all the u_nk for state 9.
+2023-10-06 16:03:55.532 | DEBUG    | alchemlyb.preprocessing.subsampling:equilibrium_detection:599 - Running equilibration detection.
+2023-10-06 16:03:55.533 | DEBUG    | alchemlyb.preprocessing.subsampling:equilibrium_detection:601 - Start index: 0.
+2023-10-06 16:03:55.533 | DEBUG    | alchemlyb.preprocessing.subsampling:equilibrium_detection:602 - Statistical inefficiency: 1.02.
+2023-10-06 16:03:55.534 | DEBUG    | alchemlyb.preprocessing.subsampling:equilibrium_detection:608 - Number of uncorrelated samples: 19.
+2023-10-06 16:03:55.534 | WARNING  | alchemlyb.workflows.abfe:preprocess:349 - Number of u_nk 19 for state 10 is less than the threshold 50.
+2023-10-06 16:03:55.534 | INFO     | alchemlyb.workflows.abfe:preprocess:354 - Take all the u_nk for state 10.
+2023-10-06 16:03:55.541 | DEBUG    | alchemlyb.preprocessing.subsampling:equilibrium_detection:599 - Running equilibration detection.
+2023-10-06 16:03:55.543 | DEBUG    | alchemlyb.preprocessing.subsampling:equilibrium_detection:601 - Start index: 4.
+2023-10-06 16:03:55.543 | DEBUG    | alchemlyb.preprocessing.subsampling:equilibrium_detection:602 - Statistical inefficiency: 1.00.
+2023-10-06 16:03:55.543 | DEBUG    | alchemlyb.preprocessing.subsampling:equilibrium_detection:608 - Number of uncorrelated samples: 15.
+2023-10-06 16:03:55.544 | WARNING  | alchemlyb.workflows.abfe:preprocess:349 - Number of u_nk 15 for state 11 is less than the threshold 50.
+2023-10-06 16:03:55.544 | INFO     | alchemlyb.workflows.abfe:preprocess:354 - Take all the u_nk for state 11.
+2023-10-06 16:03:55.550 | DEBUG    | alchemlyb.preprocessing.subsampling:equilibrium_detection:599 - Running equilibration detection.
+2023-10-06 16:03:55.551 | DEBUG    | alchemlyb.preprocessing.subsampling:equilibrium_detection:601 - Start index: 0.
+2023-10-06 16:03:55.551 | DEBUG    | alchemlyb.preprocessing.subsampling:equilibrium_detection:602 - Statistical inefficiency: 1.00.
+2023-10-06 16:03:55.552 | DEBUG    | alchemlyb.preprocessing.subsampling:equilibrium_detection:608 - Number of uncorrelated samples: 19.
+2023-10-06 16:03:55.552 | WARNING  | alchemlyb.workflows.abfe:preprocess:349 - Number of u_nk 19 for state 12 is less than the threshold 50.
+2023-10-06 16:03:55.552 | INFO     | alchemlyb.workflows.abfe:preprocess:354 - Take all the u_nk for state 12.
+2023-10-06 16:03:55.560 | DEBUG    | alchemlyb.preprocessing.subsampling:equilibrium_detection:599 - Running equilibration detection.
+2023-10-06 16:03:55.561 | DEBUG    | alchemlyb.preprocessing.subsampling:equilibrium_detection:601 - Start index: 5.
+2023-10-06 16:03:55.561 | DEBUG    | alchemlyb.preprocessing.subsampling:equilibrium_detection:602 - Statistical inefficiency: 1.00.
+2023-10-06 16:03:55.562 | DEBUG    | alchemlyb.preprocessing.subsampling:equilibrium_detection:608 - Number of uncorrelated samples: 14.
+2023-10-06 16:03:55.563 | WARNING  | alchemlyb.workflows.abfe:preprocess:349 - Number of u_nk 14 for state 13 is less than the threshold 50.
+2023-10-06 16:03:55.563 | INFO     | alchemlyb.workflows.abfe:preprocess:354 - Take all the u_nk for state 13.
+2023-10-06 16:03:55.571 | DEBUG    | alchemlyb.preprocessing.subsampling:equilibrium_detection:599 - Running equilibration detection.
+2023-10-06 16:03:55.571 | DEBUG    | alchemlyb.preprocessing.subsampling:equilibrium_detection:601 - Start index: 5.
+2023-10-06 16:03:55.572 | DEBUG    | alchemlyb.preprocessing.subsampling:equilibrium_detection:602 - Statistical inefficiency: 1.00.
+2023-10-06 16:03:55.572 | DEBUG    | alchemlyb.preprocessing.subsampling:equilibrium_detection:608 - Number of uncorrelated samples: 14.
+2023-10-06 16:03:55.572 | WARNING  | alchemlyb.workflows.abfe:preprocess:349 - Number of u_nk 14 for state 14 is less than the threshold 50.
+2023-10-06 16:03:55.573 | INFO     | alchemlyb.workflows.abfe:preprocess:354 - Take all the u_nk for state 14.
+2023-10-06 16:03:55.580 | DEBUG    | alchemlyb.preprocessing.subsampling:equilibrium_detection:599 - Running equilibration detection.
+2023-10-06 16:03:55.581 | DEBUG    | alchemlyb.preprocessing.subsampling:equilibrium_detection:601 - Start index: 0.
+2023-10-06 16:03:55.581 | DEBUG    | alchemlyb.preprocessing.subsampling:equilibrium_detection:602 - Statistical inefficiency: 1.00.
+2023-10-06 16:03:55.581 | DEBUG    | alchemlyb.preprocessing.subsampling:equilibrium_detection:608 - Number of uncorrelated samples: 19.
+2023-10-06 16:03:55.582 | WARNING  | alchemlyb.workflows.abfe:preprocess:349 - Number of u_nk 19 for state 15 is less than the threshold 50.
+2023-10-06 16:03:55.582 | INFO     | alchemlyb.workflows.abfe:preprocess:354 - Take all the u_nk for state 15.
+2023-10-06 16:03:55.588 | DEBUG    | alchemlyb.preprocessing.subsampling:equilibrium_detection:599 - Running equilibration detection.
+2023-10-06 16:03:55.589 | DEBUG    | alchemlyb.preprocessing.subsampling:equilibrium_detection:601 - Start index: 7.
+2023-10-06 16:03:55.589 | DEBUG    | alchemlyb.preprocessing.subsampling:equilibrium_detection:602 - Statistical inefficiency: 1.00.
+2023-10-06 16:03:55.590 | DEBUG    | alchemlyb.preprocessing.subsampling:equilibrium_detection:608 - Number of uncorrelated samples: 12.
+2023-10-06 16:03:55.590 | WARNING  | alchemlyb.workflows.abfe:preprocess:349 - Number of u_nk 12 for state 16 is less than the threshold 50.
+2023-10-06 16:03:55.590 | INFO     | alchemlyb.workflows.abfe:preprocess:354 - Take all the u_nk for state 16.
+2023-10-06 16:03:55.598 | DEBUG    | alchemlyb.preprocessing.subsampling:equilibrium_detection:599 - Running equilibration detection.
+2023-10-06 16:03:55.598 | DEBUG    | alchemlyb.preprocessing.subsampling:equilibrium_detection:601 - Start index: 1.
+2023-10-06 16:03:55.598 | DEBUG    | alchemlyb.preprocessing.subsampling:equilibrium_detection:602 - Statistical inefficiency: 2.14.
+2023-10-06 16:03:55.599 | DEBUG    | alchemlyb.preprocessing.subsampling:equilibrium_detection:608 - Number of uncorrelated samples: 9.
+2023-10-06 16:03:55.599 | WARNING  | alchemlyb.workflows.abfe:preprocess:349 - Number of u_nk 9 for state 17 is less than the threshold 50.
+2023-10-06 16:03:55.599 | INFO     | alchemlyb.workflows.abfe:preprocess:354 - Take all the u_nk for state 17.
+2023-10-06 16:03:55.606 | DEBUG    | alchemlyb.preprocessing.subsampling:equilibrium_detection:599 - Running equilibration detection.
+2023-10-06 16:03:55.606 | DEBUG    | alchemlyb.preprocessing.subsampling:equilibrium_detection:601 - Start index: 0.
+2023-10-06 16:03:55.607 | DEBUG    | alchemlyb.preprocessing.subsampling:equilibrium_detection:602 - Statistical inefficiency: 1.00.
+2023-10-06 16:03:55.607 | DEBUG    | alchemlyb.preprocessing.subsampling:equilibrium_detection:608 - Number of uncorrelated samples: 19.
+2023-10-06 16:03:55.607 | WARNING  | alchemlyb.workflows.abfe:preprocess:349 - Number of u_nk 19 for state 18 is less than the threshold 50.
+2023-10-06 16:03:55.607 | INFO     | alchemlyb.workflows.abfe:preprocess:354 - Take all the u_nk for state 18.
+2023-10-06 16:03:55.617 | DEBUG    | alchemlyb.preprocessing.subsampling:equilibrium_detection:599 - Running equilibration detection.
+2023-10-06 16:03:55.618 | DEBUG    | alchemlyb.preprocessing.subsampling:equilibrium_detection:601 - Start index: 0.
+2023-10-06 16:03:55.618 | DEBUG    | alchemlyb.preprocessing.subsampling:equilibrium_detection:602 - Statistical inefficiency: 1.00.
+2023-10-06 16:03:55.618 | DEBUG    | alchemlyb.preprocessing.subsampling:equilibrium_detection:608 - Number of uncorrelated samples: 19.
+2023-10-06 16:03:55.619 | WARNING  | alchemlyb.workflows.abfe:preprocess:349 - Number of u_nk 19 for state 19 is less than the threshold 50.
+2023-10-06 16:03:55.619 | INFO     | alchemlyb.workflows.abfe:preprocess:354 - Take all the u_nk for state 19.
+2023-10-06 16:03:55.625 | DEBUG    | alchemlyb.preprocessing.subsampling:equilibrium_detection:599 - Running equilibration detection.
+2023-10-06 16:03:55.626 | DEBUG    | alchemlyb.preprocessing.subsampling:equilibrium_detection:601 - Start index: 0.
+2023-10-06 16:03:55.626 | DEBUG    | alchemlyb.preprocessing.subsampling:equilibrium_detection:602 - Statistical inefficiency: 1.00.
+2023-10-06 16:03:55.626 | DEBUG    | alchemlyb.preprocessing.subsampling:equilibrium_detection:608 - Number of uncorrelated samples: 19.
+2023-10-06 16:03:55.627 | WARNING  | alchemlyb.workflows.abfe:preprocess:349 - Number of u_nk 19 for state 20 is less than the threshold 50.
+2023-10-06 16:03:55.627 | INFO     | alchemlyb.workflows.abfe:preprocess:354 - Take all the u_nk for state 20.
+2023-10-06 16:03:55.633 | DEBUG    | alchemlyb.preprocessing.subsampling:equilibrium_detection:599 - Running equilibration detection.
+2023-10-06 16:03:55.633 | DEBUG    | alchemlyb.preprocessing.subsampling:equilibrium_detection:601 - Start index: 0.
+2023-10-06 16:03:55.633 | DEBUG    | alchemlyb.preprocessing.subsampling:equilibrium_detection:602 - Statistical inefficiency: 1.00.
+2023-10-06 16:03:55.634 | DEBUG    | alchemlyb.preprocessing.subsampling:equilibrium_detection:608 - Number of uncorrelated samples: 19.
+2023-10-06 16:03:55.634 | WARNING  | alchemlyb.workflows.abfe:preprocess:371 - Number of dHdl 19 for state 0 is less than the threshold 50.
+2023-10-06 16:03:55.634 | INFO     | alchemlyb.workflows.abfe:preprocess:376 - Take all the dHdl for state 0.
+2023-10-06 16:03:55.639 | DEBUG    | alchemlyb.preprocessing.subsampling:equilibrium_detection:599 - Running equilibration detection.
+2023-10-06 16:03:55.640 | DEBUG    | alchemlyb.preprocessing.subsampling:equilibrium_detection:601 - Start index: 0.
+2023-10-06 16:03:55.640 | DEBUG    | alchemlyb.preprocessing.subsampling:equilibrium_detection:602 - Statistical inefficiency: 1.00.
+2023-10-06 16:03:55.641 | DEBUG    | alchemlyb.preprocessing.subsampling:equilibrium_detection:608 - Number of uncorrelated samples: 19.
+2023-10-06 16:03:55.641 | WARNING  | alchemlyb.workflows.abfe:preprocess:371 - Number of dHdl 19 for state 1 is less than the threshold 50.
+2023-10-06 16:03:55.641 | INFO     | alchemlyb.workflows.abfe:preprocess:376 - Take all the dHdl for state 1.
+2023-10-06 16:03:55.647 | DEBUG    | alchemlyb.preprocessing.subsampling:equilibrium_detection:599 - Running equilibration detection.
+2023-10-06 16:03:55.647 | DEBUG    | alchemlyb.preprocessing.subsampling:equilibrium_detection:601 - Start index: 0.
+2023-10-06 16:03:55.647 | DEBUG    | alchemlyb.preprocessing.subsampling:equilibrium_detection:602 - Statistical inefficiency: 1.00.
+2023-10-06 16:03:55.648 | DEBUG    | alchemlyb.preprocessing.subsampling:equilibrium_detection:608 - Number of uncorrelated samples: 19.
+2023-10-06 16:03:55.648 | WARNING  | alchemlyb.workflows.abfe:preprocess:371 - Number of dHdl 19 for state 2 is less than the threshold 50.
+2023-10-06 16:03:55.648 | INFO     | alchemlyb.workflows.abfe:preprocess:376 - Take all the dHdl for state 2.
+2023-10-06 16:03:55.654 | DEBUG    | alchemlyb.preprocessing.subsampling:equilibrium_detection:599 - Running equilibration detection.
+2023-10-06 16:03:55.655 | DEBUG    | alchemlyb.preprocessing.subsampling:equilibrium_detection:601 - Start index: 0.
+2023-10-06 16:03:55.655 | DEBUG    | alchemlyb.preprocessing.subsampling:equilibrium_detection:602 - Statistical inefficiency: 1.00.
+2023-10-06 16:03:55.655 | DEBUG    | alchemlyb.preprocessing.subsampling:equilibrium_detection:608 - Number of uncorrelated samples: 19.
+2023-10-06 16:03:55.655 | WARNING  | alchemlyb.workflows.abfe:preprocess:371 - Number of dHdl 19 for state 3 is less than the threshold 50.
+2023-10-06 16:03:55.655 | INFO     | alchemlyb.workflows.abfe:preprocess:376 - Take all the dHdl for state 3.
+2023-10-06 16:03:55.661 | DEBUG    | alchemlyb.preprocessing.subsampling:equilibrium_detection:599 - Running equilibration detection.
+2023-10-06 16:03:55.662 | DEBUG    | alchemlyb.preprocessing.subsampling:equilibrium_detection:601 - Start index: 10.
+2023-10-06 16:03:55.662 | DEBUG    | alchemlyb.preprocessing.subsampling:equilibrium_detection:602 - Statistical inefficiency: 1.00.
+2023-10-06 16:03:55.662 | DEBUG    | alchemlyb.preprocessing.subsampling:equilibrium_detection:608 - Number of uncorrelated samples: 9.
+2023-10-06 16:03:55.662 | WARNING  | alchemlyb.workflows.abfe:preprocess:371 - Number of dHdl 9 for state 4 is less than the threshold 50.
+2023-10-06 16:03:55.663 | INFO     | alchemlyb.workflows.abfe:preprocess:376 - Take all the dHdl for state 4.
+2023-10-06 16:03:55.668 | DEBUG    | alchemlyb.preprocessing.subsampling:equilibrium_detection:599 - Running equilibration detection.
+2023-10-06 16:03:55.669 | DEBUG    | alchemlyb.preprocessing.subsampling:equilibrium_detection:601 - Start index: 0.
+2023-10-06 16:03:55.669 | DEBUG    | alchemlyb.preprocessing.subsampling:equilibrium_detection:602 - Statistical inefficiency: 1.00.
+2023-10-06 16:03:55.669 | DEBUG    | alchemlyb.preprocessing.subsampling:equilibrium_detection:608 - Number of uncorrelated samples: 19.
+2023-10-06 16:03:55.669 | WARNING  | alchemlyb.workflows.abfe:preprocess:371 - Number of dHdl 19 for state 5 is less than the threshold 50.
+2023-10-06 16:03:55.670 | INFO     | alchemlyb.workflows.abfe:preprocess:376 - Take all the dHdl for state 5.
+2023-10-06 16:03:55.675 | DEBUG    | alchemlyb.preprocessing.subsampling:equilibrium_detection:599 - Running equilibration detection.
+2023-10-06 16:03:55.676 | DEBUG    | alchemlyb.preprocessing.subsampling:equilibrium_detection:601 - Start index: 0.
+2023-10-06 16:03:55.676 | DEBUG    | alchemlyb.preprocessing.subsampling:equilibrium_detection:602 - Statistical inefficiency: 1.00.
+2023-10-06 16:03:55.676 | DEBUG    | alchemlyb.preprocessing.subsampling:equilibrium_detection:608 - Number of uncorrelated samples: 19.
+2023-10-06 16:03:55.677 | WARNING  | alchemlyb.workflows.abfe:preprocess:371 - Number of dHdl 19 for state 6 is less than the threshold 50.
+2023-10-06 16:03:55.677 | INFO     | alchemlyb.workflows.abfe:preprocess:376 - Take all the dHdl for state 6.
+2023-10-06 16:03:55.682 | DEBUG    | alchemlyb.preprocessing.subsampling:equilibrium_detection:599 - Running equilibration detection.
+2023-10-06 16:03:55.683 | DEBUG    | alchemlyb.preprocessing.subsampling:equilibrium_detection:601 - Start index: 0.
+2023-10-06 16:03:55.683 | DEBUG    | alchemlyb.preprocessing.subsampling:equilibrium_detection:602 - Statistical inefficiency: 1.00.
+2023-10-06 16:03:55.684 | DEBUG    | alchemlyb.preprocessing.subsampling:equilibrium_detection:608 - Number of uncorrelated samples: 19.
+2023-10-06 16:03:55.684 | WARNING  | alchemlyb.workflows.abfe:preprocess:371 - Number of dHdl 19 for state 7 is less than the threshold 50.
+2023-10-06 16:03:55.684 | INFO     | alchemlyb.workflows.abfe:preprocess:376 - Take all the dHdl for state 7.
+2023-10-06 16:03:55.689 | DEBUG    | alchemlyb.preprocessing.subsampling:equilibrium_detection:599 - Running equilibration detection.
+2023-10-06 16:03:55.690 | DEBUG    | alchemlyb.preprocessing.subsampling:equilibrium_detection:601 - Start index: 0.
+2023-10-06 16:03:55.690 | DEBUG    | alchemlyb.preprocessing.subsampling:equilibrium_detection:602 - Statistical inefficiency: 1.00.
+2023-10-06 16:03:55.691 | DEBUG    | alchemlyb.preprocessing.subsampling:equilibrium_detection:608 - Number of uncorrelated samples: 19.
+2023-10-06 16:03:55.691 | WARNING  | alchemlyb.workflows.abfe:preprocess:371 - Number of dHdl 19 for state 8 is less than the threshold 50.
+2023-10-06 16:03:55.691 | INFO     | alchemlyb.workflows.abfe:preprocess:376 - Take all the dHdl for state 8.
+2023-10-06 16:03:55.697 | DEBUG    | alchemlyb.preprocessing.subsampling:equilibrium_detection:599 - Running equilibration detection.
+2023-10-06 16:03:55.698 | DEBUG    | alchemlyb.preprocessing.subsampling:equilibrium_detection:601 - Start index: 8.
+2023-10-06 16:03:55.698 | DEBUG    | alchemlyb.preprocessing.subsampling:equilibrium_detection:602 - Statistical inefficiency: 1.00.
+2023-10-06 16:03:55.698 | DEBUG    | alchemlyb.preprocessing.subsampling:equilibrium_detection:608 - Number of uncorrelated samples: 11.
+2023-10-06 16:03:55.699 | WARNING  | alchemlyb.workflows.abfe:preprocess:371 - Number of dHdl 11 for state 9 is less than the threshold 50.
+2023-10-06 16:03:55.699 | INFO     | alchemlyb.workflows.abfe:preprocess:376 - Take all the dHdl for state 9.
+2023-10-06 16:03:55.704 | DEBUG    | alchemlyb.preprocessing.subsampling:equilibrium_detection:599 - Running equilibration detection.
+2023-10-06 16:03:55.705 | DEBUG    | alchemlyb.preprocessing.subsampling:equilibrium_detection:601 - Start index: 0.
+2023-10-06 16:03:55.705 | DEBUG    | alchemlyb.preprocessing.subsampling:equilibrium_detection:602 - Statistical inefficiency: 1.00.
+2023-10-06 16:03:55.705 | DEBUG    | alchemlyb.preprocessing.subsampling:equilibrium_detection:608 - Number of uncorrelated samples: 19.
+2023-10-06 16:03:55.706 | WARNING  | alchemlyb.workflows.abfe:preprocess:371 - Number of dHdl 19 for state 10 is less than the threshold 50.
+2023-10-06 16:03:55.706 | INFO     | alchemlyb.workflows.abfe:preprocess:376 - Take all the dHdl for state 10.
+2023-10-06 16:03:55.711 | DEBUG    | alchemlyb.preprocessing.subsampling:equilibrium_detection:599 - Running equilibration detection.
+2023-10-06 16:03:55.712 | DEBUG    | alchemlyb.preprocessing.subsampling:equilibrium_detection:601 - Start index: 0.
+2023-10-06 16:03:55.712 | DEBUG    | alchemlyb.preprocessing.subsampling:equilibrium_detection:602 - Statistical inefficiency: 1.00.
+2023-10-06 16:03:55.712 | DEBUG    | alchemlyb.preprocessing.subsampling:equilibrium_detection:608 - Number of uncorrelated samples: 19.
+2023-10-06 16:03:55.713 | WARNING  | alchemlyb.workflows.abfe:preprocess:371 - Number of dHdl 19 for state 11 is less than the threshold 50.
+2023-10-06 16:03:55.713 | INFO     | alchemlyb.workflows.abfe:preprocess:376 - Take all the dHdl for state 11.
+2023-10-06 16:03:55.718 | DEBUG    | alchemlyb.preprocessing.subsampling:equilibrium_detection:599 - Running equilibration detection.
+2023-10-06 16:03:55.719 | DEBUG    | alchemlyb.preprocessing.subsampling:equilibrium_detection:601 - Start index: 0.
+2023-10-06 16:03:55.719 | DEBUG    | alchemlyb.preprocessing.subsampling:equilibrium_detection:602 - Statistical inefficiency: 1.00.
+2023-10-06 16:03:55.719 | DEBUG    | alchemlyb.preprocessing.subsampling:equilibrium_detection:608 - Number of uncorrelated samples: 19.
+2023-10-06 16:03:55.720 | WARNING  | alchemlyb.workflows.abfe:preprocess:371 - Number of dHdl 19 for state 12 is less than the threshold 50.
+2023-10-06 16:03:55.720 | INFO     | alchemlyb.workflows.abfe:preprocess:376 - Take all the dHdl for state 12.
+2023-10-06 16:03:55.725 | DEBUG    | alchemlyb.preprocessing.subsampling:equilibrium_detection:599 - Running equilibration detection.
+2023-10-06 16:03:55.726 | DEBUG    | alchemlyb.preprocessing.subsampling:equilibrium_detection:601 - Start index: 0.
+2023-10-06 16:03:55.726 | DEBUG    | alchemlyb.preprocessing.subsampling:equilibrium_detection:602 - Statistical inefficiency: 1.00.
+2023-10-06 16:03:55.727 | DEBUG    | alchemlyb.preprocessing.subsampling:equilibrium_detection:608 - Number of uncorrelated samples: 19.
+2023-10-06 16:03:55.727 | WARNING  | alchemlyb.workflows.abfe:preprocess:371 - Number of dHdl 19 for state 13 is less than the threshold 50.
+2023-10-06 16:03:55.727 | INFO     | alchemlyb.workflows.abfe:preprocess:376 - Take all the dHdl for state 13.
+2023-10-06 16:03:55.733 | DEBUG    | alchemlyb.preprocessing.subsampling:equilibrium_detection:599 - Running equilibration detection.
+2023-10-06 16:03:55.734 | DEBUG    | alchemlyb.preprocessing.subsampling:equilibrium_detection:601 - Start index: 0.
+2023-10-06 16:03:55.734 | DEBUG    | alchemlyb.preprocessing.subsampling:equilibrium_detection:602 - Statistical inefficiency: 1.20.
+2023-10-06 16:03:55.734 | DEBUG    | alchemlyb.preprocessing.subsampling:equilibrium_detection:608 - Number of uncorrelated samples: 16.
+2023-10-06 16:03:55.734 | WARNING  | alchemlyb.workflows.abfe:preprocess:371 - Number of dHdl 16 for state 14 is less than the threshold 50.
+2023-10-06 16:03:55.734 | INFO     | alchemlyb.workflows.abfe:preprocess:376 - Take all the dHdl for state 14.
+2023-10-06 16:03:55.739 | DEBUG    | alchemlyb.preprocessing.subsampling:equilibrium_detection:599 - Running equilibration detection.
+2023-10-06 16:03:55.740 | DEBUG    | alchemlyb.preprocessing.subsampling:equilibrium_detection:601 - Start index: 0.
+2023-10-06 16:03:55.740 | DEBUG    | alchemlyb.preprocessing.subsampling:equilibrium_detection:602 - Statistical inefficiency: 1.80.
+2023-10-06 16:03:55.741 | DEBUG    | alchemlyb.preprocessing.subsampling:equilibrium_detection:608 - Number of uncorrelated samples: 11.
+2023-10-06 16:03:55.741 | WARNING  | alchemlyb.workflows.abfe:preprocess:371 - Number of dHdl 11 for state 15 is less than the threshold 50.
+2023-10-06 16:03:55.741 | INFO     | alchemlyb.workflows.abfe:preprocess:376 - Take all the dHdl for state 15.
+2023-10-06 16:03:55.747 | DEBUG    | alchemlyb.preprocessing.subsampling:equilibrium_detection:599 - Running equilibration detection.
+2023-10-06 16:03:55.748 | DEBUG    | alchemlyb.preprocessing.subsampling:equilibrium_detection:601 - Start index: 11.
+2023-10-06 16:03:55.748 | DEBUG    | alchemlyb.preprocessing.subsampling:equilibrium_detection:602 - Statistical inefficiency: 1.00.
+2023-10-06 16:03:55.748 | DEBUG    | alchemlyb.preprocessing.subsampling:equilibrium_detection:608 - Number of uncorrelated samples: 8.
+2023-10-06 16:03:55.749 | WARNING  | alchemlyb.workflows.abfe:preprocess:371 - Number of dHdl 8 for state 16 is less than the threshold 50.
+2023-10-06 16:03:55.749 | INFO     | alchemlyb.workflows.abfe:preprocess:376 - Take all the dHdl for state 16.
+2023-10-06 16:03:55.754 | DEBUG    | alchemlyb.preprocessing.subsampling:equilibrium_detection:599 - Running equilibration detection.
+2023-10-06 16:03:55.755 | DEBUG    | alchemlyb.preprocessing.subsampling:equilibrium_detection:601 - Start index: 0.
+2023-10-06 16:03:55.755 | DEBUG    | alchemlyb.preprocessing.subsampling:equilibrium_detection:602 - Statistical inefficiency: 1.00.
+2023-10-06 16:03:55.756 | DEBUG    | alchemlyb.preprocessing.subsampling:equilibrium_detection:608 - Number of uncorrelated samples: 19.
+2023-10-06 16:03:55.756 | WARNING  | alchemlyb.workflows.abfe:preprocess:371 - Number of dHdl 19 for state 17 is less than the threshold 50.
+2023-10-06 16:03:55.756 | INFO     | alchemlyb.workflows.abfe:preprocess:376 - Take all the dHdl for state 17.
+2023-10-06 16:03:55.762 | DEBUG    | alchemlyb.preprocessing.subsampling:equilibrium_detection:599 - Running equilibration detection.
+2023-10-06 16:03:55.763 | DEBUG    | alchemlyb.preprocessing.subsampling:equilibrium_detection:601 - Start index: 2.
+2023-10-06 16:03:55.763 | DEBUG    | alchemlyb.preprocessing.subsampling:equilibrium_detection:602 - Statistical inefficiency: 1.00.
+2023-10-06 16:03:55.763 | DEBUG    | alchemlyb.preprocessing.subsampling:equilibrium_detection:608 - Number of uncorrelated samples: 17.
+2023-10-06 16:03:55.764 | WARNING  | alchemlyb.workflows.abfe:preprocess:371 - Number of dHdl 17 for state 18 is less than the threshold 50.
+2023-10-06 16:03:55.764 | INFO     | alchemlyb.workflows.abfe:preprocess:376 - Take all the dHdl for state 18.
+2023-10-06 16:03:55.769 | DEBUG    | alchemlyb.preprocessing.subsampling:equilibrium_detection:599 - Running equilibration detection.
+2023-10-06 16:03:55.771 | DEBUG    | alchemlyb.preprocessing.subsampling:equilibrium_detection:601 - Start index: 0.
+2023-10-06 16:03:55.771 | DEBUG    | alchemlyb.preprocessing.subsampling:equilibrium_detection:602 - Statistical inefficiency: 1.00.
+2023-10-06 16:03:55.772 | DEBUG    | alchemlyb.preprocessing.subsampling:equilibrium_detection:608 - Number of uncorrelated samples: 19.
+2023-10-06 16:03:55.772 | WARNING  | alchemlyb.workflows.abfe:preprocess:371 - Number of dHdl 19 for state 19 is less than the threshold 50.
+2023-10-06 16:03:55.772 | INFO     | alchemlyb.workflows.abfe:preprocess:376 - Take all the dHdl for state 19.
+2023-10-06 16:03:55.780 | DEBUG    | alchemlyb.preprocessing.subsampling:equilibrium_detection:599 - Running equilibration detection.
+2023-10-06 16:03:55.781 | DEBUG    | alchemlyb.preprocessing.subsampling:equilibrium_detection:601 - Start index: 0.
+2023-10-06 16:03:55.781 | DEBUG    | alchemlyb.preprocessing.subsampling:equilibrium_detection:602 - Statistical inefficiency: 1.00.
+2023-10-06 16:03:55.782 | DEBUG    | alchemlyb.preprocessing.subsampling:equilibrium_detection:608 - Number of uncorrelated samples: 19.
+2023-10-06 16:03:55.782 | WARNING  | alchemlyb.workflows.abfe:preprocess:371 - Number of dHdl 19 for state 20 is less than the threshold 50.
+2023-10-06 16:03:55.782 | INFO     | alchemlyb.workflows.abfe:preprocess:376 - Take all the dHdl for state 20.
+2023-10-06 16:03:55.782 | INFO     | alchemlyb.workflows.abfe:estimate:421 - Start running estimator: MBAR,BAR,TI.
+2023-10-06 16:03:55.786 | INFO     | alchemlyb.workflows.abfe:estimate:430 - A total 399 lines of dHdl is used.
+2023-10-06 16:03:55.793 | INFO     | alchemlyb.workflows.abfe:estimate:438 - A total 399 lines of u_nk is used.
+2023-10-06 16:03:55.793 | INFO     | alchemlyb.workflows.abfe:estimate:442 - Run MBAR estimator.
+2023-10-06 16:03:55.814 | INFO     | alchemlyb.workflows.abfe:estimate:449 - Run BAR estimator.
+2023-10-06 16:03:55.895 | INFO     | alchemlyb.workflows.abfe:estimate:452 - Run TI estimator.
+2023-10-06 16:03:55.920 | INFO     | alchemlyb.workflows.abfe:generate_result:505 - Summarise the estimate into a dataframe.
+2023-10-06 16:03:55.920 | INFO     | alchemlyb.workflows.abfe:generate_result:507 - Generate the row names.
+2023-10-06 16:03:55.921 | INFO     | alchemlyb.workflows.abfe:generate_result:518 - use the stage name from u_nk
+2023-10-06 16:03:55.921 | INFO     | alchemlyb.workflows.abfe:generate_result:532 - Read the results from estimator MBAR
+2023-10-06 16:03:55.922 | INFO     | alchemlyb.workflows.abfe:generate_result:549 - Generate the staged result from estimator MBAR
+2023-10-06 16:03:55.922 | INFO     | alchemlyb.workflows.abfe:generate_result:568 - Stage coul-lambda is from state 0 to state 5.
+2023-10-06 16:03:55.922 | INFO     | alchemlyb.workflows.abfe:generate_result:568 - Stage vdw-lambda is from state 5 to state 20.
+2023-10-06 16:03:55.922 | INFO     | alchemlyb.workflows.abfe:generate_result:532 - Read the results from estimator BAR
+2023-10-06 16:03:55.923 | INFO     | alchemlyb.workflows.abfe:generate_result:549 - Generate the staged result from estimator BAR
+2023-10-06 16:03:55.923 | INFO     | alchemlyb.workflows.abfe:generate_result:568 - Stage coul-lambda is from state 0 to state 5.
+2023-10-06 16:03:55.923 | INFO     | alchemlyb.workflows.abfe:generate_result:568 - Stage vdw-lambda is from state 5 to state 20.
+2023-10-06 16:03:55.924 | INFO     | alchemlyb.workflows.abfe:generate_result:532 - Read the results from estimator TI
+2023-10-06 16:03:55.925 | INFO     | alchemlyb.workflows.abfe:generate_result:549 - Generate the staged result from estimator TI
+2023-10-06 16:03:55.925 | INFO     | alchemlyb.workflows.abfe:generate_result:568 - Stage coul-lambda is from state 0 to state 5.
+2023-10-06 16:03:55.925 | INFO     | alchemlyb.workflows.abfe:generate_result:568 - Stage vdw-lambda is from state 5 to state 20.
+2023-10-06 16:03:55.932 | INFO     | alchemlyb.workflows.abfe:generate_result:610 - Write results:
+                     MBAR  MBAR_Error       BAR  BAR_Error        TI  TI_Error
+States 0 -- 1    0.774186    0.055253  0.808410   0.062315  0.810016  0.060340
+       1 -- 2    0.508670    0.044279  0.484382   0.060013  0.488825  0.058222
+       2 -- 3    0.285903    0.033028  0.253575   0.050200  0.256345  0.051388
+       3 -- 4    0.118452    0.025107  0.129026   0.039598  0.130392  0.040106
+       4 -- 5   -0.011649    0.022753  0.020718   0.038239  0.020559  0.039374
+       5 -- 6    0.294228    0.015261  0.306339   0.028642  0.306942  0.028749
+       6 -- 7    0.292437    0.015974  0.262713   0.029918  0.268699  0.029383
+       7 -- 8    0.574928    0.036966  0.510956   0.070827  0.478261  0.083028
+       8 -- 9    0.518795    0.052682  0.508116   0.075208  0.492585  0.086493
+       9 -- 10   0.362713    0.075554  0.416123   0.081247  0.412146  0.085306
+       10 -- 11  0.101222    0.093392  0.105407   0.099404  0.166270  0.087194
+       11 -- 12 -0.090323    0.084516 -0.032219   0.095759 -0.016980  0.088697
+       12 -- 13 -0.132881    0.048740 -0.137708   0.061126 -0.127855  0.057196
+       13 -- 14 -0.282828    0.064282 -0.273358   0.073937 -0.274111  0.071490
+       14 -- 15 -0.536347    0.079215 -0.546481   0.096183 -0.546114  0.093274
+       15 -- 16 -0.826889    0.082618 -0.924708   0.114900 -0.907979  0.105154
+       16 -- 17 -0.907652    0.055508 -0.914090   0.074300 -0.902409  0.084729
+       17 -- 18 -0.723144    0.030332 -0.667790   0.044799 -0.660247  0.047121
+       18 -- 19 -0.451004    0.019097 -0.428818   0.028976 -0.431014  0.029619
+       19 -- 20 -0.186351    0.013339 -0.197484   0.019860 -0.197596  0.021266
+Stages coul      1.675562    0.147853  1.696111   0.152640  1.706137  0.151086
+       vdw      -1.993099    0.385969 -2.013001   0.114570 -1.939402  0.391290
+       TOTAL    -0.317537    0.411716 -0.316890   0.302478 -0.233265  0.419445
+2023-10-06 16:03:55.932 | INFO     | alchemlyb.workflows.abfe:plot_overlap_matrix:630 - Plot overlap matrix.
+2023-10-06 16:03:57.026 | INFO     | alchemlyb.workflows.abfe:plot_overlap_matrix:634 - Plot overlap matrix to ./ under O_MBAR.pdf.
+2023-10-06 16:03:57.026 | INFO     | alchemlyb.workflows.abfe:plot_ti_dhdl:661 - Plot TI dHdl.
+2023-10-06 16:03:57.189 | INFO     | alchemlyb.workflows.abfe:plot_ti_dhdl:671 - Plot TI dHdl to dhdl_TI.pdf under ./.
+2023-10-06 16:03:57.189 | INFO     | alchemlyb.workflows.abfe:plot_dF_state:705 - Plot dF states.
+2023-10-06 16:03:57.482 | INFO     | alchemlyb.workflows.abfe:plot_dF_state:715 - Plot dF state to dF_state.pdf under ./.
+2023-10-06 16:03:57.483 | INFO     | alchemlyb.workflows.abfe:plot_dF_state:705 - Plot dF states.
+2023-10-06 16:03:57.680 | INFO     | alchemlyb.workflows.abfe:plot_dF_state:715 - Plot dF state to dF_state_long.pdf under ./.
+2023-10-06 16:03:57.681 | INFO     | alchemlyb.workflows.abfe:check_convergence:752 - Start convergence analysis.
+2023-10-06 16:03:57.681 | INFO     | alchemlyb.workflows.abfe:check_convergence:753 - Checking data availability.
+2023-10-06 16:03:57.681 | INFO     | alchemlyb.workflows.abfe:check_convergence:758 - Subsampled u_nk is available.
+2023-10-06 16:03:57.681 | INFO     | alchemlyb.convergence.convergence:forward_backward_convergence:68 - Start convergence analysis.
+2023-10-06 16:03:57.681 | INFO     | alchemlyb.convergence.convergence:forward_backward_convergence:69 - Check data availability.
+2023-10-06 16:03:57.681 | INFO     | alchemlyb.convergence.convergence:forward_backward_convergence:86 - Use MBAR estimator for convergence analysis.
+2023-10-06 16:03:57.681 | INFO     | alchemlyb.convergence.convergence:forward_backward_convergence:88 - Begin forward analysis
+2023-10-06 16:03:57.681 | INFO     | alchemlyb.convergence.convergence:forward_backward_convergence:92 - Forward analysis: 10.00%
+2023-10-06 16:03:57.707 | INFO     | alchemlyb.convergence.convergence:forward_backward_convergence:111 - -2.52 +/- 3.24 kT
+2023-10-06 16:03:57.707 | INFO     | alchemlyb.convergence.convergence:forward_backward_convergence:92 - Forward analysis: 20.00%
+2023-10-06 16:03:57.728 | INFO     | alchemlyb.convergence.convergence:forward_backward_convergence:111 - -0.26 +/- 2.22 kT
+2023-10-06 16:03:57.729 | INFO     | alchemlyb.convergence.convergence:forward_backward_convergence:92 - Forward analysis: 30.00%
+2023-10-06 16:03:57.750 | INFO     | alchemlyb.convergence.convergence:forward_backward_convergence:111 - 0.11 +/- 1.75 kT
+2023-10-06 16:03:57.751 | INFO     | alchemlyb.convergence.convergence:forward_backward_convergence:92 - Forward analysis: 40.00%
+2023-10-06 16:03:57.774 | INFO     | alchemlyb.convergence.convergence:forward_backward_convergence:111 - 1.69 +/- 1.44 kT
+2023-10-06 16:03:57.775 | INFO     | alchemlyb.convergence.convergence:forward_backward_convergence:92 - Forward analysis: 50.00%
+2023-10-06 16:03:57.798 | INFO     | alchemlyb.convergence.convergence:forward_backward_convergence:111 - 1.38 +/- 1.31 kT
+2023-10-06 16:03:57.798 | INFO     | alchemlyb.convergence.convergence:forward_backward_convergence:92 - Forward analysis: 60.00%
+2023-10-06 16:03:57.822 | INFO     | alchemlyb.convergence.convergence:forward_backward_convergence:111 - 1.36 +/- 1.20 kT
+2023-10-06 16:03:57.822 | INFO     | alchemlyb.convergence.convergence:forward_backward_convergence:92 - Forward analysis: 70.00%
+2023-10-06 16:03:57.846 | INFO     | alchemlyb.convergence.convergence:forward_backward_convergence:111 - 1.71 +/- 1.10 kT
+2023-10-06 16:03:57.846 | INFO     | alchemlyb.convergence.convergence:forward_backward_convergence:92 - Forward analysis: 80.00%
+2023-10-06 16:03:57.875 | INFO     | alchemlyb.convergence.convergence:forward_backward_convergence:111 - 1.22 +/- 1.05 kT
+2023-10-06 16:03:57.875 | INFO     | alchemlyb.convergence.convergence:forward_backward_convergence:92 - Forward analysis: 90.00%
+2023-10-06 16:03:57.900 | INFO     | alchemlyb.convergence.convergence:forward_backward_convergence:111 - 0.74 +/- 1.01 kT
+2023-10-06 16:03:57.900 | INFO     | alchemlyb.convergence.convergence:forward_backward_convergence:92 - Forward analysis: 100.00%
+2023-10-06 16:03:57.925 | INFO     | alchemlyb.convergence.convergence:forward_backward_convergence:111 - 0.74 +/- 0.95 kT
+2023-10-06 16:03:57.925 | INFO     | alchemlyb.convergence.convergence:forward_backward_convergence:115 - Begin backward analysis
+2023-10-06 16:03:57.925 | INFO     | alchemlyb.convergence.convergence:forward_backward_convergence:119 - Backward analysis: 10.00%
+2023-10-06 16:03:57.948 | INFO     | alchemlyb.convergence.convergence:forward_backward_convergence:138 - -1.07 +/- 2.15 kT
+2023-10-06 16:03:57.948 | INFO     | alchemlyb.convergence.convergence:forward_backward_convergence:119 - Backward analysis: 20.00%
+2023-10-06 16:03:57.971 | INFO     | alchemlyb.convergence.convergence:forward_backward_convergence:138 - -2.10 +/- 1.53 kT
+2023-10-06 16:03:57.971 | INFO     | alchemlyb.convergence.convergence:forward_backward_convergence:119 - Backward analysis: 30.00%
+2023-10-06 16:03:57.995 | INFO     | alchemlyb.convergence.convergence:forward_backward_convergence:138 - -2.87 +/- 1.26 kT
+2023-10-06 16:03:57.995 | INFO     | alchemlyb.convergence.convergence:forward_backward_convergence:119 - Backward analysis: 40.00%
+2023-10-06 16:03:58.023 | INFO     | alchemlyb.convergence.convergence:forward_backward_convergence:138 - -2.43 +/- 1.10 kT
+2023-10-06 16:03:58.023 | INFO     | alchemlyb.convergence.convergence:forward_backward_convergence:119 - Backward analysis: 50.00%
+2023-10-06 16:03:58.047 | INFO     | alchemlyb.convergence.convergence:forward_backward_convergence:138 - -1.73 +/- 0.96 kT
+2023-10-06 16:03:58.048 | INFO     | alchemlyb.convergence.convergence:forward_backward_convergence:119 - Backward analysis: 60.00%
+2023-10-06 16:03:58.073 | INFO     | alchemlyb.convergence.convergence:forward_backward_convergence:138 - -1.97 +/- 0.90 kT
+2023-10-06 16:03:58.073 | INFO     | alchemlyb.convergence.convergence:forward_backward_convergence:119 - Backward analysis: 70.00%
+2023-10-06 16:03:58.100 | INFO     | alchemlyb.convergence.convergence:forward_backward_convergence:138 - -1.27 +/- 0.82 kT
+2023-10-06 16:03:58.100 | INFO     | alchemlyb.convergence.convergence:forward_backward_convergence:119 - Backward analysis: 80.00%
+2023-10-06 16:03:58.127 | INFO     | alchemlyb.convergence.convergence:forward_backward_convergence:138 - -0.71 +/- 0.76 kT
+2023-10-06 16:03:58.127 | INFO     | alchemlyb.convergence.convergence:forward_backward_convergence:119 - Backward analysis: 90.00%
+2023-10-06 16:03:58.212 | INFO     | alchemlyb.convergence.convergence:forward_backward_convergence:138 - -0.45 +/- 0.71 kT
+2023-10-06 16:03:58.212 | INFO     | alchemlyb.convergence.convergence:forward_backward_convergence:119 - Backward analysis: 100.00%
+2023-10-06 16:03:58.241 | INFO     | alchemlyb.convergence.convergence:forward_backward_convergence:138 - -0.54 +/- 0.70 kT
+2023-10-06 16:03:58.242 | INFO     | alchemlyb.workflows.abfe:check_convergence:806 - Plot convergence analysis to dF_t.pdf under ./.
+2023-10-06 16:04:05.453 | INFO     | alchemlyb.workflows.base:__init__:50 - Alchemlyb Version: f2.1.0
+2023-10-06 16:04:05.453 | INFO     | alchemlyb.workflows.base:__init__:51 - Set Temperature to 298 K.
+2023-10-06 16:04:05.453 | INFO     | alchemlyb.workflows.base:__init__:53 - Set Software to GROMACS.
+2023-10-06 16:04:05.454 | INFO     | alchemlyb.workflows.abfe:__init__:83 - Initialise Alchemlyb ABFE Workflow
+2023-10-06 16:04:05.454 | INFO     | alchemlyb.workflows.abfe:update_units:307 - Set unit to kcal/mol.
+2023-10-06 16:04:05.454 | INFO     | alchemlyb.workflows.abfe:__init__:85 - Finding files with prefix: dhdl, suffix: xvg under directory /home/cecchini/Methods/Alchemlyb/181L/ligand produced by GROMACS
+2023-10-06 16:04:05.454 | INFO     | alchemlyb.workflows.abfe:__init__:102 - Found 21 xvg files.
+2023-10-06 16:04:05.454 | INFO     | alchemlyb.workflows.abfe:__init__:103 - Unsorted file list: 
+ /home/cecchini/Methods/Alchemlyb/181L/ligand/dhdl_07.xvg
+/home/cecchini/Methods/Alchemlyb/181L/ligand/dhdl_06.xvg
+/home/cecchini/Methods/Alchemlyb/181L/ligand/dhdl_12.xvg
+/home/cecchini/Methods/Alchemlyb/181L/ligand/dhdl_01.xvg
+/home/cecchini/Methods/Alchemlyb/181L/ligand/dhdl_04.xvg
+/home/cecchini/Methods/Alchemlyb/181L/ligand/dhdl_14.xvg
+/home/cecchini/Methods/Alchemlyb/181L/ligand/dhdl_03.xvg
+/home/cecchini/Methods/Alchemlyb/181L/ligand/dhdl_19.xvg
+/home/cecchini/Methods/Alchemlyb/181L/ligand/dhdl_09.xvg
+/home/cecchini/Methods/Alchemlyb/181L/ligand/dhdl_05.xvg
+/home/cecchini/Methods/Alchemlyb/181L/ligand/dhdl_20.xvg
+/home/cecchini/Methods/Alchemlyb/181L/ligand/dhdl_11.xvg
+/home/cecchini/Methods/Alchemlyb/181L/ligand/dhdl_13.xvg
+/home/cecchini/Methods/Alchemlyb/181L/ligand/dhdl_18.xvg
+/home/cecchini/Methods/Alchemlyb/181L/ligand/dhdl_10.xvg
+/home/cecchini/Methods/Alchemlyb/181L/ligand/dhdl_08.xvg
+/home/cecchini/Methods/Alchemlyb/181L/ligand/dhdl_00.xvg
+/home/cecchini/Methods/Alchemlyb/181L/ligand/dhdl_16.xvg
+/home/cecchini/Methods/Alchemlyb/181L/ligand/dhdl_15.xvg
+/home/cecchini/Methods/Alchemlyb/181L/ligand/dhdl_02.xvg
+/home/cecchini/Methods/Alchemlyb/181L/ligand/dhdl_17.xvg
+2023-10-06 16:04:05.454 | INFO     | alchemlyb.workflows.abfe:__init__:106 - Using GROMACS parser to read the data.
+2023-10-06 16:04:05.465 | INFO     | alchemlyb.workflows.abfe:read:145 - Reading 21 lines of u_nk from /home/cecchini/Methods/Alchemlyb/181L/ligand/dhdl_07.xvg
+2023-10-06 16:04:05.471 | INFO     | alchemlyb.workflows.abfe:read:155 - Reading 21 lines of dhdl from /home/cecchini/Methods/Alchemlyb/181L/ligand/dhdl_07.xvg
+2023-10-06 16:04:05.480 | INFO     | alchemlyb.workflows.abfe:read:145 - Reading 21 lines of u_nk from /home/cecchini/Methods/Alchemlyb/181L/ligand/dhdl_06.xvg
+2023-10-06 16:04:05.487 | INFO     | alchemlyb.workflows.abfe:read:155 - Reading 21 lines of dhdl from /home/cecchini/Methods/Alchemlyb/181L/ligand/dhdl_06.xvg
+2023-10-06 16:04:05.496 | INFO     | alchemlyb.workflows.abfe:read:145 - Reading 21 lines of u_nk from /home/cecchini/Methods/Alchemlyb/181L/ligand/dhdl_12.xvg
+2023-10-06 16:04:05.503 | INFO     | alchemlyb.workflows.abfe:read:155 - Reading 21 lines of dhdl from /home/cecchini/Methods/Alchemlyb/181L/ligand/dhdl_12.xvg
+2023-10-06 16:04:05.512 | INFO     | alchemlyb.workflows.abfe:read:145 - Reading 21 lines of u_nk from /home/cecchini/Methods/Alchemlyb/181L/ligand/dhdl_01.xvg
+2023-10-06 16:04:05.519 | INFO     | alchemlyb.workflows.abfe:read:155 - Reading 21 lines of dhdl from /home/cecchini/Methods/Alchemlyb/181L/ligand/dhdl_01.xvg
+2023-10-06 16:04:05.527 | INFO     | alchemlyb.workflows.abfe:read:145 - Reading 21 lines of u_nk from /home/cecchini/Methods/Alchemlyb/181L/ligand/dhdl_04.xvg
+2023-10-06 16:04:05.534 | INFO     | alchemlyb.workflows.abfe:read:155 - Reading 21 lines of dhdl from /home/cecchini/Methods/Alchemlyb/181L/ligand/dhdl_04.xvg
+2023-10-06 16:04:05.543 | INFO     | alchemlyb.workflows.abfe:read:145 - Reading 21 lines of u_nk from /home/cecchini/Methods/Alchemlyb/181L/ligand/dhdl_14.xvg
+2023-10-06 16:04:05.549 | INFO     | alchemlyb.workflows.abfe:read:155 - Reading 21 lines of dhdl from /home/cecchini/Methods/Alchemlyb/181L/ligand/dhdl_14.xvg
+2023-10-06 16:04:05.560 | INFO     | alchemlyb.workflows.abfe:read:145 - Reading 21 lines of u_nk from /home/cecchini/Methods/Alchemlyb/181L/ligand/dhdl_03.xvg
+2023-10-06 16:04:05.567 | INFO     | alchemlyb.workflows.abfe:read:155 - Reading 21 lines of dhdl from /home/cecchini/Methods/Alchemlyb/181L/ligand/dhdl_03.xvg
+2023-10-06 16:04:05.576 | INFO     | alchemlyb.workflows.abfe:read:145 - Reading 21 lines of u_nk from /home/cecchini/Methods/Alchemlyb/181L/ligand/dhdl_19.xvg
+2023-10-06 16:04:05.583 | INFO     | alchemlyb.workflows.abfe:read:155 - Reading 21 lines of dhdl from /home/cecchini/Methods/Alchemlyb/181L/ligand/dhdl_19.xvg
+2023-10-06 16:04:05.592 | INFO     | alchemlyb.workflows.abfe:read:145 - Reading 21 lines of u_nk from /home/cecchini/Methods/Alchemlyb/181L/ligand/dhdl_09.xvg
+2023-10-06 16:04:05.599 | INFO     | alchemlyb.workflows.abfe:read:155 - Reading 21 lines of dhdl from /home/cecchini/Methods/Alchemlyb/181L/ligand/dhdl_09.xvg
+2023-10-06 16:04:05.607 | INFO     | alchemlyb.workflows.abfe:read:145 - Reading 21 lines of u_nk from /home/cecchini/Methods/Alchemlyb/181L/ligand/dhdl_05.xvg
+2023-10-06 16:04:05.615 | INFO     | alchemlyb.workflows.abfe:read:155 - Reading 21 lines of dhdl from /home/cecchini/Methods/Alchemlyb/181L/ligand/dhdl_05.xvg
+2023-10-06 16:04:05.623 | INFO     | alchemlyb.workflows.abfe:read:145 - Reading 21 lines of u_nk from /home/cecchini/Methods/Alchemlyb/181L/ligand/dhdl_20.xvg
+2023-10-06 16:04:05.630 | INFO     | alchemlyb.workflows.abfe:read:155 - Reading 21 lines of dhdl from /home/cecchini/Methods/Alchemlyb/181L/ligand/dhdl_20.xvg
+2023-10-06 16:04:05.639 | INFO     | alchemlyb.workflows.abfe:read:145 - Reading 21 lines of u_nk from /home/cecchini/Methods/Alchemlyb/181L/ligand/dhdl_11.xvg
+2023-10-06 16:04:05.645 | INFO     | alchemlyb.workflows.abfe:read:155 - Reading 21 lines of dhdl from /home/cecchini/Methods/Alchemlyb/181L/ligand/dhdl_11.xvg
+2023-10-06 16:04:05.654 | INFO     | alchemlyb.workflows.abfe:read:145 - Reading 21 lines of u_nk from /home/cecchini/Methods/Alchemlyb/181L/ligand/dhdl_13.xvg
+2023-10-06 16:04:05.660 | INFO     | alchemlyb.workflows.abfe:read:155 - Reading 21 lines of dhdl from /home/cecchini/Methods/Alchemlyb/181L/ligand/dhdl_13.xvg
+2023-10-06 16:04:05.669 | INFO     | alchemlyb.workflows.abfe:read:145 - Reading 21 lines of u_nk from /home/cecchini/Methods/Alchemlyb/181L/ligand/dhdl_18.xvg
+2023-10-06 16:04:05.675 | INFO     | alchemlyb.workflows.abfe:read:155 - Reading 21 lines of dhdl from /home/cecchini/Methods/Alchemlyb/181L/ligand/dhdl_18.xvg
+2023-10-06 16:04:05.684 | INFO     | alchemlyb.workflows.abfe:read:145 - Reading 21 lines of u_nk from /home/cecchini/Methods/Alchemlyb/181L/ligand/dhdl_10.xvg
+2023-10-06 16:04:05.690 | INFO     | alchemlyb.workflows.abfe:read:155 - Reading 21 lines of dhdl from /home/cecchini/Methods/Alchemlyb/181L/ligand/dhdl_10.xvg
+2023-10-06 16:04:05.699 | INFO     | alchemlyb.workflows.abfe:read:145 - Reading 21 lines of u_nk from /home/cecchini/Methods/Alchemlyb/181L/ligand/dhdl_08.xvg
+2023-10-06 16:04:05.705 | INFO     | alchemlyb.workflows.abfe:read:155 - Reading 21 lines of dhdl from /home/cecchini/Methods/Alchemlyb/181L/ligand/dhdl_08.xvg
+2023-10-06 16:04:05.713 | INFO     | alchemlyb.workflows.abfe:read:145 - Reading 21 lines of u_nk from /home/cecchini/Methods/Alchemlyb/181L/ligand/dhdl_00.xvg
+2023-10-06 16:04:05.720 | INFO     | alchemlyb.workflows.abfe:read:155 - Reading 21 lines of dhdl from /home/cecchini/Methods/Alchemlyb/181L/ligand/dhdl_00.xvg
+2023-10-06 16:04:05.729 | INFO     | alchemlyb.workflows.abfe:read:145 - Reading 21 lines of u_nk from /home/cecchini/Methods/Alchemlyb/181L/ligand/dhdl_16.xvg
+2023-10-06 16:04:05.736 | INFO     | alchemlyb.workflows.abfe:read:155 - Reading 21 lines of dhdl from /home/cecchini/Methods/Alchemlyb/181L/ligand/dhdl_16.xvg
+2023-10-06 16:04:05.744 | INFO     | alchemlyb.workflows.abfe:read:145 - Reading 21 lines of u_nk from /home/cecchini/Methods/Alchemlyb/181L/ligand/dhdl_15.xvg
+2023-10-06 16:04:05.751 | INFO     | alchemlyb.workflows.abfe:read:155 - Reading 21 lines of dhdl from /home/cecchini/Methods/Alchemlyb/181L/ligand/dhdl_15.xvg
+2023-10-06 16:04:05.759 | INFO     | alchemlyb.workflows.abfe:read:145 - Reading 21 lines of u_nk from /home/cecchini/Methods/Alchemlyb/181L/ligand/dhdl_02.xvg
+2023-10-06 16:04:05.766 | INFO     | alchemlyb.workflows.abfe:read:155 - Reading 21 lines of dhdl from /home/cecchini/Methods/Alchemlyb/181L/ligand/dhdl_02.xvg
+2023-10-06 16:04:05.775 | INFO     | alchemlyb.workflows.abfe:read:145 - Reading 21 lines of u_nk from /home/cecchini/Methods/Alchemlyb/181L/ligand/dhdl_17.xvg
+2023-10-06 16:04:05.781 | INFO     | alchemlyb.workflows.abfe:read:155 - Reading 21 lines of dhdl from /home/cecchini/Methods/Alchemlyb/181L/ligand/dhdl_17.xvg
+2023-10-06 16:04:05.781 | INFO     | alchemlyb.workflows.abfe:read:164 - Sort files according to the u_nk.
+2023-10-06 16:04:05.793 | INFO     | alchemlyb.workflows.abfe:read:184 - Sorted file list: 
+/home/cecchini/Methods/Alchemlyb/181L/ligand/dhdl_00.xvg
+/home/cecchini/Methods/Alchemlyb/181L/ligand/dhdl_01.xvg
+/home/cecchini/Methods/Alchemlyb/181L/ligand/dhdl_02.xvg
+/home/cecchini/Methods/Alchemlyb/181L/ligand/dhdl_03.xvg
+/home/cecchini/Methods/Alchemlyb/181L/ligand/dhdl_04.xvg
+/home/cecchini/Methods/Alchemlyb/181L/ligand/dhdl_05.xvg
+/home/cecchini/Methods/Alchemlyb/181L/ligand/dhdl_06.xvg
+/home/cecchini/Methods/Alchemlyb/181L/ligand/dhdl_07.xvg
+/home/cecchini/Methods/Alchemlyb/181L/ligand/dhdl_08.xvg
+/home/cecchini/Methods/Alchemlyb/181L/ligand/dhdl_09.xvg
+/home/cecchini/Methods/Alchemlyb/181L/ligand/dhdl_10.xvg
+/home/cecchini/Methods/Alchemlyb/181L/ligand/dhdl_11.xvg
+/home/cecchini/Methods/Alchemlyb/181L/ligand/dhdl_12.xvg
+/home/cecchini/Methods/Alchemlyb/181L/ligand/dhdl_13.xvg
+/home/cecchini/Methods/Alchemlyb/181L/ligand/dhdl_14.xvg
+/home/cecchini/Methods/Alchemlyb/181L/ligand/dhdl_15.xvg
+/home/cecchini/Methods/Alchemlyb/181L/ligand/dhdl_16.xvg
+/home/cecchini/Methods/Alchemlyb/181L/ligand/dhdl_17.xvg
+/home/cecchini/Methods/Alchemlyb/181L/ligand/dhdl_18.xvg
+/home/cecchini/Methods/Alchemlyb/181L/ligand/dhdl_19.xvg
+/home/cecchini/Methods/Alchemlyb/181L/ligand/dhdl_20.xvg
+2023-10-06 16:04:05.793 | INFO     | alchemlyb.workflows.abfe:preprocess:333 - Start preprocessing with skiptime of 10 uncorrelation method of dhdl and threshold of 50
+2023-10-06 16:04:05.793 | INFO     | alchemlyb.workflows.abfe:preprocess:339 - Processing the u_nk data set with skiptime of 10.
+2023-10-06 16:04:05.800 | DEBUG    | alchemlyb.preprocessing.subsampling:equilibrium_detection:599 - Running equilibration detection.
+2023-10-06 16:04:05.801 | DEBUG    | alchemlyb.preprocessing.subsampling:equilibrium_detection:601 - Start index: 0.
+2023-10-06 16:04:05.801 | DEBUG    | alchemlyb.preprocessing.subsampling:equilibrium_detection:602 - Statistical inefficiency: 1.00.
+2023-10-06 16:04:05.801 | DEBUG    | alchemlyb.preprocessing.subsampling:equilibrium_detection:608 - Number of uncorrelated samples: 19.
+2023-10-06 16:04:05.802 | WARNING  | alchemlyb.workflows.abfe:preprocess:349 - Number of u_nk 19 for state 0 is less than the threshold 50.
+2023-10-06 16:04:05.802 | INFO     | alchemlyb.workflows.abfe:preprocess:354 - Take all the u_nk for state 0.
+2023-10-06 16:04:05.809 | DEBUG    | alchemlyb.preprocessing.subsampling:equilibrium_detection:599 - Running equilibration detection.
+2023-10-06 16:04:05.810 | DEBUG    | alchemlyb.preprocessing.subsampling:equilibrium_detection:601 - Start index: 5.
+2023-10-06 16:04:05.810 | DEBUG    | alchemlyb.preprocessing.subsampling:equilibrium_detection:602 - Statistical inefficiency: 1.00.
+2023-10-06 16:04:05.811 | DEBUG    | alchemlyb.preprocessing.subsampling:equilibrium_detection:608 - Number of uncorrelated samples: 14.
+2023-10-06 16:04:05.811 | WARNING  | alchemlyb.workflows.abfe:preprocess:349 - Number of u_nk 14 for state 1 is less than the threshold 50.
+2023-10-06 16:04:05.811 | INFO     | alchemlyb.workflows.abfe:preprocess:354 - Take all the u_nk for state 1.
+2023-10-06 16:04:05.818 | DEBUG    | alchemlyb.preprocessing.subsampling:equilibrium_detection:599 - Running equilibration detection.
+2023-10-06 16:04:05.819 | DEBUG    | alchemlyb.preprocessing.subsampling:equilibrium_detection:601 - Start index: 0.
+2023-10-06 16:04:05.819 | DEBUG    | alchemlyb.preprocessing.subsampling:equilibrium_detection:602 - Statistical inefficiency: 1.00.
+2023-10-06 16:04:05.819 | DEBUG    | alchemlyb.preprocessing.subsampling:equilibrium_detection:608 - Number of uncorrelated samples: 19.
+2023-10-06 16:04:05.820 | WARNING  | alchemlyb.workflows.abfe:preprocess:349 - Number of u_nk 19 for state 2 is less than the threshold 50.
+2023-10-06 16:04:05.820 | INFO     | alchemlyb.workflows.abfe:preprocess:354 - Take all the u_nk for state 2.
+2023-10-06 16:04:05.827 | DEBUG    | alchemlyb.preprocessing.subsampling:equilibrium_detection:599 - Running equilibration detection.
+2023-10-06 16:04:05.827 | DEBUG    | alchemlyb.preprocessing.subsampling:equilibrium_detection:601 - Start index: 2.
+2023-10-06 16:04:05.827 | DEBUG    | alchemlyb.preprocessing.subsampling:equilibrium_detection:602 - Statistical inefficiency: 1.00.
+2023-10-06 16:04:05.828 | DEBUG    | alchemlyb.preprocessing.subsampling:equilibrium_detection:608 - Number of uncorrelated samples: 17.
+2023-10-06 16:04:05.828 | WARNING  | alchemlyb.workflows.abfe:preprocess:349 - Number of u_nk 17 for state 3 is less than the threshold 50.
+2023-10-06 16:04:05.828 | INFO     | alchemlyb.workflows.abfe:preprocess:354 - Take all the u_nk for state 3.
+2023-10-06 16:04:05.835 | DEBUG    | alchemlyb.preprocessing.subsampling:equilibrium_detection:599 - Running equilibration detection.
+2023-10-06 16:04:05.836 | DEBUG    | alchemlyb.preprocessing.subsampling:equilibrium_detection:601 - Start index: 2.
+2023-10-06 16:04:05.836 | DEBUG    | alchemlyb.preprocessing.subsampling:equilibrium_detection:602 - Statistical inefficiency: 1.04.
+2023-10-06 16:04:05.836 | DEBUG    | alchemlyb.preprocessing.subsampling:equilibrium_detection:608 - Number of uncorrelated samples: 16.
+2023-10-06 16:04:05.837 | WARNING  | alchemlyb.workflows.abfe:preprocess:349 - Number of u_nk 16 for state 4 is less than the threshold 50.
+2023-10-06 16:04:05.837 | INFO     | alchemlyb.workflows.abfe:preprocess:354 - Take all the u_nk for state 4.
+2023-10-06 16:04:05.843 | DEBUG    | alchemlyb.preprocessing.subsampling:equilibrium_detection:599 - Running equilibration detection.
+2023-10-06 16:04:05.844 | DEBUG    | alchemlyb.preprocessing.subsampling:equilibrium_detection:601 - Start index: 0.
+2023-10-06 16:04:05.844 | DEBUG    | alchemlyb.preprocessing.subsampling:equilibrium_detection:602 - Statistical inefficiency: 1.00.
+2023-10-06 16:04:05.844 | DEBUG    | alchemlyb.preprocessing.subsampling:equilibrium_detection:608 - Number of uncorrelated samples: 19.
+2023-10-06 16:04:05.845 | WARNING  | alchemlyb.workflows.abfe:preprocess:349 - Number of u_nk 19 for state 5 is less than the threshold 50.
+2023-10-06 16:04:05.845 | INFO     | alchemlyb.workflows.abfe:preprocess:354 - Take all the u_nk for state 5.
+2023-10-06 16:04:05.852 | DEBUG    | alchemlyb.preprocessing.subsampling:equilibrium_detection:599 - Running equilibration detection.
+2023-10-06 16:04:05.853 | DEBUG    | alchemlyb.preprocessing.subsampling:equilibrium_detection:601 - Start index: 0.
+2023-10-06 16:04:05.853 | DEBUG    | alchemlyb.preprocessing.subsampling:equilibrium_detection:602 - Statistical inefficiency: 1.00.
+2023-10-06 16:04:05.853 | DEBUG    | alchemlyb.preprocessing.subsampling:equilibrium_detection:608 - Number of uncorrelated samples: 19.
+2023-10-06 16:04:05.854 | WARNING  | alchemlyb.workflows.abfe:preprocess:349 - Number of u_nk 19 for state 6 is less than the threshold 50.
+2023-10-06 16:04:05.854 | INFO     | alchemlyb.workflows.abfe:preprocess:354 - Take all the u_nk for state 6.
+2023-10-06 16:04:05.860 | DEBUG    | alchemlyb.preprocessing.subsampling:equilibrium_detection:599 - Running equilibration detection.
+2023-10-06 16:04:05.861 | DEBUG    | alchemlyb.preprocessing.subsampling:equilibrium_detection:601 - Start index: 0.
+2023-10-06 16:04:05.861 | DEBUG    | alchemlyb.preprocessing.subsampling:equilibrium_detection:602 - Statistical inefficiency: 1.00.
+2023-10-06 16:04:05.861 | DEBUG    | alchemlyb.preprocessing.subsampling:equilibrium_detection:608 - Number of uncorrelated samples: 19.
+2023-10-06 16:04:05.862 | WARNING  | alchemlyb.workflows.abfe:preprocess:349 - Number of u_nk 19 for state 7 is less than the threshold 50.
+2023-10-06 16:04:05.862 | INFO     | alchemlyb.workflows.abfe:preprocess:354 - Take all the u_nk for state 7.
+2023-10-06 16:04:05.868 | DEBUG    | alchemlyb.preprocessing.subsampling:equilibrium_detection:599 - Running equilibration detection.
+2023-10-06 16:04:05.869 | DEBUG    | alchemlyb.preprocessing.subsampling:equilibrium_detection:601 - Start index: 0.
+2023-10-06 16:04:05.870 | DEBUG    | alchemlyb.preprocessing.subsampling:equilibrium_detection:602 - Statistical inefficiency: 1.00.
+2023-10-06 16:04:05.870 | DEBUG    | alchemlyb.preprocessing.subsampling:equilibrium_detection:608 - Number of uncorrelated samples: 19.
+2023-10-06 16:04:05.871 | WARNING  | alchemlyb.workflows.abfe:preprocess:349 - Number of u_nk 19 for state 8 is less than the threshold 50.
+2023-10-06 16:04:05.871 | INFO     | alchemlyb.workflows.abfe:preprocess:354 - Take all the u_nk for state 8.
+2023-10-06 16:04:05.879 | DEBUG    | alchemlyb.preprocessing.subsampling:equilibrium_detection:599 - Running equilibration detection.
+2023-10-06 16:04:05.880 | DEBUG    | alchemlyb.preprocessing.subsampling:equilibrium_detection:601 - Start index: 11.
+2023-10-06 16:04:05.880 | DEBUG    | alchemlyb.preprocessing.subsampling:equilibrium_detection:602 - Statistical inefficiency: 1.35.
+2023-10-06 16:04:05.880 | DEBUG    | alchemlyb.preprocessing.subsampling:equilibrium_detection:608 - Number of uncorrelated samples: 6.
+2023-10-06 16:04:05.881 | WARNING  | alchemlyb.workflows.abfe:preprocess:349 - Number of u_nk 6 for state 9 is less than the threshold 50.
+2023-10-06 16:04:05.881 | INFO     | alchemlyb.workflows.abfe:preprocess:354 - Take all the u_nk for state 9.
+2023-10-06 16:04:05.887 | DEBUG    | alchemlyb.preprocessing.subsampling:equilibrium_detection:599 - Running equilibration detection.
+2023-10-06 16:04:05.888 | DEBUG    | alchemlyb.preprocessing.subsampling:equilibrium_detection:601 - Start index: 0.
+2023-10-06 16:04:05.888 | DEBUG    | alchemlyb.preprocessing.subsampling:equilibrium_detection:602 - Statistical inefficiency: 1.02.
+2023-10-06 16:04:05.889 | DEBUG    | alchemlyb.preprocessing.subsampling:equilibrium_detection:608 - Number of uncorrelated samples: 19.
+2023-10-06 16:04:05.889 | WARNING  | alchemlyb.workflows.abfe:preprocess:349 - Number of u_nk 19 for state 10 is less than the threshold 50.
+2023-10-06 16:04:05.889 | INFO     | alchemlyb.workflows.abfe:preprocess:354 - Take all the u_nk for state 10.
+2023-10-06 16:04:05.896 | DEBUG    | alchemlyb.preprocessing.subsampling:equilibrium_detection:599 - Running equilibration detection.
+2023-10-06 16:04:05.897 | DEBUG    | alchemlyb.preprocessing.subsampling:equilibrium_detection:601 - Start index: 4.
+2023-10-06 16:04:05.897 | DEBUG    | alchemlyb.preprocessing.subsampling:equilibrium_detection:602 - Statistical inefficiency: 1.00.
+2023-10-06 16:04:05.897 | DEBUG    | alchemlyb.preprocessing.subsampling:equilibrium_detection:608 - Number of uncorrelated samples: 15.
+2023-10-06 16:04:05.898 | WARNING  | alchemlyb.workflows.abfe:preprocess:349 - Number of u_nk 15 for state 11 is less than the threshold 50.
+2023-10-06 16:04:05.898 | INFO     | alchemlyb.workflows.abfe:preprocess:354 - Take all the u_nk for state 11.
+2023-10-06 16:04:05.904 | DEBUG    | alchemlyb.preprocessing.subsampling:equilibrium_detection:599 - Running equilibration detection.
+2023-10-06 16:04:05.905 | DEBUG    | alchemlyb.preprocessing.subsampling:equilibrium_detection:601 - Start index: 0.
+2023-10-06 16:04:05.905 | DEBUG    | alchemlyb.preprocessing.subsampling:equilibrium_detection:602 - Statistical inefficiency: 1.00.
+2023-10-06 16:04:05.906 | DEBUG    | alchemlyb.preprocessing.subsampling:equilibrium_detection:608 - Number of uncorrelated samples: 19.
+2023-10-06 16:04:05.906 | WARNING  | alchemlyb.workflows.abfe:preprocess:349 - Number of u_nk 19 for state 12 is less than the threshold 50.
+2023-10-06 16:04:05.906 | INFO     | alchemlyb.workflows.abfe:preprocess:354 - Take all the u_nk for state 12.
+2023-10-06 16:04:05.913 | DEBUG    | alchemlyb.preprocessing.subsampling:equilibrium_detection:599 - Running equilibration detection.
+2023-10-06 16:04:05.913 | DEBUG    | alchemlyb.preprocessing.subsampling:equilibrium_detection:601 - Start index: 5.
+2023-10-06 16:04:05.913 | DEBUG    | alchemlyb.preprocessing.subsampling:equilibrium_detection:602 - Statistical inefficiency: 1.00.
+2023-10-06 16:04:05.914 | DEBUG    | alchemlyb.preprocessing.subsampling:equilibrium_detection:608 - Number of uncorrelated samples: 14.
+2023-10-06 16:04:05.914 | WARNING  | alchemlyb.workflows.abfe:preprocess:349 - Number of u_nk 14 for state 13 is less than the threshold 50.
+2023-10-06 16:04:05.914 | INFO     | alchemlyb.workflows.abfe:preprocess:354 - Take all the u_nk for state 13.
+2023-10-06 16:04:05.921 | DEBUG    | alchemlyb.preprocessing.subsampling:equilibrium_detection:599 - Running equilibration detection.
+2023-10-06 16:04:05.922 | DEBUG    | alchemlyb.preprocessing.subsampling:equilibrium_detection:601 - Start index: 5.
+2023-10-06 16:04:05.922 | DEBUG    | alchemlyb.preprocessing.subsampling:equilibrium_detection:602 - Statistical inefficiency: 1.00.
+2023-10-06 16:04:05.922 | DEBUG    | alchemlyb.preprocessing.subsampling:equilibrium_detection:608 - Number of uncorrelated samples: 14.
+2023-10-06 16:04:05.923 | WARNING  | alchemlyb.workflows.abfe:preprocess:349 - Number of u_nk 14 for state 14 is less than the threshold 50.
+2023-10-06 16:04:05.923 | INFO     | alchemlyb.workflows.abfe:preprocess:354 - Take all the u_nk for state 14.
+2023-10-06 16:04:05.929 | DEBUG    | alchemlyb.preprocessing.subsampling:equilibrium_detection:599 - Running equilibration detection.
+2023-10-06 16:04:05.930 | DEBUG    | alchemlyb.preprocessing.subsampling:equilibrium_detection:601 - Start index: 0.
+2023-10-06 16:04:05.931 | DEBUG    | alchemlyb.preprocessing.subsampling:equilibrium_detection:602 - Statistical inefficiency: 1.00.
+2023-10-06 16:04:05.931 | DEBUG    | alchemlyb.preprocessing.subsampling:equilibrium_detection:608 - Number of uncorrelated samples: 19.
+2023-10-06 16:04:05.931 | WARNING  | alchemlyb.workflows.abfe:preprocess:349 - Number of u_nk 19 for state 15 is less than the threshold 50.
+2023-10-06 16:04:05.931 | INFO     | alchemlyb.workflows.abfe:preprocess:354 - Take all the u_nk for state 15.
+2023-10-06 16:04:05.938 | DEBUG    | alchemlyb.preprocessing.subsampling:equilibrium_detection:599 - Running equilibration detection.
+2023-10-06 16:04:05.939 | DEBUG    | alchemlyb.preprocessing.subsampling:equilibrium_detection:601 - Start index: 7.
+2023-10-06 16:04:05.939 | DEBUG    | alchemlyb.preprocessing.subsampling:equilibrium_detection:602 - Statistical inefficiency: 1.00.
+2023-10-06 16:04:05.940 | DEBUG    | alchemlyb.preprocessing.subsampling:equilibrium_detection:608 - Number of uncorrelated samples: 12.
+2023-10-06 16:04:05.940 | WARNING  | alchemlyb.workflows.abfe:preprocess:349 - Number of u_nk 12 for state 16 is less than the threshold 50.
+2023-10-06 16:04:05.940 | INFO     | alchemlyb.workflows.abfe:preprocess:354 - Take all the u_nk for state 16.
+2023-10-06 16:04:05.947 | DEBUG    | alchemlyb.preprocessing.subsampling:equilibrium_detection:599 - Running equilibration detection.
+2023-10-06 16:04:05.947 | DEBUG    | alchemlyb.preprocessing.subsampling:equilibrium_detection:601 - Start index: 1.
+2023-10-06 16:04:05.947 | DEBUG    | alchemlyb.preprocessing.subsampling:equilibrium_detection:602 - Statistical inefficiency: 2.14.
+2023-10-06 16:04:05.948 | DEBUG    | alchemlyb.preprocessing.subsampling:equilibrium_detection:608 - Number of uncorrelated samples: 9.
+2023-10-06 16:04:05.948 | WARNING  | alchemlyb.workflows.abfe:preprocess:349 - Number of u_nk 9 for state 17 is less than the threshold 50.
+2023-10-06 16:04:05.948 | INFO     | alchemlyb.workflows.abfe:preprocess:354 - Take all the u_nk for state 17.
+2023-10-06 16:04:05.955 | DEBUG    | alchemlyb.preprocessing.subsampling:equilibrium_detection:599 - Running equilibration detection.
+2023-10-06 16:04:05.956 | DEBUG    | alchemlyb.preprocessing.subsampling:equilibrium_detection:601 - Start index: 0.
+2023-10-06 16:04:05.956 | DEBUG    | alchemlyb.preprocessing.subsampling:equilibrium_detection:602 - Statistical inefficiency: 1.00.
+2023-10-06 16:04:05.956 | DEBUG    | alchemlyb.preprocessing.subsampling:equilibrium_detection:608 - Number of uncorrelated samples: 19.
+2023-10-06 16:04:05.956 | WARNING  | alchemlyb.workflows.abfe:preprocess:349 - Number of u_nk 19 for state 18 is less than the threshold 50.
+2023-10-06 16:04:05.957 | INFO     | alchemlyb.workflows.abfe:preprocess:354 - Take all the u_nk for state 18.
+2023-10-06 16:04:05.963 | DEBUG    | alchemlyb.preprocessing.subsampling:equilibrium_detection:599 - Running equilibration detection.
+2023-10-06 16:04:05.964 | DEBUG    | alchemlyb.preprocessing.subsampling:equilibrium_detection:601 - Start index: 0.
+2023-10-06 16:04:05.964 | DEBUG    | alchemlyb.preprocessing.subsampling:equilibrium_detection:602 - Statistical inefficiency: 1.00.
+2023-10-06 16:04:05.964 | DEBUG    | alchemlyb.preprocessing.subsampling:equilibrium_detection:608 - Number of uncorrelated samples: 19.
+2023-10-06 16:04:05.965 | WARNING  | alchemlyb.workflows.abfe:preprocess:349 - Number of u_nk 19 for state 19 is less than the threshold 50.
+2023-10-06 16:04:05.965 | INFO     | alchemlyb.workflows.abfe:preprocess:354 - Take all the u_nk for state 19.
+2023-10-06 16:04:05.972 | DEBUG    | alchemlyb.preprocessing.subsampling:equilibrium_detection:599 - Running equilibration detection.
+2023-10-06 16:04:05.974 | DEBUG    | alchemlyb.preprocessing.subsampling:equilibrium_detection:601 - Start index: 0.
+2023-10-06 16:04:05.974 | DEBUG    | alchemlyb.preprocessing.subsampling:equilibrium_detection:602 - Statistical inefficiency: 1.00.
+2023-10-06 16:04:05.974 | DEBUG    | alchemlyb.preprocessing.subsampling:equilibrium_detection:608 - Number of uncorrelated samples: 19.
+2023-10-06 16:04:05.975 | WARNING  | alchemlyb.workflows.abfe:preprocess:349 - Number of u_nk 19 for state 20 is less than the threshold 50.
+2023-10-06 16:04:05.975 | INFO     | alchemlyb.workflows.abfe:preprocess:354 - Take all the u_nk for state 20.
+2023-10-06 16:04:05.981 | DEBUG    | alchemlyb.preprocessing.subsampling:equilibrium_detection:599 - Running equilibration detection.
+2023-10-06 16:04:05.981 | DEBUG    | alchemlyb.preprocessing.subsampling:equilibrium_detection:601 - Start index: 0.
+2023-10-06 16:04:05.981 | DEBUG    | alchemlyb.preprocessing.subsampling:equilibrium_detection:602 - Statistical inefficiency: 1.00.
+2023-10-06 16:04:05.982 | DEBUG    | alchemlyb.preprocessing.subsampling:equilibrium_detection:608 - Number of uncorrelated samples: 19.
+2023-10-06 16:04:05.982 | WARNING  | alchemlyb.workflows.abfe:preprocess:371 - Number of dHdl 19 for state 0 is less than the threshold 50.
+2023-10-06 16:04:05.982 | INFO     | alchemlyb.workflows.abfe:preprocess:376 - Take all the dHdl for state 0.
+2023-10-06 16:04:05.988 | DEBUG    | alchemlyb.preprocessing.subsampling:equilibrium_detection:599 - Running equilibration detection.
+2023-10-06 16:04:05.989 | DEBUG    | alchemlyb.preprocessing.subsampling:equilibrium_detection:601 - Start index: 0.
+2023-10-06 16:04:05.989 | DEBUG    | alchemlyb.preprocessing.subsampling:equilibrium_detection:602 - Statistical inefficiency: 1.00.
+2023-10-06 16:04:05.989 | DEBUG    | alchemlyb.preprocessing.subsampling:equilibrium_detection:608 - Number of uncorrelated samples: 19.
+2023-10-06 16:04:05.989 | WARNING  | alchemlyb.workflows.abfe:preprocess:371 - Number of dHdl 19 for state 1 is less than the threshold 50.
+2023-10-06 16:04:05.990 | INFO     | alchemlyb.workflows.abfe:preprocess:376 - Take all the dHdl for state 1.
+2023-10-06 16:04:05.995 | DEBUG    | alchemlyb.preprocessing.subsampling:equilibrium_detection:599 - Running equilibration detection.
+2023-10-06 16:04:05.996 | DEBUG    | alchemlyb.preprocessing.subsampling:equilibrium_detection:601 - Start index: 0.
+2023-10-06 16:04:05.996 | DEBUG    | alchemlyb.preprocessing.subsampling:equilibrium_detection:602 - Statistical inefficiency: 1.00.
+2023-10-06 16:04:05.996 | DEBUG    | alchemlyb.preprocessing.subsampling:equilibrium_detection:608 - Number of uncorrelated samples: 19.
+2023-10-06 16:04:05.996 | WARNING  | alchemlyb.workflows.abfe:preprocess:371 - Number of dHdl 19 for state 2 is less than the threshold 50.
+2023-10-06 16:04:05.997 | INFO     | alchemlyb.workflows.abfe:preprocess:376 - Take all the dHdl for state 2.
+2023-10-06 16:04:06.002 | DEBUG    | alchemlyb.preprocessing.subsampling:equilibrium_detection:599 - Running equilibration detection.
+2023-10-06 16:04:06.003 | DEBUG    | alchemlyb.preprocessing.subsampling:equilibrium_detection:601 - Start index: 0.
+2023-10-06 16:04:06.003 | DEBUG    | alchemlyb.preprocessing.subsampling:equilibrium_detection:602 - Statistical inefficiency: 1.00.
+2023-10-06 16:04:06.003 | DEBUG    | alchemlyb.preprocessing.subsampling:equilibrium_detection:608 - Number of uncorrelated samples: 19.
+2023-10-06 16:04:06.004 | WARNING  | alchemlyb.workflows.abfe:preprocess:371 - Number of dHdl 19 for state 3 is less than the threshold 50.
+2023-10-06 16:04:06.004 | INFO     | alchemlyb.workflows.abfe:preprocess:376 - Take all the dHdl for state 3.
+2023-10-06 16:04:06.010 | DEBUG    | alchemlyb.preprocessing.subsampling:equilibrium_detection:599 - Running equilibration detection.
+2023-10-06 16:04:06.010 | DEBUG    | alchemlyb.preprocessing.subsampling:equilibrium_detection:601 - Start index: 10.
+2023-10-06 16:04:06.011 | DEBUG    | alchemlyb.preprocessing.subsampling:equilibrium_detection:602 - Statistical inefficiency: 1.00.
+2023-10-06 16:04:06.011 | DEBUG    | alchemlyb.preprocessing.subsampling:equilibrium_detection:608 - Number of uncorrelated samples: 9.
+2023-10-06 16:04:06.011 | WARNING  | alchemlyb.workflows.abfe:preprocess:371 - Number of dHdl 9 for state 4 is less than the threshold 50.
+2023-10-06 16:04:06.011 | INFO     | alchemlyb.workflows.abfe:preprocess:376 - Take all the dHdl for state 4.
+2023-10-06 16:04:06.017 | DEBUG    | alchemlyb.preprocessing.subsampling:equilibrium_detection:599 - Running equilibration detection.
+2023-10-06 16:04:06.018 | DEBUG    | alchemlyb.preprocessing.subsampling:equilibrium_detection:601 - Start index: 0.
+2023-10-06 16:04:06.018 | DEBUG    | alchemlyb.preprocessing.subsampling:equilibrium_detection:602 - Statistical inefficiency: 1.00.
+2023-10-06 16:04:06.018 | DEBUG    | alchemlyb.preprocessing.subsampling:equilibrium_detection:608 - Number of uncorrelated samples: 19.
+2023-10-06 16:04:06.018 | WARNING  | alchemlyb.workflows.abfe:preprocess:371 - Number of dHdl 19 for state 5 is less than the threshold 50.
+2023-10-06 16:04:06.019 | INFO     | alchemlyb.workflows.abfe:preprocess:376 - Take all the dHdl for state 5.
+2023-10-06 16:04:06.024 | DEBUG    | alchemlyb.preprocessing.subsampling:equilibrium_detection:599 - Running equilibration detection.
+2023-10-06 16:04:06.026 | DEBUG    | alchemlyb.preprocessing.subsampling:equilibrium_detection:601 - Start index: 0.
+2023-10-06 16:04:06.026 | DEBUG    | alchemlyb.preprocessing.subsampling:equilibrium_detection:602 - Statistical inefficiency: 1.00.
+2023-10-06 16:04:06.026 | DEBUG    | alchemlyb.preprocessing.subsampling:equilibrium_detection:608 - Number of uncorrelated samples: 19.
+2023-10-06 16:04:06.027 | WARNING  | alchemlyb.workflows.abfe:preprocess:371 - Number of dHdl 19 for state 6 is less than the threshold 50.
+2023-10-06 16:04:06.027 | INFO     | alchemlyb.workflows.abfe:preprocess:376 - Take all the dHdl for state 6.
+2023-10-06 16:04:06.032 | DEBUG    | alchemlyb.preprocessing.subsampling:equilibrium_detection:599 - Running equilibration detection.
+2023-10-06 16:04:06.033 | DEBUG    | alchemlyb.preprocessing.subsampling:equilibrium_detection:601 - Start index: 0.
+2023-10-06 16:04:06.033 | DEBUG    | alchemlyb.preprocessing.subsampling:equilibrium_detection:602 - Statistical inefficiency: 1.00.
+2023-10-06 16:04:06.033 | DEBUG    | alchemlyb.preprocessing.subsampling:equilibrium_detection:608 - Number of uncorrelated samples: 19.
+2023-10-06 16:04:06.034 | WARNING  | alchemlyb.workflows.abfe:preprocess:371 - Number of dHdl 19 for state 7 is less than the threshold 50.
+2023-10-06 16:04:06.034 | INFO     | alchemlyb.workflows.abfe:preprocess:376 - Take all the dHdl for state 7.
+2023-10-06 16:04:06.040 | DEBUG    | alchemlyb.preprocessing.subsampling:equilibrium_detection:599 - Running equilibration detection.
+2023-10-06 16:04:06.040 | DEBUG    | alchemlyb.preprocessing.subsampling:equilibrium_detection:601 - Start index: 0.
+2023-10-06 16:04:06.041 | DEBUG    | alchemlyb.preprocessing.subsampling:equilibrium_detection:602 - Statistical inefficiency: 1.00.
+2023-10-06 16:04:06.041 | DEBUG    | alchemlyb.preprocessing.subsampling:equilibrium_detection:608 - Number of uncorrelated samples: 19.
+2023-10-06 16:04:06.041 | WARNING  | alchemlyb.workflows.abfe:preprocess:371 - Number of dHdl 19 for state 8 is less than the threshold 50.
+2023-10-06 16:04:06.041 | INFO     | alchemlyb.workflows.abfe:preprocess:376 - Take all the dHdl for state 8.
+2023-10-06 16:04:06.047 | DEBUG    | alchemlyb.preprocessing.subsampling:equilibrium_detection:599 - Running equilibration detection.
+2023-10-06 16:04:06.048 | DEBUG    | alchemlyb.preprocessing.subsampling:equilibrium_detection:601 - Start index: 8.
+2023-10-06 16:04:06.048 | DEBUG    | alchemlyb.preprocessing.subsampling:equilibrium_detection:602 - Statistical inefficiency: 1.00.
+2023-10-06 16:04:06.048 | DEBUG    | alchemlyb.preprocessing.subsampling:equilibrium_detection:608 - Number of uncorrelated samples: 11.
+2023-10-06 16:04:06.049 | WARNING  | alchemlyb.workflows.abfe:preprocess:371 - Number of dHdl 11 for state 9 is less than the threshold 50.
+2023-10-06 16:04:06.049 | INFO     | alchemlyb.workflows.abfe:preprocess:376 - Take all the dHdl for state 9.
+2023-10-06 16:04:06.054 | DEBUG    | alchemlyb.preprocessing.subsampling:equilibrium_detection:599 - Running equilibration detection.
+2023-10-06 16:04:06.055 | DEBUG    | alchemlyb.preprocessing.subsampling:equilibrium_detection:601 - Start index: 0.
+2023-10-06 16:04:06.055 | DEBUG    | alchemlyb.preprocessing.subsampling:equilibrium_detection:602 - Statistical inefficiency: 1.00.
+2023-10-06 16:04:06.056 | DEBUG    | alchemlyb.preprocessing.subsampling:equilibrium_detection:608 - Number of uncorrelated samples: 19.
+2023-10-06 16:04:06.056 | WARNING  | alchemlyb.workflows.abfe:preprocess:371 - Number of dHdl 19 for state 10 is less than the threshold 50.
+2023-10-06 16:04:06.056 | INFO     | alchemlyb.workflows.abfe:preprocess:376 - Take all the dHdl for state 10.
+2023-10-06 16:04:06.061 | DEBUG    | alchemlyb.preprocessing.subsampling:equilibrium_detection:599 - Running equilibration detection.
+2023-10-06 16:04:06.062 | DEBUG    | alchemlyb.preprocessing.subsampling:equilibrium_detection:601 - Start index: 0.
+2023-10-06 16:04:06.062 | DEBUG    | alchemlyb.preprocessing.subsampling:equilibrium_detection:602 - Statistical inefficiency: 1.00.
+2023-10-06 16:04:06.063 | DEBUG    | alchemlyb.preprocessing.subsampling:equilibrium_detection:608 - Number of uncorrelated samples: 19.
+2023-10-06 16:04:06.063 | WARNING  | alchemlyb.workflows.abfe:preprocess:371 - Number of dHdl 19 for state 11 is less than the threshold 50.
+2023-10-06 16:04:06.063 | INFO     | alchemlyb.workflows.abfe:preprocess:376 - Take all the dHdl for state 11.
+2023-10-06 16:04:06.069 | DEBUG    | alchemlyb.preprocessing.subsampling:equilibrium_detection:599 - Running equilibration detection.
+2023-10-06 16:04:06.071 | DEBUG    | alchemlyb.preprocessing.subsampling:equilibrium_detection:601 - Start index: 0.
+2023-10-06 16:04:06.071 | DEBUG    | alchemlyb.preprocessing.subsampling:equilibrium_detection:602 - Statistical inefficiency: 1.00.
+2023-10-06 16:04:06.071 | DEBUG    | alchemlyb.preprocessing.subsampling:equilibrium_detection:608 - Number of uncorrelated samples: 19.
+2023-10-06 16:04:06.072 | WARNING  | alchemlyb.workflows.abfe:preprocess:371 - Number of dHdl 19 for state 12 is less than the threshold 50.
+2023-10-06 16:04:06.072 | INFO     | alchemlyb.workflows.abfe:preprocess:376 - Take all the dHdl for state 12.
+2023-10-06 16:04:06.078 | DEBUG    | alchemlyb.preprocessing.subsampling:equilibrium_detection:599 - Running equilibration detection.
+2023-10-06 16:04:06.079 | DEBUG    | alchemlyb.preprocessing.subsampling:equilibrium_detection:601 - Start index: 0.
+2023-10-06 16:04:06.079 | DEBUG    | alchemlyb.preprocessing.subsampling:equilibrium_detection:602 - Statistical inefficiency: 1.00.
+2023-10-06 16:04:06.079 | DEBUG    | alchemlyb.preprocessing.subsampling:equilibrium_detection:608 - Number of uncorrelated samples: 19.
+2023-10-06 16:04:06.079 | WARNING  | alchemlyb.workflows.abfe:preprocess:371 - Number of dHdl 19 for state 13 is less than the threshold 50.
+2023-10-06 16:04:06.080 | INFO     | alchemlyb.workflows.abfe:preprocess:376 - Take all the dHdl for state 13.
+2023-10-06 16:04:06.085 | DEBUG    | alchemlyb.preprocessing.subsampling:equilibrium_detection:599 - Running equilibration detection.
+2023-10-06 16:04:06.086 | DEBUG    | alchemlyb.preprocessing.subsampling:equilibrium_detection:601 - Start index: 0.
+2023-10-06 16:04:06.086 | DEBUG    | alchemlyb.preprocessing.subsampling:equilibrium_detection:602 - Statistical inefficiency: 1.20.
+2023-10-06 16:04:06.086 | DEBUG    | alchemlyb.preprocessing.subsampling:equilibrium_detection:608 - Number of uncorrelated samples: 16.
+2023-10-06 16:04:06.087 | WARNING  | alchemlyb.workflows.abfe:preprocess:371 - Number of dHdl 16 for state 14 is less than the threshold 50.
+2023-10-06 16:04:06.087 | INFO     | alchemlyb.workflows.abfe:preprocess:376 - Take all the dHdl for state 14.
+2023-10-06 16:04:06.092 | DEBUG    | alchemlyb.preprocessing.subsampling:equilibrium_detection:599 - Running equilibration detection.
+2023-10-06 16:04:06.093 | DEBUG    | alchemlyb.preprocessing.subsampling:equilibrium_detection:601 - Start index: 0.
+2023-10-06 16:04:06.093 | DEBUG    | alchemlyb.preprocessing.subsampling:equilibrium_detection:602 - Statistical inefficiency: 1.80.
+2023-10-06 16:04:06.093 | DEBUG    | alchemlyb.preprocessing.subsampling:equilibrium_detection:608 - Number of uncorrelated samples: 11.
+2023-10-06 16:04:06.094 | WARNING  | alchemlyb.workflows.abfe:preprocess:371 - Number of dHdl 11 for state 15 is less than the threshold 50.
+2023-10-06 16:04:06.094 | INFO     | alchemlyb.workflows.abfe:preprocess:376 - Take all the dHdl for state 15.
+2023-10-06 16:04:06.100 | DEBUG    | alchemlyb.preprocessing.subsampling:equilibrium_detection:599 - Running equilibration detection.
+2023-10-06 16:04:06.100 | DEBUG    | alchemlyb.preprocessing.subsampling:equilibrium_detection:601 - Start index: 11.
+2023-10-06 16:04:06.101 | DEBUG    | alchemlyb.preprocessing.subsampling:equilibrium_detection:602 - Statistical inefficiency: 1.00.
+2023-10-06 16:04:06.101 | DEBUG    | alchemlyb.preprocessing.subsampling:equilibrium_detection:608 - Number of uncorrelated samples: 8.
+2023-10-06 16:04:06.101 | WARNING  | alchemlyb.workflows.abfe:preprocess:371 - Number of dHdl 8 for state 16 is less than the threshold 50.
+2023-10-06 16:04:06.101 | INFO     | alchemlyb.workflows.abfe:preprocess:376 - Take all the dHdl for state 16.
+2023-10-06 16:04:06.107 | DEBUG    | alchemlyb.preprocessing.subsampling:equilibrium_detection:599 - Running equilibration detection.
+2023-10-06 16:04:06.107 | DEBUG    | alchemlyb.preprocessing.subsampling:equilibrium_detection:601 - Start index: 0.
+2023-10-06 16:04:06.108 | DEBUG    | alchemlyb.preprocessing.subsampling:equilibrium_detection:602 - Statistical inefficiency: 1.00.
+2023-10-06 16:04:06.108 | DEBUG    | alchemlyb.preprocessing.subsampling:equilibrium_detection:608 - Number of uncorrelated samples: 19.
+2023-10-06 16:04:06.108 | WARNING  | alchemlyb.workflows.abfe:preprocess:371 - Number of dHdl 19 for state 17 is less than the threshold 50.
+2023-10-06 16:04:06.108 | INFO     | alchemlyb.workflows.abfe:preprocess:376 - Take all the dHdl for state 17.
+2023-10-06 16:04:06.114 | DEBUG    | alchemlyb.preprocessing.subsampling:equilibrium_detection:599 - Running equilibration detection.
+2023-10-06 16:04:06.114 | DEBUG    | alchemlyb.preprocessing.subsampling:equilibrium_detection:601 - Start index: 2.
+2023-10-06 16:04:06.115 | DEBUG    | alchemlyb.preprocessing.subsampling:equilibrium_detection:602 - Statistical inefficiency: 1.00.
+2023-10-06 16:04:06.115 | DEBUG    | alchemlyb.preprocessing.subsampling:equilibrium_detection:608 - Number of uncorrelated samples: 17.
+2023-10-06 16:04:06.115 | WARNING  | alchemlyb.workflows.abfe:preprocess:371 - Number of dHdl 17 for state 18 is less than the threshold 50.
+2023-10-06 16:04:06.115 | INFO     | alchemlyb.workflows.abfe:preprocess:376 - Take all the dHdl for state 18.
+2023-10-06 16:04:06.121 | DEBUG    | alchemlyb.preprocessing.subsampling:equilibrium_detection:599 - Running equilibration detection.
+2023-10-06 16:04:06.121 | DEBUG    | alchemlyb.preprocessing.subsampling:equilibrium_detection:601 - Start index: 0.
+2023-10-06 16:04:06.122 | DEBUG    | alchemlyb.preprocessing.subsampling:equilibrium_detection:602 - Statistical inefficiency: 1.00.
+2023-10-06 16:04:06.122 | DEBUG    | alchemlyb.preprocessing.subsampling:equilibrium_detection:608 - Number of uncorrelated samples: 19.
+2023-10-06 16:04:06.122 | WARNING  | alchemlyb.workflows.abfe:preprocess:371 - Number of dHdl 19 for state 19 is less than the threshold 50.
+2023-10-06 16:04:06.122 | INFO     | alchemlyb.workflows.abfe:preprocess:376 - Take all the dHdl for state 19.
+2023-10-06 16:04:06.128 | DEBUG    | alchemlyb.preprocessing.subsampling:equilibrium_detection:599 - Running equilibration detection.
+2023-10-06 16:04:06.129 | DEBUG    | alchemlyb.preprocessing.subsampling:equilibrium_detection:601 - Start index: 0.
+2023-10-06 16:04:06.129 | DEBUG    | alchemlyb.preprocessing.subsampling:equilibrium_detection:602 - Statistical inefficiency: 1.00.
+2023-10-06 16:04:06.129 | DEBUG    | alchemlyb.preprocessing.subsampling:equilibrium_detection:608 - Number of uncorrelated samples: 19.
+2023-10-06 16:04:06.129 | WARNING  | alchemlyb.workflows.abfe:preprocess:371 - Number of dHdl 19 for state 20 is less than the threshold 50.
+2023-10-06 16:04:06.130 | INFO     | alchemlyb.workflows.abfe:preprocess:376 - Take all the dHdl for state 20.
+2023-10-06 16:04:06.130 | INFO     | alchemlyb.workflows.abfe:estimate:421 - Start running estimator: MBAR,BAR,TI.
+2023-10-06 16:04:06.134 | INFO     | alchemlyb.workflows.abfe:estimate:430 - A total 399 lines of dHdl is used.
+2023-10-06 16:04:06.140 | INFO     | alchemlyb.workflows.abfe:estimate:438 - A total 399 lines of u_nk is used.
+2023-10-06 16:04:06.140 | INFO     | alchemlyb.workflows.abfe:estimate:442 - Run MBAR estimator.
+2023-10-06 16:04:06.164 | INFO     | alchemlyb.workflows.abfe:estimate:449 - Run BAR estimator.
+2023-10-06 16:04:06.249 | INFO     | alchemlyb.workflows.abfe:estimate:452 - Run TI estimator.
+2023-10-06 16:04:06.278 | INFO     | alchemlyb.workflows.abfe:generate_result:505 - Summarise the estimate into a dataframe.
+2023-10-06 16:04:06.279 | INFO     | alchemlyb.workflows.abfe:generate_result:507 - Generate the row names.
+2023-10-06 16:04:06.279 | INFO     | alchemlyb.workflows.abfe:generate_result:518 - use the stage name from u_nk
+2023-10-06 16:04:06.279 | INFO     | alchemlyb.workflows.abfe:generate_result:532 - Read the results from estimator MBAR
+2023-10-06 16:04:06.281 | INFO     | alchemlyb.workflows.abfe:generate_result:549 - Generate the staged result from estimator MBAR
+2023-10-06 16:04:06.281 | INFO     | alchemlyb.workflows.abfe:generate_result:568 - Stage coul-lambda is from state 0 to state 5.
+2023-10-06 16:04:06.281 | INFO     | alchemlyb.workflows.abfe:generate_result:568 - Stage vdw-lambda is from state 5 to state 20.
+2023-10-06 16:04:06.281 | INFO     | alchemlyb.workflows.abfe:generate_result:532 - Read the results from estimator BAR
+2023-10-06 16:04:06.282 | INFO     | alchemlyb.workflows.abfe:generate_result:549 - Generate the staged result from estimator BAR
+2023-10-06 16:04:06.282 | INFO     | alchemlyb.workflows.abfe:generate_result:568 - Stage coul-lambda is from state 0 to state 5.
+2023-10-06 16:04:06.282 | INFO     | alchemlyb.workflows.abfe:generate_result:568 - Stage vdw-lambda is from state 5 to state 20.
+2023-10-06 16:04:06.283 | INFO     | alchemlyb.workflows.abfe:generate_result:532 - Read the results from estimator TI
+2023-10-06 16:04:06.284 | INFO     | alchemlyb.workflows.abfe:generate_result:549 - Generate the staged result from estimator TI
+2023-10-06 16:04:06.284 | INFO     | alchemlyb.workflows.abfe:generate_result:568 - Stage coul-lambda is from state 0 to state 5.
+2023-10-06 16:04:06.284 | INFO     | alchemlyb.workflows.abfe:generate_result:568 - Stage vdw-lambda is from state 5 to state 20.
+2023-10-06 16:04:06.289 | INFO     | alchemlyb.workflows.abfe:generate_result:610 - Write results:
+                     MBAR  MBAR_Error       BAR  BAR_Error        TI  TI_Error
+States 0 -- 1    0.774186    0.055253  0.808410   0.062315  0.810016  0.060340
+       1 -- 2    0.508670    0.044279  0.484382   0.060013  0.488825  0.058222
+       2 -- 3    0.285903    0.033028  0.253575   0.050200  0.256345  0.051388
+       3 -- 4    0.118452    0.025107  0.129026   0.039598  0.130392  0.040106
+       4 -- 5   -0.011649    0.022753  0.020718   0.038239  0.020559  0.039374
+       5 -- 6    0.294228    0.015261  0.306339   0.028642  0.306942  0.028749
+       6 -- 7    0.292437    0.015974  0.262713   0.029918  0.268699  0.029383
+       7 -- 8    0.574928    0.036966  0.510956   0.070827  0.478261  0.083028
+       8 -- 9    0.518795    0.052682  0.508116   0.075208  0.492585  0.086493
+       9 -- 10   0.362713    0.075554  0.416123   0.081247  0.412146  0.085306
+       10 -- 11  0.101222    0.093392  0.105407   0.099404  0.166270  0.087194
+       11 -- 12 -0.090323    0.084516 -0.032219   0.095759 -0.016980  0.088697
+       12 -- 13 -0.132881    0.048740 -0.137708   0.061126 -0.127855  0.057196
+       13 -- 14 -0.282828    0.064282 -0.273358   0.073937 -0.274111  0.071490
+       14 -- 15 -0.536347    0.079215 -0.546481   0.096183 -0.546114  0.093274
+       15 -- 16 -0.826889    0.082618 -0.924708   0.114900 -0.907979  0.105154
+       16 -- 17 -0.907652    0.055508 -0.914090   0.074300 -0.902409  0.084729
+       17 -- 18 -0.723144    0.030332 -0.667790   0.044799 -0.660247  0.047121
+       18 -- 19 -0.451004    0.019097 -0.428818   0.028976 -0.431014  0.029619
+       19 -- 20 -0.186351    0.013339 -0.197484   0.019860 -0.197596  0.021266
+Stages coul      1.675562    0.147853  1.696111   0.152640  1.706137  0.151086
+       vdw      -1.993099    0.385969 -2.013001   0.114570 -1.939402  0.391290
+       TOTAL    -0.317537    0.411716 -0.316890   0.302478 -0.233265  0.419445
+2023-10-06 16:04:06.289 | INFO     | alchemlyb.workflows.abfe:plot_overlap_matrix:630 - Plot overlap matrix.
+2023-10-06 16:04:07.390 | INFO     | alchemlyb.workflows.abfe:plot_overlap_matrix:634 - Plot overlap matrix to ./ under O_MBAR.pdf.
+2023-10-06 16:04:07.390 | INFO     | alchemlyb.workflows.abfe:plot_ti_dhdl:661 - Plot TI dHdl.
+2023-10-06 16:04:07.564 | INFO     | alchemlyb.workflows.abfe:plot_ti_dhdl:671 - Plot TI dHdl to dhdl_TI.pdf under ./.
+2023-10-06 16:04:07.564 | INFO     | alchemlyb.workflows.abfe:plot_dF_state:705 - Plot dF states.
+2023-10-06 16:04:07.854 | INFO     | alchemlyb.workflows.abfe:plot_dF_state:715 - Plot dF state to dF_state.pdf under ./.
+2023-10-06 16:04:07.854 | INFO     | alchemlyb.workflows.abfe:plot_dF_state:705 - Plot dF states.
+2023-10-06 16:04:08.079 | INFO     | alchemlyb.workflows.abfe:plot_dF_state:715 - Plot dF state to dF_state_long.pdf under ./.
+2023-10-06 16:04:08.080 | INFO     | alchemlyb.workflows.abfe:check_convergence:752 - Start convergence analysis.
+2023-10-06 16:04:08.080 | INFO     | alchemlyb.workflows.abfe:check_convergence:753 - Checking data availability.
+2023-10-06 16:04:08.080 | INFO     | alchemlyb.workflows.abfe:check_convergence:758 - Subsampled u_nk is available.
+2023-10-06 16:04:08.080 | INFO     | alchemlyb.convergence.convergence:forward_backward_convergence:68 - Start convergence analysis.
+2023-10-06 16:04:08.080 | INFO     | alchemlyb.convergence.convergence:forward_backward_convergence:69 - Check data availability.
+2023-10-06 16:04:08.080 | INFO     | alchemlyb.convergence.convergence:forward_backward_convergence:86 - Use MBAR estimator for convergence analysis.
+2023-10-06 16:04:08.080 | INFO     | alchemlyb.convergence.convergence:forward_backward_convergence:88 - Begin forward analysis
+2023-10-06 16:04:08.080 | INFO     | alchemlyb.convergence.convergence:forward_backward_convergence:92 - Forward analysis: 10.00%
+2023-10-06 16:04:08.102 | INFO     | alchemlyb.convergence.convergence:forward_backward_convergence:111 - -2.52 +/- 3.24 kT
+2023-10-06 16:04:08.102 | INFO     | alchemlyb.convergence.convergence:forward_backward_convergence:92 - Forward analysis: 20.00%
+2023-10-06 16:04:08.124 | INFO     | alchemlyb.convergence.convergence:forward_backward_convergence:111 - -0.26 +/- 2.22 kT
+2023-10-06 16:04:08.124 | INFO     | alchemlyb.convergence.convergence:forward_backward_convergence:92 - Forward analysis: 30.00%
+2023-10-06 16:04:08.147 | INFO     | alchemlyb.convergence.convergence:forward_backward_convergence:111 - 0.11 +/- 1.75 kT
+2023-10-06 16:04:08.147 | INFO     | alchemlyb.convergence.convergence:forward_backward_convergence:92 - Forward analysis: 40.00%
+2023-10-06 16:04:08.171 | INFO     | alchemlyb.convergence.convergence:forward_backward_convergence:111 - 1.69 +/- 1.44 kT
+2023-10-06 16:04:08.172 | INFO     | alchemlyb.convergence.convergence:forward_backward_convergence:92 - Forward analysis: 50.00%
+2023-10-06 16:04:08.194 | INFO     | alchemlyb.convergence.convergence:forward_backward_convergence:111 - 1.38 +/- 1.31 kT
+2023-10-06 16:04:08.195 | INFO     | alchemlyb.convergence.convergence:forward_backward_convergence:92 - Forward analysis: 60.00%
+2023-10-06 16:04:08.217 | INFO     | alchemlyb.convergence.convergence:forward_backward_convergence:111 - 1.36 +/- 1.20 kT
+2023-10-06 16:04:08.218 | INFO     | alchemlyb.convergence.convergence:forward_backward_convergence:92 - Forward analysis: 70.00%
+2023-10-06 16:04:08.242 | INFO     | alchemlyb.convergence.convergence:forward_backward_convergence:111 - 1.71 +/- 1.10 kT
+2023-10-06 16:04:08.242 | INFO     | alchemlyb.convergence.convergence:forward_backward_convergence:92 - Forward analysis: 80.00%
+2023-10-06 16:04:08.266 | INFO     | alchemlyb.convergence.convergence:forward_backward_convergence:111 - 1.22 +/- 1.05 kT
+2023-10-06 16:04:08.266 | INFO     | alchemlyb.convergence.convergence:forward_backward_convergence:92 - Forward analysis: 90.00%
+2023-10-06 16:04:08.291 | INFO     | alchemlyb.convergence.convergence:forward_backward_convergence:111 - 0.74 +/- 1.01 kT
+2023-10-06 16:04:08.291 | INFO     | alchemlyb.convergence.convergence:forward_backward_convergence:92 - Forward analysis: 100.00%
+2023-10-06 16:04:08.317 | INFO     | alchemlyb.convergence.convergence:forward_backward_convergence:111 - 0.74 +/- 0.95 kT
+2023-10-06 16:04:08.317 | INFO     | alchemlyb.convergence.convergence:forward_backward_convergence:115 - Begin backward analysis
+2023-10-06 16:04:08.317 | INFO     | alchemlyb.convergence.convergence:forward_backward_convergence:119 - Backward analysis: 10.00%
+2023-10-06 16:04:08.339 | INFO     | alchemlyb.convergence.convergence:forward_backward_convergence:138 - -1.07 +/- 2.15 kT
+2023-10-06 16:04:08.339 | INFO     | alchemlyb.convergence.convergence:forward_backward_convergence:119 - Backward analysis: 20.00%
+2023-10-06 16:04:08.361 | INFO     | alchemlyb.convergence.convergence:forward_backward_convergence:138 - -2.10 +/- 1.53 kT
+2023-10-06 16:04:08.361 | INFO     | alchemlyb.convergence.convergence:forward_backward_convergence:119 - Backward analysis: 30.00%
+2023-10-06 16:04:08.387 | INFO     | alchemlyb.convergence.convergence:forward_backward_convergence:138 - -2.87 +/- 1.26 kT
+2023-10-06 16:04:08.387 | INFO     | alchemlyb.convergence.convergence:forward_backward_convergence:119 - Backward analysis: 40.00%
+2023-10-06 16:04:08.411 | INFO     | alchemlyb.convergence.convergence:forward_backward_convergence:138 - -2.43 +/- 1.10 kT
+2023-10-06 16:04:08.411 | INFO     | alchemlyb.convergence.convergence:forward_backward_convergence:119 - Backward analysis: 50.00%
+2023-10-06 16:04:08.442 | INFO     | alchemlyb.convergence.convergence:forward_backward_convergence:138 - -1.73 +/- 0.96 kT
+2023-10-06 16:04:08.443 | INFO     | alchemlyb.convergence.convergence:forward_backward_convergence:119 - Backward analysis: 60.00%
+2023-10-06 16:04:08.485 | INFO     | alchemlyb.convergence.convergence:forward_backward_convergence:138 - -1.97 +/- 0.90 kT
+2023-10-06 16:04:08.485 | INFO     | alchemlyb.convergence.convergence:forward_backward_convergence:119 - Backward analysis: 70.00%
+2023-10-06 16:04:08.521 | INFO     | alchemlyb.convergence.convergence:forward_backward_convergence:138 - -1.27 +/- 0.82 kT
+2023-10-06 16:04:08.521 | INFO     | alchemlyb.convergence.convergence:forward_backward_convergence:119 - Backward analysis: 80.00%
+2023-10-06 16:04:08.551 | INFO     | alchemlyb.convergence.convergence:forward_backward_convergence:138 - -0.71 +/- 0.76 kT
+2023-10-06 16:04:08.551 | INFO     | alchemlyb.convergence.convergence:forward_backward_convergence:119 - Backward analysis: 90.00%
+2023-10-06 16:04:08.640 | INFO     | alchemlyb.convergence.convergence:forward_backward_convergence:138 - -0.45 +/- 0.71 kT
+2023-10-06 16:04:08.641 | INFO     | alchemlyb.convergence.convergence:forward_backward_convergence:119 - Backward analysis: 100.00%
+2023-10-06 16:04:08.671 | INFO     | alchemlyb.convergence.convergence:forward_backward_convergence:138 - -0.54 +/- 0.70 kT
+2023-10-06 16:04:08.671 | INFO     | alchemlyb.workflows.abfe:check_convergence:806 - Plot convergence analysis to dF_t.pdf under ./.
+2023-10-06 16:05:08.190 | INFO     | alchemlyb.workflows.base:__init__:50 - Alchemlyb Version: f2.1.0
+2023-10-06 16:05:08.190 | INFO     | alchemlyb.workflows.base:__init__:51 - Set Temperature to 298 K.
+2023-10-06 16:05:08.190 | INFO     | alchemlyb.workflows.base:__init__:53 - Set Software to GROMACS.
+2023-10-06 16:05:08.190 | INFO     | alchemlyb.workflows.abfe:__init__:83 - Initialise Alchemlyb ABFE Workflow
+2023-10-06 16:05:08.191 | INFO     | alchemlyb.workflows.abfe:update_units:307 - Set unit to kcal/mol.
+2023-10-06 16:05:08.191 | INFO     | alchemlyb.workflows.abfe:__init__:85 - Finding files with prefix: dhdl, suffix: xvg under directory /home/cecchini/Methods/Alchemlyb/181L/ligand produced by GROMACS
+2023-10-06 16:05:08.191 | INFO     | alchemlyb.workflows.abfe:__init__:102 - Found 21 xvg files.
+2023-10-06 16:05:08.191 | INFO     | alchemlyb.workflows.abfe:__init__:103 - Unsorted file list: 
+ /home/cecchini/Methods/Alchemlyb/181L/ligand/dhdl_07.xvg
+/home/cecchini/Methods/Alchemlyb/181L/ligand/dhdl_06.xvg
+/home/cecchini/Methods/Alchemlyb/181L/ligand/dhdl_12.xvg
+/home/cecchini/Methods/Alchemlyb/181L/ligand/dhdl_01.xvg
+/home/cecchini/Methods/Alchemlyb/181L/ligand/dhdl_04.xvg
+/home/cecchini/Methods/Alchemlyb/181L/ligand/dhdl_14.xvg
+/home/cecchini/Methods/Alchemlyb/181L/ligand/dhdl_03.xvg
+/home/cecchini/Methods/Alchemlyb/181L/ligand/dhdl_19.xvg
+/home/cecchini/Methods/Alchemlyb/181L/ligand/dhdl_09.xvg
+/home/cecchini/Methods/Alchemlyb/181L/ligand/dhdl_05.xvg
+/home/cecchini/Methods/Alchemlyb/181L/ligand/dhdl_20.xvg
+/home/cecchini/Methods/Alchemlyb/181L/ligand/dhdl_11.xvg
+/home/cecchini/Methods/Alchemlyb/181L/ligand/dhdl_13.xvg
+/home/cecchini/Methods/Alchemlyb/181L/ligand/dhdl_18.xvg
+/home/cecchini/Methods/Alchemlyb/181L/ligand/dhdl_10.xvg
+/home/cecchini/Methods/Alchemlyb/181L/ligand/dhdl_08.xvg
+/home/cecchini/Methods/Alchemlyb/181L/ligand/dhdl_00.xvg
+/home/cecchini/Methods/Alchemlyb/181L/ligand/dhdl_16.xvg
+/home/cecchini/Methods/Alchemlyb/181L/ligand/dhdl_15.xvg
+/home/cecchini/Methods/Alchemlyb/181L/ligand/dhdl_02.xvg
+/home/cecchini/Methods/Alchemlyb/181L/ligand/dhdl_17.xvg
+2023-10-06 16:05:08.191 | INFO     | alchemlyb.workflows.abfe:__init__:106 - Using GROMACS parser to read the data.
+2023-10-06 16:05:08.201 | INFO     | alchemlyb.workflows.abfe:read:145 - Reading 21 lines of u_nk from /home/cecchini/Methods/Alchemlyb/181L/ligand/dhdl_07.xvg
+2023-10-06 16:05:08.208 | INFO     | alchemlyb.workflows.abfe:read:155 - Reading 21 lines of dhdl from /home/cecchini/Methods/Alchemlyb/181L/ligand/dhdl_07.xvg
+2023-10-06 16:05:08.216 | INFO     | alchemlyb.workflows.abfe:read:145 - Reading 21 lines of u_nk from /home/cecchini/Methods/Alchemlyb/181L/ligand/dhdl_06.xvg
+2023-10-06 16:05:08.222 | INFO     | alchemlyb.workflows.abfe:read:155 - Reading 21 lines of dhdl from /home/cecchini/Methods/Alchemlyb/181L/ligand/dhdl_06.xvg
+2023-10-06 16:05:08.231 | INFO     | alchemlyb.workflows.abfe:read:145 - Reading 21 lines of u_nk from /home/cecchini/Methods/Alchemlyb/181L/ligand/dhdl_12.xvg
+2023-10-06 16:05:08.237 | INFO     | alchemlyb.workflows.abfe:read:155 - Reading 21 lines of dhdl from /home/cecchini/Methods/Alchemlyb/181L/ligand/dhdl_12.xvg
+2023-10-06 16:05:08.245 | INFO     | alchemlyb.workflows.abfe:read:145 - Reading 21 lines of u_nk from /home/cecchini/Methods/Alchemlyb/181L/ligand/dhdl_01.xvg
+2023-10-06 16:05:08.252 | INFO     | alchemlyb.workflows.abfe:read:155 - Reading 21 lines of dhdl from /home/cecchini/Methods/Alchemlyb/181L/ligand/dhdl_01.xvg
+2023-10-06 16:05:08.260 | INFO     | alchemlyb.workflows.abfe:read:145 - Reading 21 lines of u_nk from /home/cecchini/Methods/Alchemlyb/181L/ligand/dhdl_04.xvg
+2023-10-06 16:05:08.266 | INFO     | alchemlyb.workflows.abfe:read:155 - Reading 21 lines of dhdl from /home/cecchini/Methods/Alchemlyb/181L/ligand/dhdl_04.xvg
+2023-10-06 16:05:08.275 | INFO     | alchemlyb.workflows.abfe:read:145 - Reading 21 lines of u_nk from /home/cecchini/Methods/Alchemlyb/181L/ligand/dhdl_14.xvg
+2023-10-06 16:05:08.281 | INFO     | alchemlyb.workflows.abfe:read:155 - Reading 21 lines of dhdl from /home/cecchini/Methods/Alchemlyb/181L/ligand/dhdl_14.xvg
+2023-10-06 16:05:08.289 | INFO     | alchemlyb.workflows.abfe:read:145 - Reading 21 lines of u_nk from /home/cecchini/Methods/Alchemlyb/181L/ligand/dhdl_03.xvg
+2023-10-06 16:05:08.296 | INFO     | alchemlyb.workflows.abfe:read:155 - Reading 21 lines of dhdl from /home/cecchini/Methods/Alchemlyb/181L/ligand/dhdl_03.xvg
+2023-10-06 16:05:08.304 | INFO     | alchemlyb.workflows.abfe:read:145 - Reading 21 lines of u_nk from /home/cecchini/Methods/Alchemlyb/181L/ligand/dhdl_19.xvg
+2023-10-06 16:05:08.310 | INFO     | alchemlyb.workflows.abfe:read:155 - Reading 21 lines of dhdl from /home/cecchini/Methods/Alchemlyb/181L/ligand/dhdl_19.xvg
+2023-10-06 16:05:08.318 | INFO     | alchemlyb.workflows.abfe:read:145 - Reading 21 lines of u_nk from /home/cecchini/Methods/Alchemlyb/181L/ligand/dhdl_09.xvg
+2023-10-06 16:05:08.325 | INFO     | alchemlyb.workflows.abfe:read:155 - Reading 21 lines of dhdl from /home/cecchini/Methods/Alchemlyb/181L/ligand/dhdl_09.xvg
+2023-10-06 16:05:08.333 | INFO     | alchemlyb.workflows.abfe:read:145 - Reading 21 lines of u_nk from /home/cecchini/Methods/Alchemlyb/181L/ligand/dhdl_05.xvg
+2023-10-06 16:05:08.339 | INFO     | alchemlyb.workflows.abfe:read:155 - Reading 21 lines of dhdl from /home/cecchini/Methods/Alchemlyb/181L/ligand/dhdl_05.xvg
+2023-10-06 16:05:08.347 | INFO     | alchemlyb.workflows.abfe:read:145 - Reading 21 lines of u_nk from /home/cecchini/Methods/Alchemlyb/181L/ligand/dhdl_20.xvg
+2023-10-06 16:05:08.353 | INFO     | alchemlyb.workflows.abfe:read:155 - Reading 21 lines of dhdl from /home/cecchini/Methods/Alchemlyb/181L/ligand/dhdl_20.xvg
+2023-10-06 16:05:08.362 | INFO     | alchemlyb.workflows.abfe:read:145 - Reading 21 lines of u_nk from /home/cecchini/Methods/Alchemlyb/181L/ligand/dhdl_11.xvg
+2023-10-06 16:05:08.368 | INFO     | alchemlyb.workflows.abfe:read:155 - Reading 21 lines of dhdl from /home/cecchini/Methods/Alchemlyb/181L/ligand/dhdl_11.xvg
+2023-10-06 16:05:08.377 | INFO     | alchemlyb.workflows.abfe:read:145 - Reading 21 lines of u_nk from /home/cecchini/Methods/Alchemlyb/181L/ligand/dhdl_13.xvg
+2023-10-06 16:05:08.383 | INFO     | alchemlyb.workflows.abfe:read:155 - Reading 21 lines of dhdl from /home/cecchini/Methods/Alchemlyb/181L/ligand/dhdl_13.xvg
+2023-10-06 16:05:08.392 | INFO     | alchemlyb.workflows.abfe:read:145 - Reading 21 lines of u_nk from /home/cecchini/Methods/Alchemlyb/181L/ligand/dhdl_18.xvg
+2023-10-06 16:05:08.398 | INFO     | alchemlyb.workflows.abfe:read:155 - Reading 21 lines of dhdl from /home/cecchini/Methods/Alchemlyb/181L/ligand/dhdl_18.xvg
+2023-10-06 16:05:08.407 | INFO     | alchemlyb.workflows.abfe:read:145 - Reading 21 lines of u_nk from /home/cecchini/Methods/Alchemlyb/181L/ligand/dhdl_10.xvg
+2023-10-06 16:05:08.413 | INFO     | alchemlyb.workflows.abfe:read:155 - Reading 21 lines of dhdl from /home/cecchini/Methods/Alchemlyb/181L/ligand/dhdl_10.xvg
+2023-10-06 16:05:08.421 | INFO     | alchemlyb.workflows.abfe:read:145 - Reading 21 lines of u_nk from /home/cecchini/Methods/Alchemlyb/181L/ligand/dhdl_08.xvg
+2023-10-06 16:05:08.428 | INFO     | alchemlyb.workflows.abfe:read:155 - Reading 21 lines of dhdl from /home/cecchini/Methods/Alchemlyb/181L/ligand/dhdl_08.xvg
+2023-10-06 16:05:08.436 | INFO     | alchemlyb.workflows.abfe:read:145 - Reading 21 lines of u_nk from /home/cecchini/Methods/Alchemlyb/181L/ligand/dhdl_00.xvg
+2023-10-06 16:05:08.442 | INFO     | alchemlyb.workflows.abfe:read:155 - Reading 21 lines of dhdl from /home/cecchini/Methods/Alchemlyb/181L/ligand/dhdl_00.xvg
+2023-10-06 16:05:08.450 | INFO     | alchemlyb.workflows.abfe:read:145 - Reading 21 lines of u_nk from /home/cecchini/Methods/Alchemlyb/181L/ligand/dhdl_16.xvg
+2023-10-06 16:05:08.457 | INFO     | alchemlyb.workflows.abfe:read:155 - Reading 21 lines of dhdl from /home/cecchini/Methods/Alchemlyb/181L/ligand/dhdl_16.xvg
+2023-10-06 16:05:08.466 | INFO     | alchemlyb.workflows.abfe:read:145 - Reading 21 lines of u_nk from /home/cecchini/Methods/Alchemlyb/181L/ligand/dhdl_15.xvg
+2023-10-06 16:05:08.473 | INFO     | alchemlyb.workflows.abfe:read:155 - Reading 21 lines of dhdl from /home/cecchini/Methods/Alchemlyb/181L/ligand/dhdl_15.xvg
+2023-10-06 16:05:08.481 | INFO     | alchemlyb.workflows.abfe:read:145 - Reading 21 lines of u_nk from /home/cecchini/Methods/Alchemlyb/181L/ligand/dhdl_02.xvg
+2023-10-06 16:05:08.487 | INFO     | alchemlyb.workflows.abfe:read:155 - Reading 21 lines of dhdl from /home/cecchini/Methods/Alchemlyb/181L/ligand/dhdl_02.xvg
+2023-10-06 16:05:08.495 | INFO     | alchemlyb.workflows.abfe:read:145 - Reading 21 lines of u_nk from /home/cecchini/Methods/Alchemlyb/181L/ligand/dhdl_17.xvg
+2023-10-06 16:05:08.501 | INFO     | alchemlyb.workflows.abfe:read:155 - Reading 21 lines of dhdl from /home/cecchini/Methods/Alchemlyb/181L/ligand/dhdl_17.xvg
+2023-10-06 16:05:08.502 | INFO     | alchemlyb.workflows.abfe:read:164 - Sort files according to the u_nk.
+2023-10-06 16:05:08.513 | INFO     | alchemlyb.workflows.abfe:read:184 - Sorted file list: 
+/home/cecchini/Methods/Alchemlyb/181L/ligand/dhdl_00.xvg
+/home/cecchini/Methods/Alchemlyb/181L/ligand/dhdl_01.xvg
+/home/cecchini/Methods/Alchemlyb/181L/ligand/dhdl_02.xvg
+/home/cecchini/Methods/Alchemlyb/181L/ligand/dhdl_03.xvg
+/home/cecchini/Methods/Alchemlyb/181L/ligand/dhdl_04.xvg
+/home/cecchini/Methods/Alchemlyb/181L/ligand/dhdl_05.xvg
+/home/cecchini/Methods/Alchemlyb/181L/ligand/dhdl_06.xvg
+/home/cecchini/Methods/Alchemlyb/181L/ligand/dhdl_07.xvg
+/home/cecchini/Methods/Alchemlyb/181L/ligand/dhdl_08.xvg
+/home/cecchini/Methods/Alchemlyb/181L/ligand/dhdl_09.xvg
+/home/cecchini/Methods/Alchemlyb/181L/ligand/dhdl_10.xvg
+/home/cecchini/Methods/Alchemlyb/181L/ligand/dhdl_11.xvg
+/home/cecchini/Methods/Alchemlyb/181L/ligand/dhdl_12.xvg
+/home/cecchini/Methods/Alchemlyb/181L/ligand/dhdl_13.xvg
+/home/cecchini/Methods/Alchemlyb/181L/ligand/dhdl_14.xvg
+/home/cecchini/Methods/Alchemlyb/181L/ligand/dhdl_15.xvg
+/home/cecchini/Methods/Alchemlyb/181L/ligand/dhdl_16.xvg
+/home/cecchini/Methods/Alchemlyb/181L/ligand/dhdl_17.xvg
+/home/cecchini/Methods/Alchemlyb/181L/ligand/dhdl_18.xvg
+/home/cecchini/Methods/Alchemlyb/181L/ligand/dhdl_19.xvg
+/home/cecchini/Methods/Alchemlyb/181L/ligand/dhdl_20.xvg
+2023-10-06 16:05:08.514 | INFO     | alchemlyb.workflows.abfe:preprocess:333 - Start preprocessing with skiptime of 10 uncorrelation method of dhdl and threshold of 50
+2023-10-06 16:05:08.514 | INFO     | alchemlyb.workflows.abfe:preprocess:339 - Processing the u_nk data set with skiptime of 10.
+2023-10-06 16:05:08.522 | DEBUG    | alchemlyb.preprocessing.subsampling:equilibrium_detection:599 - Running equilibration detection.
+2023-10-06 16:05:08.524 | DEBUG    | alchemlyb.preprocessing.subsampling:equilibrium_detection:601 - Start index: 0.
+2023-10-06 16:05:08.524 | DEBUG    | alchemlyb.preprocessing.subsampling:equilibrium_detection:602 - Statistical inefficiency: 1.00.
+2023-10-06 16:05:08.524 | DEBUG    | alchemlyb.preprocessing.subsampling:equilibrium_detection:608 - Number of uncorrelated samples: 19.
+2023-10-06 16:05:08.525 | WARNING  | alchemlyb.workflows.abfe:preprocess:349 - Number of u_nk 19 for state 0 is less than the threshold 50.
+2023-10-06 16:05:08.525 | INFO     | alchemlyb.workflows.abfe:preprocess:354 - Take all the u_nk for state 0.
+2023-10-06 16:05:08.532 | DEBUG    | alchemlyb.preprocessing.subsampling:equilibrium_detection:599 - Running equilibration detection.
+2023-10-06 16:05:08.532 | DEBUG    | alchemlyb.preprocessing.subsampling:equilibrium_detection:601 - Start index: 5.
+2023-10-06 16:05:08.533 | DEBUG    | alchemlyb.preprocessing.subsampling:equilibrium_detection:602 - Statistical inefficiency: 1.00.
+2023-10-06 16:05:08.533 | DEBUG    | alchemlyb.preprocessing.subsampling:equilibrium_detection:608 - Number of uncorrelated samples: 14.
+2023-10-06 16:05:08.533 | WARNING  | alchemlyb.workflows.abfe:preprocess:349 - Number of u_nk 14 for state 1 is less than the threshold 50.
+2023-10-06 16:05:08.534 | INFO     | alchemlyb.workflows.abfe:preprocess:354 - Take all the u_nk for state 1.
+2023-10-06 16:05:08.540 | DEBUG    | alchemlyb.preprocessing.subsampling:equilibrium_detection:599 - Running equilibration detection.
+2023-10-06 16:05:08.541 | DEBUG    | alchemlyb.preprocessing.subsampling:equilibrium_detection:601 - Start index: 0.
+2023-10-06 16:05:08.541 | DEBUG    | alchemlyb.preprocessing.subsampling:equilibrium_detection:602 - Statistical inefficiency: 1.00.
+2023-10-06 16:05:08.541 | DEBUG    | alchemlyb.preprocessing.subsampling:equilibrium_detection:608 - Number of uncorrelated samples: 19.
+2023-10-06 16:05:08.542 | WARNING  | alchemlyb.workflows.abfe:preprocess:349 - Number of u_nk 19 for state 2 is less than the threshold 50.
+2023-10-06 16:05:08.542 | INFO     | alchemlyb.workflows.abfe:preprocess:354 - Take all the u_nk for state 2.
+2023-10-06 16:05:08.549 | DEBUG    | alchemlyb.preprocessing.subsampling:equilibrium_detection:599 - Running equilibration detection.
+2023-10-06 16:05:08.550 | DEBUG    | alchemlyb.preprocessing.subsampling:equilibrium_detection:601 - Start index: 2.
+2023-10-06 16:05:08.550 | DEBUG    | alchemlyb.preprocessing.subsampling:equilibrium_detection:602 - Statistical inefficiency: 1.00.
+2023-10-06 16:05:08.550 | DEBUG    | alchemlyb.preprocessing.subsampling:equilibrium_detection:608 - Number of uncorrelated samples: 17.
+2023-10-06 16:05:08.551 | WARNING  | alchemlyb.workflows.abfe:preprocess:349 - Number of u_nk 17 for state 3 is less than the threshold 50.
+2023-10-06 16:05:08.551 | INFO     | alchemlyb.workflows.abfe:preprocess:354 - Take all the u_nk for state 3.
+2023-10-06 16:05:08.557 | DEBUG    | alchemlyb.preprocessing.subsampling:equilibrium_detection:599 - Running equilibration detection.
+2023-10-06 16:05:08.558 | DEBUG    | alchemlyb.preprocessing.subsampling:equilibrium_detection:601 - Start index: 2.
+2023-10-06 16:05:08.558 | DEBUG    | alchemlyb.preprocessing.subsampling:equilibrium_detection:602 - Statistical inefficiency: 1.04.
+2023-10-06 16:05:08.558 | DEBUG    | alchemlyb.preprocessing.subsampling:equilibrium_detection:608 - Number of uncorrelated samples: 16.
+2023-10-06 16:05:08.559 | WARNING  | alchemlyb.workflows.abfe:preprocess:349 - Number of u_nk 16 for state 4 is less than the threshold 50.
+2023-10-06 16:05:08.559 | INFO     | alchemlyb.workflows.abfe:preprocess:354 - Take all the u_nk for state 4.
+2023-10-06 16:05:08.566 | DEBUG    | alchemlyb.preprocessing.subsampling:equilibrium_detection:599 - Running equilibration detection.
+2023-10-06 16:05:08.568 | DEBUG    | alchemlyb.preprocessing.subsampling:equilibrium_detection:601 - Start index: 0.
+2023-10-06 16:05:08.568 | DEBUG    | alchemlyb.preprocessing.subsampling:equilibrium_detection:602 - Statistical inefficiency: 1.00.
+2023-10-06 16:05:08.569 | DEBUG    | alchemlyb.preprocessing.subsampling:equilibrium_detection:608 - Number of uncorrelated samples: 19.
+2023-10-06 16:05:08.569 | WARNING  | alchemlyb.workflows.abfe:preprocess:349 - Number of u_nk 19 for state 5 is less than the threshold 50.
+2023-10-06 16:05:08.570 | INFO     | alchemlyb.workflows.abfe:preprocess:354 - Take all the u_nk for state 5.
+2023-10-06 16:05:08.577 | DEBUG    | alchemlyb.preprocessing.subsampling:equilibrium_detection:599 - Running equilibration detection.
+2023-10-06 16:05:08.578 | DEBUG    | alchemlyb.preprocessing.subsampling:equilibrium_detection:601 - Start index: 0.
+2023-10-06 16:05:08.578 | DEBUG    | alchemlyb.preprocessing.subsampling:equilibrium_detection:602 - Statistical inefficiency: 1.00.
+2023-10-06 16:05:08.578 | DEBUG    | alchemlyb.preprocessing.subsampling:equilibrium_detection:608 - Number of uncorrelated samples: 19.
+2023-10-06 16:05:08.579 | WARNING  | alchemlyb.workflows.abfe:preprocess:349 - Number of u_nk 19 for state 6 is less than the threshold 50.
+2023-10-06 16:05:08.579 | INFO     | alchemlyb.workflows.abfe:preprocess:354 - Take all the u_nk for state 6.
+2023-10-06 16:05:08.585 | DEBUG    | alchemlyb.preprocessing.subsampling:equilibrium_detection:599 - Running equilibration detection.
+2023-10-06 16:05:08.586 | DEBUG    | alchemlyb.preprocessing.subsampling:equilibrium_detection:601 - Start index: 0.
+2023-10-06 16:05:08.586 | DEBUG    | alchemlyb.preprocessing.subsampling:equilibrium_detection:602 - Statistical inefficiency: 1.00.
+2023-10-06 16:05:08.586 | DEBUG    | alchemlyb.preprocessing.subsampling:equilibrium_detection:608 - Number of uncorrelated samples: 19.
+2023-10-06 16:05:08.587 | WARNING  | alchemlyb.workflows.abfe:preprocess:349 - Number of u_nk 19 for state 7 is less than the threshold 50.
+2023-10-06 16:05:08.587 | INFO     | alchemlyb.workflows.abfe:preprocess:354 - Take all the u_nk for state 7.
+2023-10-06 16:05:08.593 | DEBUG    | alchemlyb.preprocessing.subsampling:equilibrium_detection:599 - Running equilibration detection.
+2023-10-06 16:05:08.594 | DEBUG    | alchemlyb.preprocessing.subsampling:equilibrium_detection:601 - Start index: 0.
+2023-10-06 16:05:08.594 | DEBUG    | alchemlyb.preprocessing.subsampling:equilibrium_detection:602 - Statistical inefficiency: 1.00.
+2023-10-06 16:05:08.595 | DEBUG    | alchemlyb.preprocessing.subsampling:equilibrium_detection:608 - Number of uncorrelated samples: 19.
+2023-10-06 16:05:08.595 | WARNING  | alchemlyb.workflows.abfe:preprocess:349 - Number of u_nk 19 for state 8 is less than the threshold 50.
+2023-10-06 16:05:08.595 | INFO     | alchemlyb.workflows.abfe:preprocess:354 - Take all the u_nk for state 8.
+2023-10-06 16:05:08.602 | DEBUG    | alchemlyb.preprocessing.subsampling:equilibrium_detection:599 - Running equilibration detection.
+2023-10-06 16:05:08.603 | DEBUG    | alchemlyb.preprocessing.subsampling:equilibrium_detection:601 - Start index: 11.
+2023-10-06 16:05:08.603 | DEBUG    | alchemlyb.preprocessing.subsampling:equilibrium_detection:602 - Statistical inefficiency: 1.35.
+2023-10-06 16:05:08.603 | DEBUG    | alchemlyb.preprocessing.subsampling:equilibrium_detection:608 - Number of uncorrelated samples: 6.
+2023-10-06 16:05:08.604 | WARNING  | alchemlyb.workflows.abfe:preprocess:349 - Number of u_nk 6 for state 9 is less than the threshold 50.
+2023-10-06 16:05:08.604 | INFO     | alchemlyb.workflows.abfe:preprocess:354 - Take all the u_nk for state 9.
+2023-10-06 16:05:08.611 | DEBUG    | alchemlyb.preprocessing.subsampling:equilibrium_detection:599 - Running equilibration detection.
+2023-10-06 16:05:08.612 | DEBUG    | alchemlyb.preprocessing.subsampling:equilibrium_detection:601 - Start index: 0.
+2023-10-06 16:05:08.612 | DEBUG    | alchemlyb.preprocessing.subsampling:equilibrium_detection:602 - Statistical inefficiency: 1.02.
+2023-10-06 16:05:08.612 | DEBUG    | alchemlyb.preprocessing.subsampling:equilibrium_detection:608 - Number of uncorrelated samples: 19.
+2023-10-06 16:05:08.613 | WARNING  | alchemlyb.workflows.abfe:preprocess:349 - Number of u_nk 19 for state 10 is less than the threshold 50.
+2023-10-06 16:05:08.613 | INFO     | alchemlyb.workflows.abfe:preprocess:354 - Take all the u_nk for state 10.
+2023-10-06 16:05:08.619 | DEBUG    | alchemlyb.preprocessing.subsampling:equilibrium_detection:599 - Running equilibration detection.
+2023-10-06 16:05:08.620 | DEBUG    | alchemlyb.preprocessing.subsampling:equilibrium_detection:601 - Start index: 4.
+2023-10-06 16:05:08.620 | DEBUG    | alchemlyb.preprocessing.subsampling:equilibrium_detection:602 - Statistical inefficiency: 1.00.
+2023-10-06 16:05:08.621 | DEBUG    | alchemlyb.preprocessing.subsampling:equilibrium_detection:608 - Number of uncorrelated samples: 15.
+2023-10-06 16:05:08.621 | WARNING  | alchemlyb.workflows.abfe:preprocess:349 - Number of u_nk 15 for state 11 is less than the threshold 50.
+2023-10-06 16:05:08.621 | INFO     | alchemlyb.workflows.abfe:preprocess:354 - Take all the u_nk for state 11.
+2023-10-06 16:05:08.628 | DEBUG    | alchemlyb.preprocessing.subsampling:equilibrium_detection:599 - Running equilibration detection.
+2023-10-06 16:05:08.629 | DEBUG    | alchemlyb.preprocessing.subsampling:equilibrium_detection:601 - Start index: 0.
+2023-10-06 16:05:08.629 | DEBUG    | alchemlyb.preprocessing.subsampling:equilibrium_detection:602 - Statistical inefficiency: 1.00.
+2023-10-06 16:05:08.630 | DEBUG    | alchemlyb.preprocessing.subsampling:equilibrium_detection:608 - Number of uncorrelated samples: 19.
+2023-10-06 16:05:08.630 | WARNING  | alchemlyb.workflows.abfe:preprocess:349 - Number of u_nk 19 for state 12 is less than the threshold 50.
+2023-10-06 16:05:08.630 | INFO     | alchemlyb.workflows.abfe:preprocess:354 - Take all the u_nk for state 12.
+2023-10-06 16:05:08.638 | DEBUG    | alchemlyb.preprocessing.subsampling:equilibrium_detection:599 - Running equilibration detection.
+2023-10-06 16:05:08.639 | DEBUG    | alchemlyb.preprocessing.subsampling:equilibrium_detection:601 - Start index: 5.
+2023-10-06 16:05:08.639 | DEBUG    | alchemlyb.preprocessing.subsampling:equilibrium_detection:602 - Statistical inefficiency: 1.00.
+2023-10-06 16:05:08.639 | DEBUG    | alchemlyb.preprocessing.subsampling:equilibrium_detection:608 - Number of uncorrelated samples: 14.
+2023-10-06 16:05:08.639 | WARNING  | alchemlyb.workflows.abfe:preprocess:349 - Number of u_nk 14 for state 13 is less than the threshold 50.
+2023-10-06 16:05:08.640 | INFO     | alchemlyb.workflows.abfe:preprocess:354 - Take all the u_nk for state 13.
+2023-10-06 16:05:08.646 | DEBUG    | alchemlyb.preprocessing.subsampling:equilibrium_detection:599 - Running equilibration detection.
+2023-10-06 16:05:08.647 | DEBUG    | alchemlyb.preprocessing.subsampling:equilibrium_detection:601 - Start index: 5.
+2023-10-06 16:05:08.647 | DEBUG    | alchemlyb.preprocessing.subsampling:equilibrium_detection:602 - Statistical inefficiency: 1.00.
+2023-10-06 16:05:08.647 | DEBUG    | alchemlyb.preprocessing.subsampling:equilibrium_detection:608 - Number of uncorrelated samples: 14.
+2023-10-06 16:05:08.648 | WARNING  | alchemlyb.workflows.abfe:preprocess:349 - Number of u_nk 14 for state 14 is less than the threshold 50.
+2023-10-06 16:05:08.648 | INFO     | alchemlyb.workflows.abfe:preprocess:354 - Take all the u_nk for state 14.
+2023-10-06 16:05:08.654 | DEBUG    | alchemlyb.preprocessing.subsampling:equilibrium_detection:599 - Running equilibration detection.
+2023-10-06 16:05:08.655 | DEBUG    | alchemlyb.preprocessing.subsampling:equilibrium_detection:601 - Start index: 0.
+2023-10-06 16:05:08.655 | DEBUG    | alchemlyb.preprocessing.subsampling:equilibrium_detection:602 - Statistical inefficiency: 1.00.
+2023-10-06 16:05:08.655 | DEBUG    | alchemlyb.preprocessing.subsampling:equilibrium_detection:608 - Number of uncorrelated samples: 19.
+2023-10-06 16:05:08.656 | WARNING  | alchemlyb.workflows.abfe:preprocess:349 - Number of u_nk 19 for state 15 is less than the threshold 50.
+2023-10-06 16:05:08.656 | INFO     | alchemlyb.workflows.abfe:preprocess:354 - Take all the u_nk for state 15.
+2023-10-06 16:05:08.663 | DEBUG    | alchemlyb.preprocessing.subsampling:equilibrium_detection:599 - Running equilibration detection.
+2023-10-06 16:05:08.663 | DEBUG    | alchemlyb.preprocessing.subsampling:equilibrium_detection:601 - Start index: 7.
+2023-10-06 16:05:08.664 | DEBUG    | alchemlyb.preprocessing.subsampling:equilibrium_detection:602 - Statistical inefficiency: 1.00.
+2023-10-06 16:05:08.664 | DEBUG    | alchemlyb.preprocessing.subsampling:equilibrium_detection:608 - Number of uncorrelated samples: 12.
+2023-10-06 16:05:08.664 | WARNING  | alchemlyb.workflows.abfe:preprocess:349 - Number of u_nk 12 for state 16 is less than the threshold 50.
+2023-10-06 16:05:08.664 | INFO     | alchemlyb.workflows.abfe:preprocess:354 - Take all the u_nk for state 16.
+2023-10-06 16:05:08.671 | DEBUG    | alchemlyb.preprocessing.subsampling:equilibrium_detection:599 - Running equilibration detection.
+2023-10-06 16:05:08.672 | DEBUG    | alchemlyb.preprocessing.subsampling:equilibrium_detection:601 - Start index: 1.
+2023-10-06 16:05:08.672 | DEBUG    | alchemlyb.preprocessing.subsampling:equilibrium_detection:602 - Statistical inefficiency: 2.14.
+2023-10-06 16:05:08.672 | DEBUG    | alchemlyb.preprocessing.subsampling:equilibrium_detection:608 - Number of uncorrelated samples: 9.
+2023-10-06 16:05:08.673 | WARNING  | alchemlyb.workflows.abfe:preprocess:349 - Number of u_nk 9 for state 17 is less than the threshold 50.
+2023-10-06 16:05:08.673 | INFO     | alchemlyb.workflows.abfe:preprocess:354 - Take all the u_nk for state 17.
+2023-10-06 16:05:08.679 | DEBUG    | alchemlyb.preprocessing.subsampling:equilibrium_detection:599 - Running equilibration detection.
+2023-10-06 16:05:08.680 | DEBUG    | alchemlyb.preprocessing.subsampling:equilibrium_detection:601 - Start index: 0.
+2023-10-06 16:05:08.680 | DEBUG    | alchemlyb.preprocessing.subsampling:equilibrium_detection:602 - Statistical inefficiency: 1.00.
+2023-10-06 16:05:08.680 | DEBUG    | alchemlyb.preprocessing.subsampling:equilibrium_detection:608 - Number of uncorrelated samples: 19.
+2023-10-06 16:05:08.681 | WARNING  | alchemlyb.workflows.abfe:preprocess:349 - Number of u_nk 19 for state 18 is less than the threshold 50.
+2023-10-06 16:05:08.681 | INFO     | alchemlyb.workflows.abfe:preprocess:354 - Take all the u_nk for state 18.
+2023-10-06 16:05:08.687 | DEBUG    | alchemlyb.preprocessing.subsampling:equilibrium_detection:599 - Running equilibration detection.
+2023-10-06 16:05:08.688 | DEBUG    | alchemlyb.preprocessing.subsampling:equilibrium_detection:601 - Start index: 0.
+2023-10-06 16:05:08.688 | DEBUG    | alchemlyb.preprocessing.subsampling:equilibrium_detection:602 - Statistical inefficiency: 1.00.
+2023-10-06 16:05:08.689 | DEBUG    | alchemlyb.preprocessing.subsampling:equilibrium_detection:608 - Number of uncorrelated samples: 19.
+2023-10-06 16:05:08.689 | WARNING  | alchemlyb.workflows.abfe:preprocess:349 - Number of u_nk 19 for state 19 is less than the threshold 50.
+2023-10-06 16:05:08.689 | INFO     | alchemlyb.workflows.abfe:preprocess:354 - Take all the u_nk for state 19.
+2023-10-06 16:05:08.695 | DEBUG    | alchemlyb.preprocessing.subsampling:equilibrium_detection:599 - Running equilibration detection.
+2023-10-06 16:05:08.696 | DEBUG    | alchemlyb.preprocessing.subsampling:equilibrium_detection:601 - Start index: 0.
+2023-10-06 16:05:08.696 | DEBUG    | alchemlyb.preprocessing.subsampling:equilibrium_detection:602 - Statistical inefficiency: 1.00.
+2023-10-06 16:05:08.697 | DEBUG    | alchemlyb.preprocessing.subsampling:equilibrium_detection:608 - Number of uncorrelated samples: 19.
+2023-10-06 16:05:08.697 | WARNING  | alchemlyb.workflows.abfe:preprocess:349 - Number of u_nk 19 for state 20 is less than the threshold 50.
+2023-10-06 16:05:08.697 | INFO     | alchemlyb.workflows.abfe:preprocess:354 - Take all the u_nk for state 20.
+2023-10-06 16:05:08.703 | DEBUG    | alchemlyb.preprocessing.subsampling:equilibrium_detection:599 - Running equilibration detection.
+2023-10-06 16:05:08.703 | DEBUG    | alchemlyb.preprocessing.subsampling:equilibrium_detection:601 - Start index: 0.
+2023-10-06 16:05:08.704 | DEBUG    | alchemlyb.preprocessing.subsampling:equilibrium_detection:602 - Statistical inefficiency: 1.00.
+2023-10-06 16:05:08.704 | DEBUG    | alchemlyb.preprocessing.subsampling:equilibrium_detection:608 - Number of uncorrelated samples: 19.
+2023-10-06 16:05:08.704 | WARNING  | alchemlyb.workflows.abfe:preprocess:371 - Number of dHdl 19 for state 0 is less than the threshold 50.
+2023-10-06 16:05:08.704 | INFO     | alchemlyb.workflows.abfe:preprocess:376 - Take all the dHdl for state 0.
+2023-10-06 16:05:08.710 | DEBUG    | alchemlyb.preprocessing.subsampling:equilibrium_detection:599 - Running equilibration detection.
+2023-10-06 16:05:08.710 | DEBUG    | alchemlyb.preprocessing.subsampling:equilibrium_detection:601 - Start index: 0.
+2023-10-06 16:05:08.710 | DEBUG    | alchemlyb.preprocessing.subsampling:equilibrium_detection:602 - Statistical inefficiency: 1.00.
+2023-10-06 16:05:08.711 | DEBUG    | alchemlyb.preprocessing.subsampling:equilibrium_detection:608 - Number of uncorrelated samples: 19.
+2023-10-06 16:05:08.711 | WARNING  | alchemlyb.workflows.abfe:preprocess:371 - Number of dHdl 19 for state 1 is less than the threshold 50.
+2023-10-06 16:05:08.711 | INFO     | alchemlyb.workflows.abfe:preprocess:376 - Take all the dHdl for state 1.
+2023-10-06 16:05:08.716 | DEBUG    | alchemlyb.preprocessing.subsampling:equilibrium_detection:599 - Running equilibration detection.
+2023-10-06 16:05:08.717 | DEBUG    | alchemlyb.preprocessing.subsampling:equilibrium_detection:601 - Start index: 0.
+2023-10-06 16:05:08.717 | DEBUG    | alchemlyb.preprocessing.subsampling:equilibrium_detection:602 - Statistical inefficiency: 1.00.
+2023-10-06 16:05:08.718 | DEBUG    | alchemlyb.preprocessing.subsampling:equilibrium_detection:608 - Number of uncorrelated samples: 19.
+2023-10-06 16:05:08.718 | WARNING  | alchemlyb.workflows.abfe:preprocess:371 - Number of dHdl 19 for state 2 is less than the threshold 50.
+2023-10-06 16:05:08.718 | INFO     | alchemlyb.workflows.abfe:preprocess:376 - Take all the dHdl for state 2.
+2023-10-06 16:05:08.723 | DEBUG    | alchemlyb.preprocessing.subsampling:equilibrium_detection:599 - Running equilibration detection.
+2023-10-06 16:05:08.724 | DEBUG    | alchemlyb.preprocessing.subsampling:equilibrium_detection:601 - Start index: 0.
+2023-10-06 16:05:08.724 | DEBUG    | alchemlyb.preprocessing.subsampling:equilibrium_detection:602 - Statistical inefficiency: 1.00.
+2023-10-06 16:05:08.725 | DEBUG    | alchemlyb.preprocessing.subsampling:equilibrium_detection:608 - Number of uncorrelated samples: 19.
+2023-10-06 16:05:08.725 | WARNING  | alchemlyb.workflows.abfe:preprocess:371 - Number of dHdl 19 for state 3 is less than the threshold 50.
+2023-10-06 16:05:08.725 | INFO     | alchemlyb.workflows.abfe:preprocess:376 - Take all the dHdl for state 3.
+2023-10-06 16:05:08.731 | DEBUG    | alchemlyb.preprocessing.subsampling:equilibrium_detection:599 - Running equilibration detection.
+2023-10-06 16:05:08.732 | DEBUG    | alchemlyb.preprocessing.subsampling:equilibrium_detection:601 - Start index: 10.
+2023-10-06 16:05:08.732 | DEBUG    | alchemlyb.preprocessing.subsampling:equilibrium_detection:602 - Statistical inefficiency: 1.00.
+2023-10-06 16:05:08.732 | DEBUG    | alchemlyb.preprocessing.subsampling:equilibrium_detection:608 - Number of uncorrelated samples: 9.
+2023-10-06 16:05:08.732 | WARNING  | alchemlyb.workflows.abfe:preprocess:371 - Number of dHdl 9 for state 4 is less than the threshold 50.
+2023-10-06 16:05:08.732 | INFO     | alchemlyb.workflows.abfe:preprocess:376 - Take all the dHdl for state 4.
+2023-10-06 16:05:08.738 | DEBUG    | alchemlyb.preprocessing.subsampling:equilibrium_detection:599 - Running equilibration detection.
+2023-10-06 16:05:08.739 | DEBUG    | alchemlyb.preprocessing.subsampling:equilibrium_detection:601 - Start index: 0.
+2023-10-06 16:05:08.739 | DEBUG    | alchemlyb.preprocessing.subsampling:equilibrium_detection:602 - Statistical inefficiency: 1.00.
+2023-10-06 16:05:08.739 | DEBUG    | alchemlyb.preprocessing.subsampling:equilibrium_detection:608 - Number of uncorrelated samples: 19.
+2023-10-06 16:05:08.740 | WARNING  | alchemlyb.workflows.abfe:preprocess:371 - Number of dHdl 19 for state 5 is less than the threshold 50.
+2023-10-06 16:05:08.740 | INFO     | alchemlyb.workflows.abfe:preprocess:376 - Take all the dHdl for state 5.
+2023-10-06 16:05:08.745 | DEBUG    | alchemlyb.preprocessing.subsampling:equilibrium_detection:599 - Running equilibration detection.
+2023-10-06 16:05:08.746 | DEBUG    | alchemlyb.preprocessing.subsampling:equilibrium_detection:601 - Start index: 0.
+2023-10-06 16:05:08.746 | DEBUG    | alchemlyb.preprocessing.subsampling:equilibrium_detection:602 - Statistical inefficiency: 1.00.
+2023-10-06 16:05:08.746 | DEBUG    | alchemlyb.preprocessing.subsampling:equilibrium_detection:608 - Number of uncorrelated samples: 19.
+2023-10-06 16:05:08.746 | WARNING  | alchemlyb.workflows.abfe:preprocess:371 - Number of dHdl 19 for state 6 is less than the threshold 50.
+2023-10-06 16:05:08.746 | INFO     | alchemlyb.workflows.abfe:preprocess:376 - Take all the dHdl for state 6.
+2023-10-06 16:05:08.752 | DEBUG    | alchemlyb.preprocessing.subsampling:equilibrium_detection:599 - Running equilibration detection.
+2023-10-06 16:05:08.753 | DEBUG    | alchemlyb.preprocessing.subsampling:equilibrium_detection:601 - Start index: 0.
+2023-10-06 16:05:08.753 | DEBUG    | alchemlyb.preprocessing.subsampling:equilibrium_detection:602 - Statistical inefficiency: 1.00.
+2023-10-06 16:05:08.753 | DEBUG    | alchemlyb.preprocessing.subsampling:equilibrium_detection:608 - Number of uncorrelated samples: 19.
+2023-10-06 16:05:08.753 | WARNING  | alchemlyb.workflows.abfe:preprocess:371 - Number of dHdl 19 for state 7 is less than the threshold 50.
+2023-10-06 16:05:08.753 | INFO     | alchemlyb.workflows.abfe:preprocess:376 - Take all the dHdl for state 7.
+2023-10-06 16:05:08.759 | DEBUG    | alchemlyb.preprocessing.subsampling:equilibrium_detection:599 - Running equilibration detection.
+2023-10-06 16:05:08.760 | DEBUG    | alchemlyb.preprocessing.subsampling:equilibrium_detection:601 - Start index: 0.
+2023-10-06 16:05:08.760 | DEBUG    | alchemlyb.preprocessing.subsampling:equilibrium_detection:602 - Statistical inefficiency: 1.00.
+2023-10-06 16:05:08.760 | DEBUG    | alchemlyb.preprocessing.subsampling:equilibrium_detection:608 - Number of uncorrelated samples: 19.
+2023-10-06 16:05:08.760 | WARNING  | alchemlyb.workflows.abfe:preprocess:371 - Number of dHdl 19 for state 8 is less than the threshold 50.
+2023-10-06 16:05:08.760 | INFO     | alchemlyb.workflows.abfe:preprocess:376 - Take all the dHdl for state 8.
+2023-10-06 16:05:08.766 | DEBUG    | alchemlyb.preprocessing.subsampling:equilibrium_detection:599 - Running equilibration detection.
+2023-10-06 16:05:08.767 | DEBUG    | alchemlyb.preprocessing.subsampling:equilibrium_detection:601 - Start index: 8.
+2023-10-06 16:05:08.767 | DEBUG    | alchemlyb.preprocessing.subsampling:equilibrium_detection:602 - Statistical inefficiency: 1.00.
+2023-10-06 16:05:08.767 | DEBUG    | alchemlyb.preprocessing.subsampling:equilibrium_detection:608 - Number of uncorrelated samples: 11.
+2023-10-06 16:05:08.767 | WARNING  | alchemlyb.workflows.abfe:preprocess:371 - Number of dHdl 11 for state 9 is less than the threshold 50.
+2023-10-06 16:05:08.767 | INFO     | alchemlyb.workflows.abfe:preprocess:376 - Take all the dHdl for state 9.
+2023-10-06 16:05:08.773 | DEBUG    | alchemlyb.preprocessing.subsampling:equilibrium_detection:599 - Running equilibration detection.
+2023-10-06 16:05:08.774 | DEBUG    | alchemlyb.preprocessing.subsampling:equilibrium_detection:601 - Start index: 0.
+2023-10-06 16:05:08.774 | DEBUG    | alchemlyb.preprocessing.subsampling:equilibrium_detection:602 - Statistical inefficiency: 1.00.
+2023-10-06 16:05:08.774 | DEBUG    | alchemlyb.preprocessing.subsampling:equilibrium_detection:608 - Number of uncorrelated samples: 19.
+2023-10-06 16:05:08.774 | WARNING  | alchemlyb.workflows.abfe:preprocess:371 - Number of dHdl 19 for state 10 is less than the threshold 50.
+2023-10-06 16:05:08.775 | INFO     | alchemlyb.workflows.abfe:preprocess:376 - Take all the dHdl for state 10.
+2023-10-06 16:05:08.780 | DEBUG    | alchemlyb.preprocessing.subsampling:equilibrium_detection:599 - Running equilibration detection.
+2023-10-06 16:05:08.780 | DEBUG    | alchemlyb.preprocessing.subsampling:equilibrium_detection:601 - Start index: 0.
+2023-10-06 16:05:08.781 | DEBUG    | alchemlyb.preprocessing.subsampling:equilibrium_detection:602 - Statistical inefficiency: 1.00.
+2023-10-06 16:05:08.781 | DEBUG    | alchemlyb.preprocessing.subsampling:equilibrium_detection:608 - Number of uncorrelated samples: 19.
+2023-10-06 16:05:08.781 | WARNING  | alchemlyb.workflows.abfe:preprocess:371 - Number of dHdl 19 for state 11 is less than the threshold 50.
+2023-10-06 16:05:08.781 | INFO     | alchemlyb.workflows.abfe:preprocess:376 - Take all the dHdl for state 11.
+2023-10-06 16:05:08.787 | DEBUG    | alchemlyb.preprocessing.subsampling:equilibrium_detection:599 - Running equilibration detection.
+2023-10-06 16:05:08.787 | DEBUG    | alchemlyb.preprocessing.subsampling:equilibrium_detection:601 - Start index: 0.
+2023-10-06 16:05:08.787 | DEBUG    | alchemlyb.preprocessing.subsampling:equilibrium_detection:602 - Statistical inefficiency: 1.00.
+2023-10-06 16:05:08.788 | DEBUG    | alchemlyb.preprocessing.subsampling:equilibrium_detection:608 - Number of uncorrelated samples: 19.
+2023-10-06 16:05:08.788 | WARNING  | alchemlyb.workflows.abfe:preprocess:371 - Number of dHdl 19 for state 12 is less than the threshold 50.
+2023-10-06 16:05:08.788 | INFO     | alchemlyb.workflows.abfe:preprocess:376 - Take all the dHdl for state 12.
+2023-10-06 16:05:08.793 | DEBUG    | alchemlyb.preprocessing.subsampling:equilibrium_detection:599 - Running equilibration detection.
+2023-10-06 16:05:08.794 | DEBUG    | alchemlyb.preprocessing.subsampling:equilibrium_detection:601 - Start index: 0.
+2023-10-06 16:05:08.794 | DEBUG    | alchemlyb.preprocessing.subsampling:equilibrium_detection:602 - Statistical inefficiency: 1.00.
+2023-10-06 16:05:08.795 | DEBUG    | alchemlyb.preprocessing.subsampling:equilibrium_detection:608 - Number of uncorrelated samples: 19.
+2023-10-06 16:05:08.795 | WARNING  | alchemlyb.workflows.abfe:preprocess:371 - Number of dHdl 19 for state 13 is less than the threshold 50.
+2023-10-06 16:05:08.796 | INFO     | alchemlyb.workflows.abfe:preprocess:376 - Take all the dHdl for state 13.
+2023-10-06 16:05:08.802 | DEBUG    | alchemlyb.preprocessing.subsampling:equilibrium_detection:599 - Running equilibration detection.
+2023-10-06 16:05:08.803 | DEBUG    | alchemlyb.preprocessing.subsampling:equilibrium_detection:601 - Start index: 0.
+2023-10-06 16:05:08.803 | DEBUG    | alchemlyb.preprocessing.subsampling:equilibrium_detection:602 - Statistical inefficiency: 1.20.
+2023-10-06 16:05:08.804 | DEBUG    | alchemlyb.preprocessing.subsampling:equilibrium_detection:608 - Number of uncorrelated samples: 16.
+2023-10-06 16:05:08.804 | WARNING  | alchemlyb.workflows.abfe:preprocess:371 - Number of dHdl 16 for state 14 is less than the threshold 50.
+2023-10-06 16:05:08.804 | INFO     | alchemlyb.workflows.abfe:preprocess:376 - Take all the dHdl for state 14.
+2023-10-06 16:05:08.810 | DEBUG    | alchemlyb.preprocessing.subsampling:equilibrium_detection:599 - Running equilibration detection.
+2023-10-06 16:05:08.811 | DEBUG    | alchemlyb.preprocessing.subsampling:equilibrium_detection:601 - Start index: 0.
+2023-10-06 16:05:08.811 | DEBUG    | alchemlyb.preprocessing.subsampling:equilibrium_detection:602 - Statistical inefficiency: 1.80.
+2023-10-06 16:05:08.811 | DEBUG    | alchemlyb.preprocessing.subsampling:equilibrium_detection:608 - Number of uncorrelated samples: 11.
+2023-10-06 16:05:08.812 | WARNING  | alchemlyb.workflows.abfe:preprocess:371 - Number of dHdl 11 for state 15 is less than the threshold 50.
+2023-10-06 16:05:08.812 | INFO     | alchemlyb.workflows.abfe:preprocess:376 - Take all the dHdl for state 15.
+2023-10-06 16:05:08.817 | DEBUG    | alchemlyb.preprocessing.subsampling:equilibrium_detection:599 - Running equilibration detection.
+2023-10-06 16:05:08.818 | DEBUG    | alchemlyb.preprocessing.subsampling:equilibrium_detection:601 - Start index: 11.
+2023-10-06 16:05:08.818 | DEBUG    | alchemlyb.preprocessing.subsampling:equilibrium_detection:602 - Statistical inefficiency: 1.00.
+2023-10-06 16:05:08.819 | DEBUG    | alchemlyb.preprocessing.subsampling:equilibrium_detection:608 - Number of uncorrelated samples: 8.
+2023-10-06 16:05:08.819 | WARNING  | alchemlyb.workflows.abfe:preprocess:371 - Number of dHdl 8 for state 16 is less than the threshold 50.
+2023-10-06 16:05:08.819 | INFO     | alchemlyb.workflows.abfe:preprocess:376 - Take all the dHdl for state 16.
+2023-10-06 16:05:08.825 | DEBUG    | alchemlyb.preprocessing.subsampling:equilibrium_detection:599 - Running equilibration detection.
+2023-10-06 16:05:08.826 | DEBUG    | alchemlyb.preprocessing.subsampling:equilibrium_detection:601 - Start index: 0.
+2023-10-06 16:05:08.826 | DEBUG    | alchemlyb.preprocessing.subsampling:equilibrium_detection:602 - Statistical inefficiency: 1.00.
+2023-10-06 16:05:08.826 | DEBUG    | alchemlyb.preprocessing.subsampling:equilibrium_detection:608 - Number of uncorrelated samples: 19.
+2023-10-06 16:05:08.826 | WARNING  | alchemlyb.workflows.abfe:preprocess:371 - Number of dHdl 19 for state 17 is less than the threshold 50.
+2023-10-06 16:05:08.827 | INFO     | alchemlyb.workflows.abfe:preprocess:376 - Take all the dHdl for state 17.
+2023-10-06 16:05:08.832 | DEBUG    | alchemlyb.preprocessing.subsampling:equilibrium_detection:599 - Running equilibration detection.
+2023-10-06 16:05:08.833 | DEBUG    | alchemlyb.preprocessing.subsampling:equilibrium_detection:601 - Start index: 2.
+2023-10-06 16:05:08.833 | DEBUG    | alchemlyb.preprocessing.subsampling:equilibrium_detection:602 - Statistical inefficiency: 1.00.
+2023-10-06 16:05:08.833 | DEBUG    | alchemlyb.preprocessing.subsampling:equilibrium_detection:608 - Number of uncorrelated samples: 17.
+2023-10-06 16:05:08.834 | WARNING  | alchemlyb.workflows.abfe:preprocess:371 - Number of dHdl 17 for state 18 is less than the threshold 50.
+2023-10-06 16:05:08.834 | INFO     | alchemlyb.workflows.abfe:preprocess:376 - Take all the dHdl for state 18.
+2023-10-06 16:05:08.839 | DEBUG    | alchemlyb.preprocessing.subsampling:equilibrium_detection:599 - Running equilibration detection.
+2023-10-06 16:05:08.840 | DEBUG    | alchemlyb.preprocessing.subsampling:equilibrium_detection:601 - Start index: 0.
+2023-10-06 16:05:08.840 | DEBUG    | alchemlyb.preprocessing.subsampling:equilibrium_detection:602 - Statistical inefficiency: 1.00.
+2023-10-06 16:05:08.840 | DEBUG    | alchemlyb.preprocessing.subsampling:equilibrium_detection:608 - Number of uncorrelated samples: 19.
+2023-10-06 16:05:08.841 | WARNING  | alchemlyb.workflows.abfe:preprocess:371 - Number of dHdl 19 for state 19 is less than the threshold 50.
+2023-10-06 16:05:08.841 | INFO     | alchemlyb.workflows.abfe:preprocess:376 - Take all the dHdl for state 19.
+2023-10-06 16:05:08.846 | DEBUG    | alchemlyb.preprocessing.subsampling:equilibrium_detection:599 - Running equilibration detection.
+2023-10-06 16:05:08.847 | DEBUG    | alchemlyb.preprocessing.subsampling:equilibrium_detection:601 - Start index: 0.
+2023-10-06 16:05:08.847 | DEBUG    | alchemlyb.preprocessing.subsampling:equilibrium_detection:602 - Statistical inefficiency: 1.00.
+2023-10-06 16:05:08.847 | DEBUG    | alchemlyb.preprocessing.subsampling:equilibrium_detection:608 - Number of uncorrelated samples: 19.
+2023-10-06 16:05:08.847 | WARNING  | alchemlyb.workflows.abfe:preprocess:371 - Number of dHdl 19 for state 20 is less than the threshold 50.
+2023-10-06 16:05:08.847 | INFO     | alchemlyb.workflows.abfe:preprocess:376 - Take all the dHdl for state 20.
+2023-10-06 16:05:08.848 | INFO     | alchemlyb.workflows.abfe:estimate:421 - Start running estimator: MBAR,BAR,TI.
+2023-10-06 16:05:08.852 | INFO     | alchemlyb.workflows.abfe:estimate:430 - A total 399 lines of dHdl is used.
+2023-10-06 16:05:08.858 | INFO     | alchemlyb.workflows.abfe:estimate:438 - A total 399 lines of u_nk is used.
+2023-10-06 16:05:08.858 | INFO     | alchemlyb.workflows.abfe:estimate:442 - Run MBAR estimator.
+2023-10-06 16:05:08.887 | INFO     | alchemlyb.workflows.abfe:estimate:449 - Run BAR estimator.
+2023-10-06 16:05:09.008 | INFO     | alchemlyb.workflows.abfe:estimate:452 - Run TI estimator.
+2023-10-06 16:05:09.038 | INFO     | alchemlyb.workflows.abfe:generate_result:505 - Summarise the estimate into a dataframe.
+2023-10-06 16:05:09.038 | INFO     | alchemlyb.workflows.abfe:generate_result:507 - Generate the row names.
+2023-10-06 16:05:09.038 | INFO     | alchemlyb.workflows.abfe:generate_result:518 - use the stage name from u_nk
+2023-10-06 16:05:09.039 | INFO     | alchemlyb.workflows.abfe:generate_result:532 - Read the results from estimator MBAR
+2023-10-06 16:05:09.039 | INFO     | alchemlyb.workflows.abfe:generate_result:549 - Generate the staged result from estimator MBAR
+2023-10-06 16:05:09.040 | INFO     | alchemlyb.workflows.abfe:generate_result:568 - Stage coul-lambda is from state 0 to state 5.
+2023-10-06 16:05:09.040 | INFO     | alchemlyb.workflows.abfe:generate_result:568 - Stage vdw-lambda is from state 5 to state 20.
+2023-10-06 16:05:09.040 | INFO     | alchemlyb.workflows.abfe:generate_result:532 - Read the results from estimator BAR
+2023-10-06 16:05:09.041 | INFO     | alchemlyb.workflows.abfe:generate_result:549 - Generate the staged result from estimator BAR
+2023-10-06 16:05:09.041 | INFO     | alchemlyb.workflows.abfe:generate_result:568 - Stage coul-lambda is from state 0 to state 5.
+2023-10-06 16:05:09.041 | INFO     | alchemlyb.workflows.abfe:generate_result:568 - Stage vdw-lambda is from state 5 to state 20.
+2023-10-06 16:05:09.042 | INFO     | alchemlyb.workflows.abfe:generate_result:532 - Read the results from estimator TI
+2023-10-06 16:05:09.043 | INFO     | alchemlyb.workflows.abfe:generate_result:549 - Generate the staged result from estimator TI
+2023-10-06 16:05:09.043 | INFO     | alchemlyb.workflows.abfe:generate_result:568 - Stage coul-lambda is from state 0 to state 5.
+2023-10-06 16:05:09.043 | INFO     | alchemlyb.workflows.abfe:generate_result:568 - Stage vdw-lambda is from state 5 to state 20.
+2023-10-06 16:05:09.048 | INFO     | alchemlyb.workflows.abfe:generate_result:610 - Write results:
+                     MBAR  MBAR_Error       BAR  BAR_Error        TI  TI_Error
+States 0 -- 1    0.774186    0.055253  0.808410   0.062315  0.810016  0.060340
+       1 -- 2    0.508670    0.044279  0.484382   0.060013  0.488825  0.058222
+       2 -- 3    0.285903    0.033028  0.253575   0.050200  0.256345  0.051388
+       3 -- 4    0.118452    0.025107  0.129026   0.039598  0.130392  0.040106
+       4 -- 5   -0.011649    0.022753  0.020718   0.038239  0.020559  0.039374
+       5 -- 6    0.294228    0.015261  0.306339   0.028642  0.306942  0.028749
+       6 -- 7    0.292437    0.015974  0.262713   0.029918  0.268699  0.029383
+       7 -- 8    0.574928    0.036966  0.510956   0.070827  0.478261  0.083028
+       8 -- 9    0.518795    0.052682  0.508116   0.075208  0.492585  0.086493
+       9 -- 10   0.362713    0.075554  0.416123   0.081247  0.412146  0.085306
+       10 -- 11  0.101222    0.093392  0.105407   0.099404  0.166270  0.087194
+       11 -- 12 -0.090323    0.084516 -0.032219   0.095759 -0.016980  0.088697
+       12 -- 13 -0.132881    0.048740 -0.137708   0.061126 -0.127855  0.057196
+       13 -- 14 -0.282828    0.064282 -0.273358   0.073937 -0.274111  0.071490
+       14 -- 15 -0.536347    0.079215 -0.546481   0.096183 -0.546114  0.093274
+       15 -- 16 -0.826889    0.082618 -0.924708   0.114900 -0.907979  0.105154
+       16 -- 17 -0.907652    0.055508 -0.914090   0.074300 -0.902409  0.084729
+       17 -- 18 -0.723144    0.030332 -0.667790   0.044799 -0.660247  0.047121
+       18 -- 19 -0.451004    0.019097 -0.428818   0.028976 -0.431014  0.029619
+       19 -- 20 -0.186351    0.013339 -0.197484   0.019860 -0.197596  0.021266
+Stages coul      1.675562    0.147853  1.696111   0.152640  1.706137  0.151086
+       vdw      -1.993099    0.385969 -2.013001   0.114570 -1.939402  0.391290
+       TOTAL    -0.317537    0.411716 -0.316890   0.302478 -0.233265  0.419445
+2023-10-06 16:05:09.048 | INFO     | alchemlyb.workflows.abfe:plot_overlap_matrix:630 - Plot overlap matrix.
+2023-10-06 16:05:10.156 | INFO     | alchemlyb.workflows.abfe:plot_overlap_matrix:634 - Plot overlap matrix to ./ under O_MBAR.pdf.
+2023-10-06 16:05:10.157 | INFO     | alchemlyb.workflows.abfe:plot_ti_dhdl:661 - Plot TI dHdl.
+2023-10-06 16:05:10.316 | INFO     | alchemlyb.workflows.abfe:plot_ti_dhdl:671 - Plot TI dHdl to dhdl_TI.pdf under ./.
+2023-10-06 16:05:10.317 | INFO     | alchemlyb.workflows.abfe:plot_dF_state:705 - Plot dF states.
+2023-10-06 16:05:10.573 | INFO     | alchemlyb.workflows.abfe:plot_dF_state:715 - Plot dF state to dF_state.pdf under ./.
+2023-10-06 16:05:10.573 | INFO     | alchemlyb.workflows.abfe:plot_dF_state:705 - Plot dF states.
+2023-10-06 16:05:10.779 | INFO     | alchemlyb.workflows.abfe:plot_dF_state:715 - Plot dF state to dF_state_long.pdf under ./.
+2023-10-06 16:05:10.779 | INFO     | alchemlyb.workflows.abfe:check_convergence:752 - Start convergence analysis.
+2023-10-06 16:05:10.780 | INFO     | alchemlyb.workflows.abfe:check_convergence:753 - Checking data availability.
+2023-10-06 16:05:10.780 | INFO     | alchemlyb.workflows.abfe:check_convergence:758 - Subsampled u_nk is available.
+2023-10-06 16:05:10.780 | INFO     | alchemlyb.convergence.convergence:forward_backward_convergence:68 - Start convergence analysis.
+2023-10-06 16:05:10.780 | INFO     | alchemlyb.convergence.convergence:forward_backward_convergence:69 - Check data availability.
+2023-10-06 16:05:10.780 | INFO     | alchemlyb.convergence.convergence:forward_backward_convergence:86 - Use MBAR estimator for convergence analysis.
+2023-10-06 16:05:10.780 | INFO     | alchemlyb.convergence.convergence:forward_backward_convergence:88 - Begin forward analysis
+2023-10-06 16:05:10.780 | INFO     | alchemlyb.convergence.convergence:forward_backward_convergence:92 - Forward analysis: 10.00%
+2023-10-06 16:05:10.809 | INFO     | alchemlyb.convergence.convergence:forward_backward_convergence:111 - -2.52 +/- 3.24 kT
+2023-10-06 16:05:10.809 | INFO     | alchemlyb.convergence.convergence:forward_backward_convergence:92 - Forward analysis: 20.00%
+2023-10-06 16:05:10.837 | INFO     | alchemlyb.convergence.convergence:forward_backward_convergence:111 - -0.26 +/- 2.22 kT
+2023-10-06 16:05:10.838 | INFO     | alchemlyb.convergence.convergence:forward_backward_convergence:92 - Forward analysis: 30.00%
+2023-10-06 16:05:10.861 | INFO     | alchemlyb.convergence.convergence:forward_backward_convergence:111 - 0.11 +/- 1.75 kT
+2023-10-06 16:05:10.862 | INFO     | alchemlyb.convergence.convergence:forward_backward_convergence:92 - Forward analysis: 40.00%
+2023-10-06 16:05:10.887 | INFO     | alchemlyb.convergence.convergence:forward_backward_convergence:111 - 1.69 +/- 1.44 kT
+2023-10-06 16:05:10.887 | INFO     | alchemlyb.convergence.convergence:forward_backward_convergence:92 - Forward analysis: 50.00%
+2023-10-06 16:05:10.916 | INFO     | alchemlyb.convergence.convergence:forward_backward_convergence:111 - 1.38 +/- 1.31 kT
+2023-10-06 16:05:10.916 | INFO     | alchemlyb.convergence.convergence:forward_backward_convergence:92 - Forward analysis: 60.00%
+2023-10-06 16:05:10.941 | INFO     | alchemlyb.convergence.convergence:forward_backward_convergence:111 - 1.36 +/- 1.20 kT
+2023-10-06 16:05:10.941 | INFO     | alchemlyb.convergence.convergence:forward_backward_convergence:92 - Forward analysis: 70.00%
+2023-10-06 16:05:10.968 | INFO     | alchemlyb.convergence.convergence:forward_backward_convergence:111 - 1.71 +/- 1.10 kT
+2023-10-06 16:05:10.968 | INFO     | alchemlyb.convergence.convergence:forward_backward_convergence:92 - Forward analysis: 80.00%
+2023-10-06 16:05:10.995 | INFO     | alchemlyb.convergence.convergence:forward_backward_convergence:111 - 1.22 +/- 1.05 kT
+2023-10-06 16:05:10.996 | INFO     | alchemlyb.convergence.convergence:forward_backward_convergence:92 - Forward analysis: 90.00%
+2023-10-06 16:05:11.024 | INFO     | alchemlyb.convergence.convergence:forward_backward_convergence:111 - 0.74 +/- 1.01 kT
+2023-10-06 16:05:11.024 | INFO     | alchemlyb.convergence.convergence:forward_backward_convergence:92 - Forward analysis: 100.00%
+2023-10-06 16:05:11.052 | INFO     | alchemlyb.convergence.convergence:forward_backward_convergence:111 - 0.74 +/- 0.95 kT
+2023-10-06 16:05:11.052 | INFO     | alchemlyb.convergence.convergence:forward_backward_convergence:115 - Begin backward analysis
+2023-10-06 16:05:11.052 | INFO     | alchemlyb.convergence.convergence:forward_backward_convergence:119 - Backward analysis: 10.00%
+2023-10-06 16:05:11.077 | INFO     | alchemlyb.convergence.convergence:forward_backward_convergence:138 - -1.07 +/- 2.15 kT
+2023-10-06 16:05:11.077 | INFO     | alchemlyb.convergence.convergence:forward_backward_convergence:119 - Backward analysis: 20.00%
+2023-10-06 16:05:11.101 | INFO     | alchemlyb.convergence.convergence:forward_backward_convergence:138 - -2.10 +/- 1.53 kT
+2023-10-06 16:05:11.101 | INFO     | alchemlyb.convergence.convergence:forward_backward_convergence:119 - Backward analysis: 30.00%
+2023-10-06 16:05:11.124 | INFO     | alchemlyb.convergence.convergence:forward_backward_convergence:138 - -2.87 +/- 1.26 kT
+2023-10-06 16:05:11.124 | INFO     | alchemlyb.convergence.convergence:forward_backward_convergence:119 - Backward analysis: 40.00%
+2023-10-06 16:05:11.148 | INFO     | alchemlyb.convergence.convergence:forward_backward_convergence:138 - -2.43 +/- 1.10 kT
+2023-10-06 16:05:11.149 | INFO     | alchemlyb.convergence.convergence:forward_backward_convergence:119 - Backward analysis: 50.00%
+2023-10-06 16:05:11.179 | INFO     | alchemlyb.convergence.convergence:forward_backward_convergence:138 - -1.73 +/- 0.96 kT
+2023-10-06 16:05:11.179 | INFO     | alchemlyb.convergence.convergence:forward_backward_convergence:119 - Backward analysis: 60.00%
+2023-10-06 16:05:11.209 | INFO     | alchemlyb.convergence.convergence:forward_backward_convergence:138 - -1.97 +/- 0.90 kT
+2023-10-06 16:05:11.209 | INFO     | alchemlyb.convergence.convergence:forward_backward_convergence:119 - Backward analysis: 70.00%
+2023-10-06 16:05:11.238 | INFO     | alchemlyb.convergence.convergence:forward_backward_convergence:138 - -1.27 +/- 0.82 kT
+2023-10-06 16:05:11.238 | INFO     | alchemlyb.convergence.convergence:forward_backward_convergence:119 - Backward analysis: 80.00%
+2023-10-06 16:05:11.266 | INFO     | alchemlyb.convergence.convergence:forward_backward_convergence:138 - -0.71 +/- 0.76 kT
+2023-10-06 16:05:11.266 | INFO     | alchemlyb.convergence.convergence:forward_backward_convergence:119 - Backward analysis: 90.00%
+2023-10-06 16:05:11.353 | INFO     | alchemlyb.convergence.convergence:forward_backward_convergence:138 - -0.45 +/- 0.71 kT
+2023-10-06 16:05:11.353 | INFO     | alchemlyb.convergence.convergence:forward_backward_convergence:119 - Backward analysis: 100.00%
+2023-10-06 16:05:11.382 | INFO     | alchemlyb.convergence.convergence:forward_backward_convergence:138 - -0.54 +/- 0.70 kT
+2023-10-06 16:05:11.383 | INFO     | alchemlyb.workflows.abfe:check_convergence:806 - Plot convergence analysis to dF_t.pdf under ./.

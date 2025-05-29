@@ -1,0 +1,72 @@
+#-----------------------------------------------------------------------STAT
+BEGIN{
+# Checking...
+    if ((IFILE == "")) {
+	printf ( "\nUsage:\n");
+	printf ( "\tawk -f work.awk -v IFILE=file.kappa\n" );
+	printf ( "\n" );
+	exit;
+    }
+    #..constants
+    pi=3.14159;
+    kb=1.38064852e-23; #..J/K
+    Na=6.02214086e23;  #..mol-1
+    j2cal=1/4.184;
+
+    #..data
+    Temp=298;    #..K 
+    V=1.66058;   #..nm^3/molecule (volume/molecule @ 1M)
+
+#..example
+#    krr=4184;    #..kJ/mol/nm^2
+#    ktt=41.84;   #..kJ/mol/rad^2
+#    kpp=41.84;   #..kJ/mol/rad^2
+#    kTHE=41.84;  #..kJ/mol/rad^2
+#    kPHI=41.84;  #..kJ/mol/rad^2
+#    kPSI=41.84;  #..kJ/mol/rad^2
+#    R0=0.405;    #..nm
+#    tt0=2.65;    #..rad
+#    TT0=1.40;    #..rad
+#
+
+    #..read KAPPA
+    while ( (getline < IFILE) > 0 )
+	if (substr($0,1,1)!="#"){
+	    cc++;
+	    DATA[cc]=$1
+	}
+#    NDAT=cc;
+#    for(ii=1;ii<=NDAT;ii++)
+#	print ii, DATA[ii];
+
+    #..SET values
+    krr=DATA[1];
+    ktt=DATA[2];
+    kpp=DATA[3];
+    kTHE=DATA[4];
+    kPHI=DATA[5];
+    kPSI=DATA[6];
+    R0=DATA[7];
+    tt0=DATA[8];
+    TT0=DATA[9];
+#    
+    
+    #..kT
+    kT=kb*Na*Temp/1000; #..kJ/mol
+#..check!    print kT;
+
+    #..positional restrain
+    Ztr=V;
+    Ztr_R=R0^2 * sin(tt0) * (2*pi*kT)^(3/2) /sqrt(krr*ktt*kpp);
+#..check!    print "log(Ztr/Ztr_R):\t", log(Ztr/Ztr_R);
+
+    #..orientation restrain
+    Zrot=8*pi^2;
+    Zrot_R=sin(TT0) * (2*pi*kT)^(3/2)/sqrt(kTHE*kPHI*kPSI);
+#..check!    print "log(Zrot/Zrot_R):", log(Zrot/Zrot_R);
+    
+    #..Restraint work
+    Wr = -kT*(log(Ztr_R/Ztr)+log(Zrot_R/Zrot));
+    printf("%7.5f kcal/mol\n", Wr*j2cal);
+}
+#-------------------------------------------------------------------------------------------STAT

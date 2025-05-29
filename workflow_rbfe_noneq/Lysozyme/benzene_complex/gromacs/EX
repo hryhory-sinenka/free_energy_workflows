@@ -1,0 +1,22 @@
+#!/bin/csh
+#source /usr/local/gromacs/bin/GMXR
+#gmx grompp -f step4.0_minimization.mdp -o step4.0_minimization.tpr -c step3_input.gro -r step3_input.gro -p topol.top -n index.ndx -maxwarn 1
+#gmx mdrun -v -deffnm step4.0_minimization -nb gpu -nt 8
+#gmx grompp -f step4.1_equilibration.mdp -o step4.1_equilibration.tpr -c step4.0_minimization.gro -r step3_input.gro -p topol.top -n index.ndx -maxwarn 1
+#gmx mdrun -v -deffnm step4.1_equilibration -nb gpu -nt 8
+gmx grompp -f step5_production.mdp -o step5_production.tpr -c step4.1_equilibration.gro -p topol.top -n index.ndx -maxwarn 1
+gmx mdrun -v -deffnm step5_production -nb gpu -nt 8
+
+cd ../../toluene_complex/gromacs/
+
+bash EX
+
+cd ../../../Water/benzene_water/gromacs/
+
+bash EX
+
+cd ../../toluene_water/gromacs/
+
+bash EX
+
+#bash ~/Downloads/lyso_tolu/gromacs/EX
